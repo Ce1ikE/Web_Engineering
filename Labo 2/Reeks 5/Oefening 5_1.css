@@ -1,0 +1,9 @@
+.List_1 {
+    list-style-type: upper-roman;
+}
+
+.List_1 ul {
+    list-style-image: url("../Startbestanden/startbestanden_labo2/vinkje.jpg") ;
+}
+
+

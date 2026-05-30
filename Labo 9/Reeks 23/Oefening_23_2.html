@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 23 : Oefening 2</title>
+    <link rel="stylesheet" href="./Oefening_23_2.css">
+</head>
+<body>
+    <header>
+        <h1 id="response">Identification</h1>
+    </header>
+
+    <main>
+        <img src="../Startbestanden/startbestanden_labo9/oefening23_2_start/images/passportcoded.jpg" alt="Identity_JB" title="Identification" id="ID_image">
+    </main>
+
+    <footer>
+        <input type="password" placeholder="Password..." id="password_input">
+        <input type="button" value="Check Code" id="button_input">
+    </footer>
+
+    <script src="./jquery.js"></script>
+    <script>
+        $("#button_input").click(function(){
+            if($("#password_input").val() == "jasonb"){
+                $("#response")
+                            .fadeOut(200)
+                            .html("Granted")
+                            .css("color","greenyellow")
+                            .css("text-shadow","0px 0px 5px currentcolor")
+                            .fadeIn(200);
+                $("#ID_image")
+                            .fadeOut(1000,function(){
+                                $(this)
+                                .attr("src","../Startbestanden/startbestanden_labo9/oefening23_2_start/images/passport.jpg")
+                                .fadeIn(1000);
+                            })
+            } else {
+                $("#response")
+                            .fadeOut(200)
+                            .html("Denied")
+                            .css("color","red")
+                            .css("text-shadow","0px 0px 5px currentcolor")
+                            .fadeIn(200);
+                $("#ID_image")
+                            .fadeOut(1000,function(){
+                                $(this)
+                                .attr("src","../Startbestanden/startbestanden_labo9/oefening23_2_start/images/passportcoded.jpg")
+                                .fadeIn(1000);
+                            })
+            }
+        });
+    </script>
+</body>
+</html>

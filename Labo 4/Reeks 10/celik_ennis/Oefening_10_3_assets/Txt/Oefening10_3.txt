@@ -1,0 +1,8 @@
+HTML5
+
+HTML5 (HyperText Markup Language 5) is de nieuwste, nog onafgewerkte versie van de HTML-standaard. Deze nieuwe taal zal de functionaliteit van zowel html en xhtml bevatten. Verder verbetert HTML5 ook de kleine foutjes van zijn voorganger en levert hij betere ondersteuning voor webapplicaties. De term HTML5 wordt ook gebruikt als marketingterm, waarbij naast HTML-versie 5 ook omliggende technieken zoals CSS3, JavaScript, XML, JSON en SVG meegenomen worden in de definitie. Hoewel HTML5 nog geen W3C-standaard is, zijn sommige functies wel al in gebruik in 
+
+
+Het ontstaan
+
+De Web Hypertext Application Technology Working Group (WHATWG) diende half april 2007 het voorstel in bij de W3C-werkgroep om 'hun' HTML 5 als startpunt te gebruiken voor de verdere HTML-ontwikkeling. Verdere wensen waren dat de naam 'HTML5' een offici�le status zou krijgen en dat Ian Hickson van de WHATWG zou blijven werken aan de specificatie. Uit de uitslag van de enqu�te die de W3C-werkgroep hield, blijkt grote steun voor de drie voorstellen; slechts een enkeling van de 102 leden die meededen aan het referendum stemde tegen. Ook Dave Hyatt van Apple werd hierbij pro forma benoemd als editor voor HTML5. Hij werd door de WHATWG naar voren geschoven om Hickson te vergezellen toen de W3C-groep aangaf ��n editor te weinig te vinden. In de toekomst zal het team van editors mogelijk nog worden uitgebreid, volgens de W3C.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="gedicht" type="gedicht-type"/>
+
+    <xs:complexType name="gedicht-type">
+        <xs:sequence>
+            <xs:element name="titel" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+            <xs:element name="strofe" type="strofe-type"/>
+            <xs:element name="auteur" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+            <xs:element name="data" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="strofe-type">
+        <xs:sequence>
+            <xs:element name="vers" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

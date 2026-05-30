@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 17 : Oefening 1</title>
+    <link rel="stylesheet" href="./Oefening_17_1.css">
+    <script>
+        var Start_Button = document.getElementById("Start_Btn");
+        var Stop_Button = document.getElementById("Stop_Btn");
+        var Reset_Button = document.getElementById("Reset_Btn");
+        var Stopwatch = document.getElementById("Stopwatch");
+
+        var Timer;
+        var Time_Now = new Date();
+        // Time_Now.setTime(-1000 * 60 * 60);
+        Time_Now.setHours(0);
+        Time_Now.setMinutes(0);
+        Time_Now.setSeconds(0);
+
+        function Start_Stopwatch() {
+            Timer = window.setInterval("Display_Stopwatch()",10);            
+        }
+
+        function Display_Stopwatch() {
+            document.getElementById("Stopwatch").innerHTML = Time_Now.getHours().toLocaleString().padStart(2,"0") + " : " + Time_Now.getMinutes().toLocaleString().padStart(2,"0") + " : " + Time_Now.getSeconds().toLocaleString().padStart(2,"0") + " : " + Time_Now.getMilliseconds().toLocaleString().padStart(3,"0");
+            Time_Now.setTime(Time_Now.getTime() + 10);
+        }
+        
+        function Stop_Stopwatch() {
+            window.clearInterval(Timer);           
+        }
+
+        function Reset_Stopwatch() {
+            Time_Now = new Date();
+            Time_Now.setHours(0);
+            Time_Now.setMinutes(0);
+            Time_Now.setSeconds(0);
+            document.getElementById("Stopwatch").innerHTML = "00 : 00 : 00 : 000";
+        }
+    </script>
+</head>
+<body">
+    <div class="stopwatch-container">
+        <p id="Stopwatch">00 : 00 : 00 : 000</p>
+
+        <div class="button-container">
+            <input type="button" value="Start stopwatch" id="Start_Btn" onclick="Start_Stopwatch();">
+            <input type="button" value="Stop stopwatch" id="Stop_Btn" onclick="Stop_Stopwatch();">
+            <input type="button" value="Reset stopwatch" id="Reset_Btn" onclick="Reset_Stopwatch();">
+        </div>
+    </div>
+
+
+</body>
+</html>

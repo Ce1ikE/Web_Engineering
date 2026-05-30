@@ -1,0 +1,88 @@
+<!doctype html> 
+<html> 
+<head> 
+  <meta charset="utf-8" /> 
+  <title>Bestelformulier oef. 21.5</title>
+  <link href="stijl_oefening21_5.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h2>Een bestelformulier</h2>
+  <form id="form1" action="mailto:student@student.lessius.eu" method="post" enctype="text/plain">
+    <div class="row">
+      <div class="col-3">
+        <p><label for="naam">Uw naam:</label></p>
+        <p><input type="text" name="naam" id="naam" /></p>
+      </div>
+      <div class="col-3">
+        <p><label for="email">Emailadres</label></p>
+        <p><input type="text" name="email" id="email" /></p>
+      </div>
+      <div class="col-3">
+        <p><label for="email">Telefoon</label></p>
+        <p><input type="text" name="telefoon" id="telefoon" /></p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-2">
+        <p><label for="aflever">Afleveradres</label></p>
+        <textarea name="aflever" id="aflever">Het afleveradres</textarea>
+      </div>
+      <div class="col-2">
+        <p><label for="factuur">Factuuradres</label></p>
+        <textarea name="factuur" id="factuur">Het afleveradres</textarea>
+      </div>
+    </div>
+    <p><input type="checkbox" name="idem" id="idem" />
+           Factuuradres hetzelfde als afleveradres</p>
+    <hr />
+    <!-- Tabel met artikelen -->
+    <table>
+      <tr>
+        <th>Artikel</th>
+        <th>Prijs</th>
+        <th>Aantal</th>
+        <th>Bedrag</th>
+      </tr>
+      <!-- Eerste artikel -->
+      <tr>
+        <td>Toner voor Laserprinter </td>
+        <td>&euro; 150,-</td>
+        <td><input type="text" name="aantal1" id="aantal1" size="5" value="0" /></td>
+        <td><input type="text" name="bedrag1" id="bedrag1" size="8" value="0" /></td>
+      </tr>
+      <!-- Tweede artikel -->
+      <tr>
+        <td>DVD Rewritable</td>
+        <td>&euro; 25,- </td>
+        <td><input type="text" name="aantal2" id="aantal2" size="5" value="0" /></td>
+        <td><input type="text" name="bedrag2" id="bedrag2" size="8" value="0" /></td>
+      </tr>
+      <!-- Derde artikel -->
+      <tr>
+        <td>256 MB geheugenuitbreiding </td>
+        <td>&euro; 98,-</td>
+        <td><input type="text" name="aantal3" id="aantal3" size="5" value="0" /></td>
+        <td><input type="text" name="bedrag3" id="bedrag3" size="8" value="0" /></td>
+      </tr>
+      <!-- Vierde artikel -->
+      <tr>
+        <td>Harddisk, 120 GB. </td>
+        <td>&euro; 279,-</td>
+        <td><input type="text" name="aantal4" id="aantal4" size="5" value="0" /></td>
+        <td><input type="text" name="bedrag4" id="bedrag4" size="8" value="0" /></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="right"><b>Totaal: &euro; </b></td>
+        <td><input type="text" name="totaal" id="totaal" size="8" value="0" /></td>
+      </tr>
+    </table>
+    <hr />
+    <p>
+    <input type="submit" name="bestel" id="bestel" value="Bestelling" />
+    <input type="reset" name="herstel" id="herstel" value="Herstel" />
+    </p>
+  </form>
+</body>
+</html>

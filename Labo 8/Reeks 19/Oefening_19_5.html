@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 19 : Oefening 5</title>
+    <link rel="stylesheet" href="./Oefening_19_5.css">
+</head>
+<body onload="event_button();">
+    <h1>Pick a color</h1>
+    <div class="tshirt-box">
+        <img src="../Startbestanden/startbestanden/images/blue.jpg" alt="blue tshirt"  title="tshirt">
+        <img src="../Startbestanden/startbestanden/images/blue.jpg" alt="blue tshirt"  title="tshirt">
+        <img src="../Startbestanden/startbestanden/images/blue.jpg" alt="blue tshirt"  title="tshirt">
+    </div>
+    <main class="color-box">
+        <button class="color-pink" value="Pink"></button>
+        <button class="color-blue" value="Blue"></button>
+        <button class="color-brown" value="Brown"></button>
+    </main>
+
+    <script>
+        var All_Images = document.getElementsByTagName("img");
+        var All_Buttons = document.getElementsByTagName("button");
+
+        function event_button(){
+            for (let i = 0; i < All_Buttons.length; i++) {
+                All_Buttons[i].addEventListener("mouseover",function(){
+                    var Tshirt_color_path = null;
+                    switch (All_Buttons[i].value) {
+                        case "Blue":   Tshirt_color_path = "../Startbestanden/startbestanden/images/blue.jpg";  break;
+                        case "Brown":  Tshirt_color_path = "../Startbestanden/startbestanden/images/brown.jpg";  break;
+                        case "Pink":   Tshirt_color_path = "../Startbestanden/startbestanden/images/pink.jpg";  break;                    
+                        default: Tshirt_color_path = "../Startbestanden/startbestanden/images/blue.jpg"; break;
+                    }
+
+                    for(let t = 0;t < All_Images.length;t++){
+                        All_Images[t].style.opacity = 0;
+                        
+                        setTimeout(function(){
+                            All_Images[t].setAttribute("src",Tshirt_color_path);
+                        },1200);
+                        setTimeout(function(){
+                            All_Images[t].style.opacity = 1;
+                        },1500);
+                    }
+                });
+            }
+        };
+    </script>
+</body>
+</html>

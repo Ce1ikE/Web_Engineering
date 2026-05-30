@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Oefening_29_4.xsl"?>
+<contacten>
+    <contact soort="privé">
+        <naam>
+            <voornaam>Jan</voornaam>
+            <achternaam>Peeters</achternaam>
+        </naam>
+        <adres>
+            <straat>Koepoorststraat 75</straat>
+            <postcode>2000</postcode>
+            <gemeente>Antwerpen</gemeente>
+        </adres>
+        <tel>+32 3 123 45 67</tel>
+    </contact>
+    <contact soort="zakelijk">
+        <naam>
+            <voornaam>Piet</voornaam>
+            <achternaam>Janssens</achternaam>
+        </naam>
+        <adres>
+            <straat>Paardenmarkt 45</straat>
+            <postcode>2000</postcode>
+            <gemeente>Antwerpen</gemeente>
+        </adres>
+        <tel>+32 3 890 12 34</tel>
+    </contact>
+    <contact soort="privé">
+        <naam>
+            <voornaam>Anna</voornaam>
+            <achternaam>Pauwels</achternaam>
+        </naam>
+        <adres>
+            <straat>Nationalestraat 15</straat>
+            <postcode>2000</postcode>
+            <gemeente>Antwerpen</gemeente>
+        </adres>
+        <tel>+32 3 822 11 84</tel>
+    </contact>
+    <contact soort="zakelijk">
+        <naam>
+            <voornaam>Marion</voornaam>
+            <achternaam>Van Goethem</achternaam>
+        </naam>
+        <adres>
+            <straat>Stationsstraat 88</straat>
+            <postcode>9120</postcode>
+            <gemeente>Beveren (Waas)</gemeente>
+        </adres>
+        <tel>+32 3 755 21 12</tel>
+    </contact>
+</contacten>

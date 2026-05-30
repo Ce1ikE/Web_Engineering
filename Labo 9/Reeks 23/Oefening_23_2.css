@@ -1,0 +1,58 @@
+body {
+    background-color: #335544;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    color: white;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+main {
+    height: 600px;
+    width: 400px;
+    background-color: #335544;
+    padding: 20px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+
+main img {
+    width: 400px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-content: center;
+}
+
+footer input {
+    color: black;
+    padding: 5px;
+    border: 3px solid black;
+    font-family: monospace;
+    font-size: 1.1rem;
+    width: 200px;
+    transition: box-shadow 0.5s ease-in-out,
+                color 0.5s ease-in-out,
+                border 1s ease-in-out;
+}
+
+input[type="button"]:hover,
+input[type="password"]:focus {
+    cursor: pointer;
+    box-shadow: 250px 0px 0px black inset;
+    color: white;
+    border: 3px solid white;
+}

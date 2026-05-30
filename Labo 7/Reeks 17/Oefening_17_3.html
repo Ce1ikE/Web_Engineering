@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 17 : Oefening 3</title>
+    <link rel="stylesheet" href="./Oefening_17_3.css">
+    <script>
+        var Timer;
+        var Time_Now = new Date();
+        Time_Now.setHours(0);
+        Time_Now.setMinutes(0);
+        Time_Now.setSeconds(10);
+
+        function Start_washing() {
+            document.getElementById("feedback").innerHTML = "Wassen is gestart";
+            document.getElementById("Timer").style.color = "white";
+            Timer = window.setInterval("Display_washing()",1000);
+        }
+
+        function Display_washing() {
+
+            if(Time_Now.getSeconds().toLocaleString() == 0) {
+                Change_Tshirt_Clean();
+                window.clearInterval(Timer);
+                Time_Now.setHours(0);
+                Time_Now.setMinutes(0);
+                Time_Now.setSeconds(10);
+                document.getElementById("feedback").innerHTML = "Wassen is klaar!";
+                document.getElementById("Timer").style.color = "red";
+                document.getElementById("Start_washing_btn").disabled = true;
+            } else {
+                Time_Now.setTime(Time_Now.getTime() - 1000);
+                document.getElementById("Timer").innerHTML = Time_Now.getMinutes().toLocaleString().padStart(2,"0") + " : " + Time_Now.getSeconds().toLocaleString().padStart(2,"0");
+            }
+        }
+
+        function Reset_washing() {
+            window.clearInterval(Timer);
+            Change_Tshirt_Dirty();
+            Time_Now.setHours(0);
+            Time_Now.setMinutes(0);
+            Time_Now.setSeconds(10);
+            document.getElementById("feedback").innerHTML = "Start een nieuwe was";
+            document.getElementById("Timer").style.color = "white";
+            document.getElementById("Timer").innerHTML = "00 : 00";
+            document.getElementById("Start_washing_btn").disabled = false;
+        }
+
+        function Change_Tshirt_Clean() {
+            var All_Images = document.getElementsByTagName("img");
+            for (let i = 0; i < All_Images.length; i++) {
+                setTimeout(function(){
+                    All_Images[i].style.opacity = 0;
+                },100);              
+                setTimeout(function(){
+                    All_Images[i].setAttribute("src","../Startbestanden/Startbestanden/gray.jpg");
+                    All_Images[i].style.opacity = 1;
+                },1000);
+            }
+        }
+
+        function Change_Tshirt_Dirty() {
+            var All_Images = document.getElementsByTagName("img");
+            setTimeout(function(){
+                All_Images[0].style.opacity = 0;
+                All_Images[1].style.opacity = 0;
+            },100);              
+            setTimeout(function(){
+                All_Images[0].setAttribute("src","../Startbestanden/Startbestanden/blue.jpg");
+                All_Images[1].setAttribute("src","../Startbestanden/Startbestanden/brown.jpg");
+                All_Images[0].style.opacity = 1;
+                All_Images[1].style.opacity = 1;
+            },1000);
+        }
+
+    </script>
+</head>
+<body>
+    <h1>wassenrij</h1>
+    <div class="wassenrij">
+        <p id="Timer">00 : 00</p>
+        <p id="feedback">Start een nieuwe was</p>
+        <div class="wasmachine">
+            <img src="../Startbestanden/Startbestanden/blue.jpg" alt="Blauw T-shirt" id="blue-t-shirt">
+            <img src="../Startbestanden/Startbestanden/brown.jpg" alt="Brown T-shirt" id="brown-t-shirt">
+        </div>
+        <div class="button-container">
+            <input type="button" value="Was kleding" id="Start_washing_btn" onclick="Start_washing()">
+            <input type="button" value="reset" id="Reset-washing_btn" onclick="Reset_washing()">
+        </div>
+    </div>
+</body>
+</html>

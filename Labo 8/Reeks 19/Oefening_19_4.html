@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 19 : Oefening 4</title>
+    <link rel="stylesheet" href="./Oefening_19_4.css">
+</head>
+<body onload="event_button();">
+    <div class="tshirt-box">
+        <img src="../Startbestanden/startbestanden/images/blue.jpg" alt="blue tshirt"  title="tshirt">
+        <img src="../Startbestanden/startbestanden/images/blue.jpg" alt="blue tshirt"  title="tshirt">
+        <img src="../Startbestanden/startbestanden/images/blue.jpg" alt="blue tshirt"  title="tshirt">
+    </div>
+    <p id="Nbr-Of-Figures"></p>
+    <div class="Button-box">
+        <input type="button" value="Yellow">
+        <input type="button" value="Blue">
+        <input type="button" value="Brown">
+        <input type="button" value="Grey">
+        <input type="button" value="Pink">
+        <input type="button" value="Purple">
+    </div>
+    <script>
+        var All_Images = document.getElementsByTagName("img");
+        var All_Buttons = document.getElementsByTagName("input");
+        
+        function event_button(){
+            for (let i = 0; i < All_Buttons.length; i++) {
+                All_Buttons[i].addEventListener("click",function(){
+                    var Tshirt_color_path = null;
+                    switch (All_Buttons[i].value) {
+                        case "Yellow": Tshirt_color_path = "../Startbestanden/startbestanden/images/yellow.jpg"; break;
+                        case "Blue":   Tshirt_color_path = "../Startbestanden/startbestanden/images/blue.jpg";  break;
+                        case "Brown":  Tshirt_color_path = "../Startbestanden/startbestanden/images/brown.jpg";  break;
+                        case "Grey":   Tshirt_color_path = "../Startbestanden/startbestanden/images/gray.jpg";  break;
+                        case "Pink":   Tshirt_color_path = "../Startbestanden/startbestanden/images/pink.jpg";  break;
+                        case "Purple": Tshirt_color_path = "../Startbestanden/startbestanden/images/purple.jpg";  break;
+                    
+                        default: Tshirt_color_path = "../Startbestanden/startbestanden/images/blue.jpg"; break;
+                    }
+
+                    for(let t = 0;t < All_Images.length;t++){
+                        All_Images[t].style.opacity = 0;
+                        
+                        setTimeout(function(){
+                            All_Images[t].setAttribute("src",Tshirt_color_path);
+                        },1200);
+                        setTimeout(function(){
+                            All_Images[t].style.opacity = 1;
+                        },1500);
+                    }
+                });
+            }
+        };
+
+    </script>
+</body>
+</html>

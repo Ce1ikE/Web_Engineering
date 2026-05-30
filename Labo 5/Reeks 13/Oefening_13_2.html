@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 13 : Oefening 2</title>
+</head>
+<body>
+    <script>
+        var UUR_Start , MIN_Start , SEC_Start , UUR_End , MIN_End , SEC_End;
+        var UUR_Diff , MIN_Diff , SEC_Diff;
+        // START TIME
+        UUR_Start = parseInt(window.prompt("Geef een start uur in AUB"));
+        MIN_Start = parseInt(window.prompt("Geef de start minuten in AUB"));
+        SEC_Start = parseInt(window.prompt("Geef de start seconden in AUB"));
+        // END TIME
+        UUR_End = parseInt(window.prompt("Geef een eind uur in AUB"));
+        MIN_End = parseInt(window.prompt("Geef de eind minuten in AUB"));
+        SEC_End = parseInt(window.prompt("Geef de eind seconden in AUB"));
+        // DIFFERENCE TIME = END TIME - START TIME
+        UUR_Diff = UUR_End - UUR_Start;
+        MIN_Diff = MIN_End - MIN_Start;
+        SEC_Diff = SEC_End - SEC_Start;
+
+        if(!((0 < UUR_Start && UUR_Start < 24) || (0 < UUR_End && UUR_End < 24) || (0 < MIN_Start && MIN_Start < 60) || (0 < SEC_Start && SEC_Start < 60) || (0 < MIN_End && MIN_End < 60) || (0 < SEC_End && SEC_End < 60)))
+        {
+
+        if(SEC_Diff < 0)
+        {
+           SEC_Diff += 60;
+           MIN_Diff -= 1;
+        }
+
+        if(MIN_Diff < 0)
+        {
+           MIN_Diff += 60;
+           UUR_Diff -= 1;
+        }
+
+        if(UUR_Diff < 0)
+        {
+           UUR_Diff += 24;
+        }
+
+        document.write("<table>");
+        document.write("<tr><td>Start</td><td>" + UUR_Start + ":" + MIN_Start + ":" + SEC_Start + "</td></tr>");
+        document.write("<tr><td>Einde</td><td>" + UUR_End + ":" + MIN_End + ":" + SEC_End + "</td></tr>");
+        document.write("<tr><td>Verschil</td><td>" + UUR_Diff + ":" + MIN_Diff + ":" + SEC_Diff + "</td></tr>");
+        document.write("</table>");  
+          
+        }
+        else 
+        {
+            window.alert("De opgegeven tijden vallen niet in de juiste tijds intervallen \nH = [0-24] ; M = [0-60] S = [0-60]")
+        }
+
+        
+    </script>
+</body>
+</html>

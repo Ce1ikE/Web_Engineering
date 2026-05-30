@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 16 : Oefening 1</title>
+</head>
+<body>
+    <h2>See "console" tab when using "inspect"</h2>
+    <script>
+        var My_Numbers = new Array;
+        for(let i = 0;i < 10;i++){
+            My_Numbers[i] = ((Math.random())*100).toFixed(0); 
+        }
+        console.log(My_Numbers.length); // lengte van de array voor het toevoegen van een extra cijfer
+        var New_Number = parseInt(window.prompt("Enter a number"));
+        My_Numbers.push(New_Number);
+        console.log(My_Numbers.length); // lengte van de array na het toevoegen van een extra cijfer
+        // Zie => "console" tab tijdens inspecteren
+
+        for(let i = 0;i < My_Numbers.length;i++){
+            document.write(My_Numbers[i] + ", ");
+        }
+    </script>
+</body>
+</html>

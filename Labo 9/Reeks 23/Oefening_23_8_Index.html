@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 23 : Oefening 8</title>
+    <link rel="stylesheet" href="../jquery-ui-1.13.3.custom/jquery-ui.css">
+    <link rel="stylesheet" href="../jquery-ui-1.13.3.custom/jquery-ui.theme.css">
+    <link rel="stylesheet" href="../jquery-ui-1.13.3.custom/jquery-ui.structure.css">
+</head>
+<body>
+    <div id="Nav">
+        <ul>
+            <li><a href="#Biology">Biology</a></li>
+            <li><a href="#Eco">Eco</a></li>
+            <li><a href="#Food">Food</a></li>
+        </ul>
+
+        <div id="Biology">
+            <ul>
+                <li>
+                    <a class="Link_Details">chromosome</a>
+
+                </li>
+                <li>
+                    <a class="Link_Details">bacteria</a>
+
+                </li>
+                <li>
+                    <a class="Link_Details">microorganism</a>
+
+                </li>
+            </ul>
+        </div>
+
+        <div id="Eco">
+            <ul>
+                <li>
+                    <a class="Link_Details">recycling</a>
+
+                </li>
+                <li>
+                    <a class="Link_Details">solar energy</a>
+
+                </li>
+                <li>
+                    <a class="Link_Details">wind energy</a>
+
+                </li>
+                <li>
+                    <a class="Link_Details">tree</a>
+
+                </li>
+            </ul>
+        </div>
+
+        <div id="Food">
+            <ul>
+                <li>
+                    <a class="Link_Details">apple</a>
+
+                </li>
+                <li>
+                    <a class="Link_Details">banana</a> 
+
+                </li>
+                <li>
+                    <a class="Link_Details">cherry</a>
+
+                </li>
+                <li>
+                    <a class="Link_Details">grape</a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="./jquery.js"></script>
+    <script src="../jquery-ui-1.13.3.custom/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#Nav").tabs();
+        });
+
+
+        $(".Link_Details").on("click",function(){
+            var Category = $(this).closest("div").attr("id");
+            var File = $(this).html();
+            var Input_URL = new URL("http://127.0.0.1:5500/Labo%209/Reeks%2023/Oefening_23_8_DetailsPage.html");
+            Input_URL += "#" + Category + "!" + File;
+            // alert(Input_URL);
+            document.location.href = Input_URL;
+        });
+
+    </script>
+</body>
+</html>

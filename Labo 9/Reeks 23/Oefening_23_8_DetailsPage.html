@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 23 : Oefening 8</title>
+    <link rel="stylesheet" href="../jquery-ui-1.13.3.custom/jquery-ui.css">
+    <link rel="stylesheet" href="../jquery-ui-1.13.3.custom/jquery-ui.theme.css">
+    <link rel="stylesheet" href="../jquery-ui-1.13.3.custom/jquery-ui.structure.css">
+    <link rel="stylesheet" href="./Oefening_23_8.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="" id="Img_Holder">
+        <a href="./Oefening_23_8_Index.html">Home</a>
+    </header>
+    <h2>1st set</h2>
+    <div class="accordion">
+        <h3>First header</h3>
+        <div>First content panel</div>
+        <h3>Second header</h3>
+        <div>Second content panel</div>
+        <h3>Third header</h3>
+        <div>Third content panel</div>
+    </div>
+
+    <h2>2nd set</h2>
+    <div class="accordion">
+        <h3>First header</h3>
+        <div>First content panel</div>
+        <h3>Second header</h3>
+        <div>Second content panel</div>
+        <h3>Third header</h3>
+        <div>Third content panel</div>
+    </div>
+
+
+    <script src="./jquery.js"></script>
+    <script src="../jquery-ui-1.13.3.custom/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".accordion").accordion();
+            $(".accordion").accordion("enable");
+
+            var CurrentURL = document.location.href;
+            var Img_Src = CurrentURL.substring(CurrentURL.indexOf("#"));
+            var Img_Cat = Img_Src.substring(1,Img_Src.indexOf("!"));
+            var Img_Img = Img_Src.substring(Img_Src.indexOf("!") + 1);
+            $("#Img_Holder").attr("src","../Startbestanden/startbestanden_labo9/SVG/" + Img_Cat + "/" + Img_Img + ".svg");
+
+            if(Img_Cat == "Biology"){
+                $("#Img_Holder").css("filter","drop-shadow(5px 5px 10px rgb(233, 227, 223))");
+            }
+
+            if(Img_Cat == "Eco"){
+                $("#Img_Holder").css("filter","drop-shadow(5px 5px 10px rgb(102, 219, 159))");
+            }
+
+            if(Img_Cat == "Food"){
+                $("#Img_Holder").css("filter","drop-shadow(5px 5px 10px rgb(219, 157, 102))");
+            }
+        });
+    </script>
+</body>
+</html>

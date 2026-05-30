@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+
+fieldset {
+    padding: 0;
+    margin: auto;
+    width: 400px;
+}
+
+header {
+    background-image: url(./Pizza_Bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-image: fill 0 linear-gradient(to top,#000,#0001);
+    width: 100%;
+    height: 200px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 0px 0px 5px red;
+    backdrop-filter: blur(1px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Toping-container,
+.Size-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: baseline;
+    row-gap: 5px;
+}
+
+#Total-Topings {
+    margin: auto;
+}
+
+.Quantity-container {
+    display: grid;
+    grid-template-columns: 60px 100px 1fr;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#Warning-message {
+    color: red;
+    text-shadow: 0px 0px 5px red;
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+/* .Total-container {
+
+}
+
+.Calculate-container {
+
+} */
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin: auto;
+    transition: 0.5s ease-in-out;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    background-color: greenyellow;
+    animation: Animate-Check 5s linear infinite;
+    box-shadow: 0px 0px 5px white;
+}
+
+input[type="button"] {
+    padding: 7px;
+    font-family: monospace;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    border: 2px solid black;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    box-shadow: -200px 0px 0px black inset,0px 0px 5px 5px white;
+}
+
+#Totaal,
+#Aantal-Pizzas {
+    width: 100px;
+    border: #000 solid 5px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.Total-h1 {
+    width: 20px;
+    aspect-ratio: 1;
+    border: black 5px solid;
+    border-top: gray 5px solid;
+    border-radius: 50%;
+    animation: Animate-Loading ease-in-out 1s 5;
+}
+
+@keyframes Animate-Check {
+    0%      {background-color: greenyellow;}
+    15%     {background-color: chocolate;}
+    50%     {background-color: tomato;}
+    85%     {background-color: orangered;}
+    100%    {background-color: greenyellow;transform: rotate(360deg);}
+}
+
+@keyframes Animate-Loading {
+    to {transform: rotate(360deg);}
+}

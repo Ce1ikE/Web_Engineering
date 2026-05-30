@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 21 : Oefening 4</title>
+    <link rel="stylesheet" href="./Oefening_21_4.css">
+    <style>
+        select.lijst {margin-left:100px;width:150px; color:navy; background:#FFFF99 }
+    </style>
+    <script type="text/javascript">
+        
+        function initieer(){
+            var knop = document.getElementById("knop");    //knop toevoegen
+            var input = document.getElementById("input");   //tekstvak toe te voegen artikel
+            var output = document.getElementById("lijst");  //lijst artikels
+            knop.addEventListener("click",function(){
+                var Option_Tag = document.createElement("option");
+                
+                Option_Tag.addEventListener("dblclick",function(){
+                    this.remove();
+                });
+                
+                Option_Tag.innerHTML = input.value
+                
+                output.appendChild(Option_Tag);
+            });
+        }
+        
+        
+        
+    </script>
+</head>
+<body onLoad="initieer()">
+      <h2>Boodschappenlijst</h2>
+      <form action="#" >
+        <p>
+            Toe te voegen artikel: 
+            <input type="text" id="input" />
+            <input type="button" id="knop" value="+" />
+        </p>
+        <p>
+            Lijst:<br /> 
+            <select id="lijst" class="lijst" size="10">
+
+            </select>
+        </p>
+      </form>
+</body>
+</html>

@@ -1,0 +1,149 @@
+@charset "utf-8";
+#card {
+	background: url(../images/card.png);
+	height: 224px;
+	width: 141px;
+	z-index: 2;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 107px;
+}
+p {
+	font: 1em/1.4em Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+
+
+/* CSS Document */
+
+#atm {
+	background-image: url(../images/background.png);
+	height: 258px;
+	width: 157px;
+	z-index: 3;
+	position: absolute;
+	padding-top: 50px;
+	margin: 150px 0px 0px 100px;
+}
+#display {
+	background: url(../images/display.png);
+	height: 40px;
+	width: 108px;
+	margin-left: 6px;
+	margin-bottom: 10px;
+	font: 1.8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #20574A;
+	padding-top: 4px;
+	padding-left: 17px;
+	letter-spacing: 0.3em;
+	padding-right: 17px;
+}
+#toetsen ul {
+	height: 42px;
+	width: 151px;
+	margin-bottom: 8px;
+	padding-left: 6px;
+}
+#toetsen li {
+	float: left;
+}
+#toetsen li a {
+	display: block;
+	height: 42px;
+	width: 42px;
+	margin-right: 8px;
+	text-indent: -9999px;
+}
+#toetsen li a#knop1 {
+	background: url(../images/1.png);
+}
+#toetsen li a#knop2 {
+	background: url(../images/2.png);
+}
+#toetsen li a#knop3 {
+	background: url(../images/3.png);
+}
+#toetsen li a#knop4 {
+	background: url(../images/4.png);
+}
+#toetsen li a#knop5 {
+	background: url(../images/5.png);
+}
+#toetsen li a#knop6 {
+	background: url(../images/6.png);
+}
+#toetsen li a#knop7 {
+	background: url(../images/7.png);
+}
+#toetsen li a#knop8 {
+	background: url(../images/8.png);
+}
+#toetsen li a#knop9 {
+	background: url(../images/9.png);
+}
+#toetsen li a#knopc {
+	background: url(../images/c.png);
+}
+#toetsen li a#knop0 {
+	background: url(../images/0.png);
+}
+#toetsen li a#knopok {
+	background: url(../images/ok.png);
+}
+/*hover*/
+
+#toetsen li a#knop1:hover {
+	background: url(../images/1_over.png);
+}
+#toetsen li a#knop2:hover {
+	background: url(../images/2_over.png);
+}
+#toetsen li a#knop3:hover {
+	background: url(../images/3_over.png);
+}
+#toetsen li a#knop4:hover {
+	background: url(../images/4_over.png);
+}
+#toetsen li a#knop5:hover {
+	background: url(../images/5_over.png);
+}
+#toetsen li a#knop6:hover {
+	background: url(../images/6_over.png);
+}
+#toetsen li a#knop7:hover {
+	background: url(../images/7_over.png);
+}
+#toetsen li a#knop8:hover {
+	background: url(../images/8_over.png);
+}
+#toetsen li a#knop9:hover {
+	background: url(../images/9_over.png);
+}
+#toetsen li a#knopc:hover {
+	background: url(../images/c_over.png);
+}
+#toetsen li a#knop0:hover {
+	background: url(../images/0_over.png);
+}
+#toetsen li a#knopok:hover {
+	background: url(../images/ok_over.png);
+}
+#feedback {
+	border: 1px dashed #788A9D;
+	position: absolute;
+	z-index: 1;
+	height: 20px;
+	width: 130px;
+	margin-left: 111px;
+	margin-top: 25px;
+	font: 0.9em Arial, Helvetica, sans-serif;
+	color: #475869;
+	background: #F0FBF8;
+	text-align: center;
+	padding-top: 4px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+	-ie-border-radius: 12px;
+	border-radius: 12px;
+}

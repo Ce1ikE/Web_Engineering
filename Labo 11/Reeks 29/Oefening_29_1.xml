@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./Oefening_29_1.xsl"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" generated="2008-04-15T14:32:10">
+<product>
+<Productnummer>1</Productnummer>
+<Leveranciersnummer>10</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Chef Anton's Cajun Seasoning</Productnaam>
+<NederlandseNaam>Chef Anton's cajun-kruiden</NederlandseNaam>
+<HoeveelheidPerEenheid>48 potten à 170 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>22</PrijsPerEenheid>
+<Voorraad>53</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>2</Productnummer>
+<Leveranciersnummer>2</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Chef Anton's Gumbo Mix</Productnaam>
+<NederlandseNaam>Chef Anton's okramix</NederlandseNaam>
+<HoeveelheidPerEenheid>36 dozen</HoeveelheidPerEenheid>
+<PrijsPerEenheid>21.35</PrijsPerEenheid>
+<Voorraad>0</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>1</UitAssortiment>
+</product>
+<product>
+<Productnummer>3</Productnummer>
+<Leveranciersnummer>3</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Grandma's Boysenberry Spread</Productnaam>
+<NederlandseNaam>Grandma's boysenberry-jam</NederlandseNaam>
+<HoeveelheidPerEenheid>12 potten à 230 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>25</PrijsPerEenheid>
+<Voorraad>120</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>25</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>4</Productnummer>
+<Leveranciersnummer>3</Leveranciersnummer>
+<Categorienummer>7</Categorienummer>
+<Productnaam>Uncle Bob's Organic Dried Pears</Productnaam>
+<NederlandseNaam>Uncle Bob's macrobiot. gedroogde peren</NederlandseNaam>
+<HoeveelheidPerEenheid>12 pakken à 455 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>30</PrijsPerEenheid>
+<Voorraad>15</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>10</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>5</Productnummer>
+<Leveranciersnummer>3</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Northwoods Cranberry Sauce</Productnaam>
+<NederlandseNaam>Northwoods veenbessensaus</NederlandseNaam>
+<HoeveelheidPerEenheid>12 flessen à 340 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>40</PrijsPerEenheid>
+<Voorraad>6</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>6</Productnummer>
+<Leveranciersnummer>4</Leveranciersnummer>
+<Categorienummer>6</Categorienummer>
+<Productnaam>Mishi Kobe Niku</Productnaam>
+<NederlandseNaam>Mishi Kobe rundvlees</NederlandseNaam>
+<HoeveelheidPerEenheid>18 pakken à 500 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>97</PrijsPerEenheid>
+<Voorraad>29</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>1</UitAssortiment>
+</product>
+<product>
+<Productnummer>7</Productnummer>
+<Leveranciersnummer>4</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Ikura</Productnaam>
+<NederlandseNaam>Kuit</NederlandseNaam>
+<HoeveelheidPerEenheid>12 potten à 200 ml</HoeveelheidPerEenheid>
+<PrijsPerEenheid>31</PrijsPerEenheid>
+<Voorraad>31</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>8</Productnummer>
+<Leveranciersnummer>5</Leveranciersnummer>
+<Categorienummer>4</Categorienummer>
+<Productnaam>Queso Cabrales</Productnaam>
+<NederlandseNaam>Cabrales kaas</NederlandseNaam>
+<HoeveelheidPerEenheid>1,5 kg/verpakking</HoeveelheidPerEenheid>
+<PrijsPerEenheid>21</PrijsPerEenheid>
+<Voorraad>22</Voorraad>
+<InBestelling>30</InBestelling>
+<Bestelpunt>30</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>9</Productnummer>
+<Leveranciersnummer>5</Leveranciersnummer>
+<Categorienummer>4</Categorienummer>
+<Productnaam>Queso Manchego La Pastora</Productnaam>
+<NederlandseNaam>Manchego La Pastora kaas</NederlandseNaam>
+<HoeveelheidPerEenheid>10 pakken à 500 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>38</PrijsPerEenheid>
+<Voorraad>86</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>10</Productnummer>
+<Leveranciersnummer>6</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Konbu</Productnaam>
+<NederlandseNaam>Kelp-zeewier</NederlandseNaam>
+<HoeveelheidPerEenheid>2 kg/verpakking</HoeveelheidPerEenheid>
+<PrijsPerEenheid>6</PrijsPerEenheid>
+<Voorraad>24</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>5</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>11</Productnummer>
+<Leveranciersnummer>6</Leveranciersnummer>
+<Categorienummer>7</Categorienummer>
+<Productnaam>Tofu</Productnaam>
+<NederlandseNaam>Tahoe</NederlandseNaam>
+<HoeveelheidPerEenheid>40 pakken à 100 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>23.25</PrijsPerEenheid>
+<Voorraad>35</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>12</Productnummer>
+<Leveranciersnummer>6</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Genen Shouyu</Productnaam>
+<NederlandseNaam>Natriumarme sojasaus</NederlandseNaam>
+<HoeveelheidPerEenheid>24 flesjes à 250 ml</HoeveelheidPerEenheid>
+<PrijsPerEenheid>15.5</PrijsPerEenheid>
+<Voorraad>39</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>5</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>13</Productnummer>
+<Leveranciersnummer>7</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Pavlova</Productnaam>
+<NederlandseNaam>Pavlova schuimgebak</NederlandseNaam>
+<HoeveelheidPerEenheid>32 dozen à 500 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>17.45</PrijsPerEenheid>
+<Voorraad>29</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>10</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>14</Productnummer>
+<Leveranciersnummer>7</Leveranciersnummer>
+<Categorienummer>6</Categorienummer>
+<Productnaam>Alice Mutton</Productnaam>
+<NederlandseNaam>Alice Springs lamsvlees</NederlandseNaam>
+<HoeveelheidPerEenheid>20 blikken à 1 kg</HoeveelheidPerEenheid>
+<PrijsPerEenheid>39</PrijsPerEenheid>
+<Voorraad>0</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>1</UitAssortiment>
+</product>
+<product>
+<Productnummer>15</Productnummer>
+<Leveranciersnummer>7</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Carnarvon Tigers</Productnaam>
+<NederlandseNaam>Carnarvon garnalen</NederlandseNaam>
+<HoeveelheidPerEenheid>16 kg/verpakking</HoeveelheidPerEenheid>
+<PrijsPerEenheid>62.5</PrijsPerEenheid>
+<Voorraad>42</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>16</Productnummer>
+<Leveranciersnummer>8</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Teatime Chocolate Biscuits</Productnaam>
+<NederlandseNaam>Teatime chocoladebiscuits</NederlandseNaam>
+<HoeveelheidPerEenheid>10 dozen x 12 stuks</HoeveelheidPerEenheid>
+<PrijsPerEenheid>9.2</PrijsPerEenheid>
+<Voorraad>25</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>5</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>17</Productnummer>
+<Leveranciersnummer>8</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Sir Rodney's Marmalade</Productnaam>
+<NederlandseNaam>Sir Rodney's marmelade</NederlandseNaam>
+<HoeveelheidPerEenheid>30 kadoverpakkingen</HoeveelheidPerEenheid>
+<PrijsPerEenheid>81</PrijsPerEenheid>
+<Voorraad>40</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>18</Productnummer>
+<Leveranciersnummer>8</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Sir Rodney's Scones</Productnaam>
+<NederlandseNaam>Sir Rodney's cake</NederlandseNaam>
+<HoeveelheidPerEenheid>24 dozen x 4 stuks</HoeveelheidPerEenheid>
+<PrijsPerEenheid>10</PrijsPerEenheid>
+<Voorraad>3</Voorraad>
+<InBestelling>40</InBestelling>
+<Bestelpunt>5</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>19</Productnummer>
+<Leveranciersnummer>9</Leveranciersnummer>
+<Categorienummer>5</Categorienummer>
+<Productnaam>Gustaf's Knäckebröd</Productnaam>
+<NederlandseNaam>Gustaf's Rye knäckebröd</NederlandseNaam>
+<HoeveelheidPerEenheid>24 pakken à 500 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>21</PrijsPerEenheid>
+<Voorraad>104</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>25</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>20</Productnummer>
+<Leveranciersnummer>9</Leveranciersnummer>
+<Categorienummer>5</Categorienummer>
+<Productnaam>Tunnbröd</Productnaam>
+<NederlandseNaam>Toast</NederlandseNaam>
+<HoeveelheidPerEenheid>12 pakken à 250 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>9</PrijsPerEenheid>
+<Voorraad>61</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>25</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>21</Productnummer>
+<Leveranciersnummer>10</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Guaraná Fantástica</Productnaam>
+<NederlandseNaam>Guaraná Fantástica frisdrank</NederlandseNaam>
+<HoeveelheidPerEenheid>12 blikken à 355 ml</HoeveelheidPerEenheid>
+<PrijsPerEenheid>4.5</PrijsPerEenheid>
+<Voorraad>20</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>1</UitAssortiment>
+</product>
+<product>
+<Productnummer>22</Productnummer>
+<Leveranciersnummer>11</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>NuNuCa Nuß-Nougat-Creme</Productnaam>
+<NederlandseNaam>NuNuCa noten/noga-pasta</NederlandseNaam>
+<HoeveelheidPerEenheid>20 potten à 450 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>14</PrijsPerEenheid>
+<Voorraad>76</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>30</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>23</Productnummer>
+<Leveranciersnummer>11</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Gumbär Gummibärchen</Productnaam>
+<NederlandseNaam>Gumbär Gummibärchen</NederlandseNaam>
+<HoeveelheidPerEenheid>100 zakken à 250 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>31.23</PrijsPerEenheid>
+<Voorraad>15</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>24</Productnummer>
+<Leveranciersnummer>11</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Schoggi Schokolade</Productnaam>
+<NederlandseNaam>Schoggi chocolade</NederlandseNaam>
+<HoeveelheidPerEenheid>100 stuks à 100 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>43.9</PrijsPerEenheid>
+<Voorraad>49</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>30</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>25</Productnummer>
+<Leveranciersnummer>12</Leveranciersnummer>
+<Categorienummer>7</Categorienummer>
+<Productnaam>Rössle Sauerkraut</Productnaam>
+<NederlandseNaam>Rössle zuurkool</NederlandseNaam>
+<HoeveelheidPerEenheid>25 blikken à 825 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>45.6</PrijsPerEenheid>
+<Voorraad>26</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>1</UitAssortiment>
+</product>
+<product>
+<Productnummer>26</Productnummer>
+<Leveranciersnummer>12</Leveranciersnummer>
+<Categorienummer>6</Categorienummer>
+<Productnaam>Thüringer Rostbratwurst</Productnaam>
+<NederlandseNaam>Thüringer braadworst</NederlandseNaam>
+<HoeveelheidPerEenheid>50 zakk. x 30 worst</HoeveelheidPerEenheid>
+<PrijsPerEenheid>123.79</PrijsPerEenheid>
+<Voorraad>0</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>1</UitAssortiment>
+</product>
+<product>
+<Productnummer>27</Productnummer>
+<Leveranciersnummer>13</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Nord-Ost Matjeshering</Productnaam>
+<NederlandseNaam>Nord-Ost maatjesharing</NederlandseNaam>
+<HoeveelheidPerEenheid>10 glazen à 200 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>25.89</PrijsPerEenheid>
+<Voorraad>10</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>28</Productnummer>
+<Leveranciersnummer>15</Leveranciersnummer>
+<Categorienummer>4</Categorienummer>
+<Productnaam>Geitost</Productnaam>
+<NederlandseNaam>Geitekaas</NederlandseNaam>
+<HoeveelheidPerEenheid>500 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>2.5</PrijsPerEenheid>
+<Voorraad>112</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>20</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>29</Productnummer>
+<Leveranciersnummer>16</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Sasquatch Ale</Productnaam>
+<NederlandseNaam>Sasquatch licht bier</NederlandseNaam>
+<HoeveelheidPerEenheid>24 flessen à 340 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>14</PrijsPerEenheid>
+<Voorraad>111</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>30</Productnummer>
+<Leveranciersnummer>16</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Steeleye Stout</Productnaam>
+<NederlandseNaam>Steeleye donker bier</NederlandseNaam>
+<HoeveelheidPerEenheid>24 flessen à 340 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>18</PrijsPerEenheid>
+<Voorraad>20</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>31</Productnummer>
+<Leveranciersnummer>14</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Inlagd Sill</Productnaam>
+<NederlandseNaam>Pekelharing</NederlandseNaam>
+<HoeveelheidPerEenheid>24 glazen à 250 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>19</PrijsPerEenheid>
+<Voorraad>112</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>20</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>32</Productnummer>
+<Leveranciersnummer>14</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Gravad lax</Productnaam>
+<NederlandseNaam>Gravad zalm</NederlandseNaam>
+<HoeveelheidPerEenheid>12 pakken à 500 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>26</PrijsPerEenheid>
+<Voorraad>11</Voorraad>
+<InBestelling>50</InBestelling>
+<Bestelpunt>25</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>33</Productnummer>
+<Leveranciersnummer>1</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Côte de Blaye</Productnaam>
+<NederlandseNaam>Côte de Blaye (Rode Bordeaux)</NederlandseNaam>
+<HoeveelheidPerEenheid>12 flessen à 75 cl</HoeveelheidPerEenheid>
+<PrijsPerEenheid>263.5</PrijsPerEenheid>
+<Voorraad>17</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>34</Productnummer>
+<Leveranciersnummer>1</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Chartreuse verte</Productnaam>
+<NederlandseNaam>Chartreuse verte (likeur)</NederlandseNaam>
+<HoeveelheidPerEenheid>750 cc per fles</HoeveelheidPerEenheid>
+<PrijsPerEenheid>18</PrijsPerEenheid>
+<Voorraad>69</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>5</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>35</Productnummer>
+<Leveranciersnummer>1</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Boston Crab Meat</Productnaam>
+<NederlandseNaam>Boston krab</NederlandseNaam>
+<HoeveelheidPerEenheid>24 blikjes à 114 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>18.4</PrijsPerEenheid>
+<Voorraad>123</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>30</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>36</Productnummer>
+<Leveranciersnummer>1</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Jack's New England Clam Chowder</Productnaam>
+<NederlandseNaam>Jack's New England schelpdierensoep</NederlandseNaam>
+<HoeveelheidPerEenheid>12 blikken à 340 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>9.65</PrijsPerEenheid>
+<Voorraad>85</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>10</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>37</Productnummer>
+<Leveranciersnummer>10</Leveranciersnummer>
+<Categorienummer>5</Categorienummer>
+<Productnaam>Singaporean Hokkien Fried Mee</Productnaam>
+<NederlandseNaam>Singaporese mie</NederlandseNaam>
+<HoeveelheidPerEenheid>32 pakken à 1 kg</HoeveelheidPerEenheid>
+<PrijsPerEenheid>14</PrijsPerEenheid>
+<Voorraad>26</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>1</UitAssortiment>
+</product>
+<product>
+<Productnummer>38</Productnummer>
+<Leveranciersnummer>10</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Ipoh Coffee</Productnaam>
+<NederlandseNaam>Maleisische koffie</NederlandseNaam>
+<HoeveelheidPerEenheid>16 blikken à 500 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>46</PrijsPerEenheid>
+<Voorraad>17</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>25</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>39</Productnummer>
+<Leveranciersnummer>10</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Gula Malacca</Productnaam>
+<NederlandseNaam>Donkerbruine suiker uit Malakka</NederlandseNaam>
+<HoeveelheidPerEenheid>20 zakken à 2 kg</HoeveelheidPerEenheid>
+<PrijsPerEenheid>19.45</PrijsPerEenheid>
+<Voorraad>27</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>40</Productnummer>
+<Leveranciersnummer>11</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Røgede sild</Productnaam>
+<NederlandseNaam>Gerookte haring</NederlandseNaam>
+<HoeveelheidPerEenheid>1 kg/verpakking</HoeveelheidPerEenheid>
+<PrijsPerEenheid>9.5</PrijsPerEenheid>
+<Voorraad>5</Voorraad>
+<InBestelling>70</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>41</Productnummer>
+<Leveranciersnummer>11</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Spegesild</Productnaam>
+<NederlandseNaam>Gezouten haring</NederlandseNaam>
+<HoeveelheidPerEenheid>4 glazen à 450 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>12</PrijsPerEenheid>
+<Voorraad>95</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>42</Productnummer>
+<Leveranciersnummer>11</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Zaanse koeken</Productnaam>
+<NederlandseNaam>Zaanse koeken</NederlandseNaam>
+<HoeveelheidPerEenheid>10 dozen à 114 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>9.5</PrijsPerEenheid>
+<Voorraad>36</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>43</Productnummer>
+<Leveranciersnummer>16</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Chocolade</Productnaam>
+<NederlandseNaam>Hollandse chocolade</NederlandseNaam>
+<HoeveelheidPerEenheid>10 repen</HoeveelheidPerEenheid>
+<PrijsPerEenheid>12.75</PrijsPerEenheid>
+<Voorraad>15</Voorraad>
+<InBestelling>70</InBestelling>
+<Bestelpunt>25</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>44</Productnummer>
+<Leveranciersnummer>16</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Maxilaku</Productnaam>
+<NederlandseNaam>Drop</NederlandseNaam>
+<HoeveelheidPerEenheid>24 zakjes à 50 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>20</PrijsPerEenheid>
+<Voorraad>10</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>45</Productnummer>
+<Leveranciersnummer>2</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Valkoinen suklaa</Productnaam>
+<NederlandseNaam>Witte chocolade</NederlandseNaam>
+<HoeveelheidPerEenheid>12 repen à 100 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>16.25</PrijsPerEenheid>
+<Voorraad>65</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>30</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>46</Productnummer>
+<Leveranciersnummer>2</Leveranciersnummer>
+<Categorienummer>7</Categorienummer>
+<Productnaam>Manjimup Dried Apples</Productnaam>
+<NederlandseNaam>Manjimup gedroogde appels</NederlandseNaam>
+<HoeveelheidPerEenheid>50 pakken à 300 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>53</PrijsPerEenheid>
+<Voorraad>20</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>10</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>47</Productnummer>
+<Leveranciersnummer>1</Leveranciersnummer>
+<Categorienummer>5</Categorienummer>
+<Productnaam>Filo Mix</Productnaam>
+<NederlandseNaam>Mix voor Grieks bladerdeeg</NederlandseNaam>
+<HoeveelheidPerEenheid>16 dozen à 2 kg</HoeveelheidPerEenheid>
+<PrijsPerEenheid>7</PrijsPerEenheid>
+<Voorraad>38</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>25</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>48</Productnummer>
+<Leveranciersnummer>1</Leveranciersnummer>
+<Categorienummer>6</Categorienummer>
+<Productnaam>Perth Pasties</Productnaam>
+<NederlandseNaam>Perth vleespasteitjes</NederlandseNaam>
+<HoeveelheidPerEenheid>48 stuks</HoeveelheidPerEenheid>
+<PrijsPerEenheid>32.8</PrijsPerEenheid>
+<Voorraad>0</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>1</UitAssortiment>
+</product>
+<product>
+<Productnummer>49</Productnummer>
+<Leveranciersnummer>2</Leveranciersnummer>
+<Categorienummer>6</Categorienummer>
+<Productnaam>Tourtière</Productnaam>
+<NederlandseNaam>Varkenvleespastei</NederlandseNaam>
+<HoeveelheidPerEenheid>18 stuks</HoeveelheidPerEenheid>
+<PrijsPerEenheid>7.45</PrijsPerEenheid>
+<Voorraad>21</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>10</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>50</Productnummer>
+<Leveranciersnummer>2</Leveranciersnummer>
+<Categorienummer>6</Categorienummer>
+<Productnaam>Pâté chinois</Productnaam>
+<NederlandseNaam>Shepard's Pie</NederlandseNaam>
+<HoeveelheidPerEenheid>24 dozen x 2 stuks</HoeveelheidPerEenheid>
+<PrijsPerEenheid>24</PrijsPerEenheid>
+<Voorraad>115</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>20</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>51</Productnummer>
+<Leveranciersnummer>6</Leveranciersnummer>
+<Categorienummer>5</Categorienummer>
+<Productnaam>Gnocchi di nonna Alice</Productnaam>
+<NederlandseNaam>Gramma Alice's knoedels</NederlandseNaam>
+<HoeveelheidPerEenheid>24 pakken à 250 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>38</PrijsPerEenheid>
+<Voorraad>21</Voorraad>
+<InBestelling>10</InBestelling>
+<Bestelpunt>30</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>52</Productnummer>
+<Leveranciersnummer>6</Leveranciersnummer>
+<Categorienummer>5</Categorienummer>
+<Productnaam>Ravioli Angelo</Productnaam>
+<NederlandseNaam>Angelo ravioli</NederlandseNaam>
+<HoeveelheidPerEenheid>24 pakken à 250 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>19.5</PrijsPerEenheid>
+<Voorraad>36</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>20</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>53</Productnummer>
+<Leveranciersnummer>7</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Escargots de Bourgogne</Productnaam>
+<NederlandseNaam>Slakken uit Bourgondië</NederlandseNaam>
+<HoeveelheidPerEenheid>24 stuks</HoeveelheidPerEenheid>
+<PrijsPerEenheid>13.25</PrijsPerEenheid>
+<Voorraad>62</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>20</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>54</Productnummer>
+<Leveranciersnummer>7</Leveranciersnummer>
+<Categorienummer>4</Categorienummer>
+<Productnaam>Raclette Courdavault</Productnaam>
+<NederlandseNaam>Courdavault Raclette kaas</NederlandseNaam>
+<HoeveelheidPerEenheid>5 kg/verpakking</HoeveelheidPerEenheid>
+<PrijsPerEenheid>55</PrijsPerEenheid>
+<Voorraad>79</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>55</Productnummer>
+<Leveranciersnummer>5</Leveranciersnummer>
+<Categorienummer>4</Categorienummer>
+<Productnaam>Camembert Pierrot</Productnaam>
+<NederlandseNaam>Pierrot camembert</NederlandseNaam>
+<HoeveelheidPerEenheid>15 kazen à 300 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>34</PrijsPerEenheid>
+<Voorraad>19</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>56</Productnummer>
+<Leveranciersnummer>8</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Sirop d'érable</Productnaam>
+<NederlandseNaam>Ahornstroop</NederlandseNaam>
+<HoeveelheidPerEenheid>24 flessen à 500 ml</HoeveelheidPerEenheid>
+<PrijsPerEenheid>28.5</PrijsPerEenheid>
+<Voorraad>113</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>25</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>57</Productnummer>
+<Leveranciersnummer>7</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Tarte au sucre</Productnaam>
+<NederlandseNaam>Suikertaart</NederlandseNaam>
+<HoeveelheidPerEenheid>48 stuks</HoeveelheidPerEenheid>
+<PrijsPerEenheid>49.3</PrijsPerEenheid>
+<Voorraad>17</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>58</Productnummer>
+<Leveranciersnummer>7</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Vegie-spread</Productnaam>
+<NederlandseNaam>Plantaardige sandwich spread</NederlandseNaam>
+<HoeveelheidPerEenheid>15 glazen à 625 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>43.9</PrijsPerEenheid>
+<Voorraad>24</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>5</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>59</Productnummer>
+<Leveranciersnummer>12</Leveranciersnummer>
+<Categorienummer>5</Categorienummer>
+<Productnaam>Wimmers gute Semmelknödel</Productnaam>
+<NederlandseNaam>Wimmer's overheerlijke broodknoedels</NederlandseNaam>
+<HoeveelheidPerEenheid>20 zakken x 4 stuks</HoeveelheidPerEenheid>
+<PrijsPerEenheid>33.25</PrijsPerEenheid>
+<Voorraad>22</Voorraad>
+<InBestelling>80</InBestelling>
+<Bestelpunt>30</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>60</Productnummer>
+<Leveranciersnummer>2</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Louisiana Fiery Hot Pepper Sauce</Productnaam>
+<NederlandseNaam>Louisiana scherpe pepersaus</NederlandseNaam>
+<HoeveelheidPerEenheid>32 flessen à 230 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>21.05</PrijsPerEenheid>
+<Voorraad>76</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>61</Productnummer>
+<Leveranciersnummer>2</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Louisiana Hot Spiced Okra</Productnaam>
+<NederlandseNaam>Louisiana hete, gekruide okra</NederlandseNaam>
+<HoeveelheidPerEenheid>24 flessen à 230 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>17</PrijsPerEenheid>
+<Voorraad>4</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>20</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>62</Productnummer>
+<Leveranciersnummer>16</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Laughing Lumberjack Lager</Productnaam>
+<NederlandseNaam>Laughing Lumberjack lagerbier</NederlandseNaam>
+<HoeveelheidPerEenheid>24 flessen à 340 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>14</PrijsPerEenheid>
+<Voorraad>52</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>10</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>63</Productnummer>
+<Leveranciersnummer>8</Leveranciersnummer>
+<Categorienummer>3</Categorienummer>
+<Productnaam>Scottish Longbreads</Productnaam>
+<NederlandseNaam>Schotse longbreads</NederlandseNaam>
+<HoeveelheidPerEenheid>10 dozen x 8 stuks</HoeveelheidPerEenheid>
+<PrijsPerEenheid>12.5</PrijsPerEenheid>
+<Voorraad>6</Voorraad>
+<InBestelling>10</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>64</Productnummer>
+<Leveranciersnummer>15</Leveranciersnummer>
+<Categorienummer>4</Categorienummer>
+<Productnaam>Gudbrandsdalsost</Productnaam>
+<NederlandseNaam>Gudbrandsdals kaas</NederlandseNaam>
+<HoeveelheidPerEenheid>10 kg/verpakking</HoeveelheidPerEenheid>
+<PrijsPerEenheid>36</PrijsPerEenheid>
+<Voorraad>26</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>65</Productnummer>
+<Leveranciersnummer>7</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Outback Lager</Productnaam>
+<NederlandseNaam>Australisch Outback lagerbier</NederlandseNaam>
+<HoeveelheidPerEenheid>24 flessen à 355 ml</HoeveelheidPerEenheid>
+<PrijsPerEenheid>15</PrijsPerEenheid>
+<Voorraad>15</Voorraad>
+<InBestelling>10</InBestelling>
+<Bestelpunt>30</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>66</Productnummer>
+<Leveranciersnummer>15</Leveranciersnummer>
+<Categorienummer>4</Categorienummer>
+<Productnaam>Fløtemysost</Productnaam>
+<NederlandseNaam>Fløtemys roomkaas</NederlandseNaam>
+<HoeveelheidPerEenheid>10 pakken à 500 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>21.5</PrijsPerEenheid>
+<Voorraad>26</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>0</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>67</Productnummer>
+<Leveranciersnummer>14</Leveranciersnummer>
+<Categorienummer>8</Categorienummer>
+<Productnaam>Röd Kaviar</Productnaam>
+<NederlandseNaam>Rode kaviaar</NederlandseNaam>
+<HoeveelheidPerEenheid>24 flessen à 150 g</HoeveelheidPerEenheid>
+<PrijsPerEenheid>15</PrijsPerEenheid>
+<Voorraad>101</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>5</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>68</Productnummer>
+<Leveranciersnummer>4</Leveranciersnummer>
+<Categorienummer>7</Categorienummer>
+<Productnaam>Longlife Tofu</Productnaam>
+<NederlandseNaam>Longlife tahoe</NederlandseNaam>
+<HoeveelheidPerEenheid>5 kg/verpakking</HoeveelheidPerEenheid>
+<PrijsPerEenheid>10</PrijsPerEenheid>
+<Voorraad>4</Voorraad>
+<InBestelling>20</InBestelling>
+<Bestelpunt>5</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>69</Productnummer>
+<Leveranciersnummer>12</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Rhönbräu Klosterbier</Productnaam>
+<NederlandseNaam>Rhönbräu bier</NederlandseNaam>
+<HoeveelheidPerEenheid>24 flessen à 0,5 l</HoeveelheidPerEenheid>
+<PrijsPerEenheid>7.75</PrijsPerEenheid>
+<Voorraad>125</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>25</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>70</Productnummer>
+<Leveranciersnummer>2</Leveranciersnummer>
+<Categorienummer>1</Categorienummer>
+<Productnaam>Lakkalikööri</Productnaam>
+<NederlandseNaam>Cloudberry likeur</NederlandseNaam>
+<HoeveelheidPerEenheid>500 ml</HoeveelheidPerEenheid>
+<PrijsPerEenheid>18</PrijsPerEenheid>
+<Voorraad>57</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>20</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>71</Productnummer>
+<Leveranciersnummer>12</Leveranciersnummer>
+<Categorienummer>2</Categorienummer>
+<Productnaam>Original Frankfurter grüne Soße</Productnaam>
+<NederlandseNaam>Originele Frankfurter groene saus</NederlandseNaam>
+<HoeveelheidPerEenheid>12 dozen</HoeveelheidPerEenheid>
+<PrijsPerEenheid>13</PrijsPerEenheid>
+<Voorraad>32</Voorraad>
+<InBestelling>0</InBestelling>
+<Bestelpunt>15</Bestelpunt>
+<UitAssortiment>0</UitAssortiment>
+</product>
+<product>
+<Productnummer>72</Productnummer>
+<Productnaam>Tofu</Productnaam>
+<UitAssortiment>0</UitAssortiment>
+</product>
+</dataroot>

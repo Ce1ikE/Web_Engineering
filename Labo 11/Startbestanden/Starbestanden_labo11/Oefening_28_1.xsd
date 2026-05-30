@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="patient" type="patientType" />
+
+    <xs:complexType name="patientType">
+      <xs:sequence>
+        <xs:element name="naam" type="xs:string"  />
+        <xs:element name="geslacht" type="geslachtType" />
+        <xs:element name="nr" type="xs:integer"  />
+        <xs:element name="medische-gegevens" type="mgegevensType" />
+      </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="mgegevensType">
+      <xs:sequence>
+        <xs:element name="gegeven" type="xs:string" maxOccurs="unbounded" />
+     </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="geslachtType">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="m" />
+        <xs:enumeration value="f" />
+      </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+  

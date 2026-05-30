@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 21 : Oefening 5</title>
+    <link rel="stylesheet" href="./Oefening_21_5.css">
+</head>
+<body>
+    <h2>Een bestelformulier</h2>
+    <form id="form1" action="mailto:student@student.lessius.eu" method="post" enctype="text/plain">
+      <div class="row">
+        <div class="col-3">
+          <p><label for="naam">Uw naam:</label></p>
+          <p><input type="text" name="naam" id="naam" /></p>
+        </div>
+        <div class="col-3">
+          <p><label for="email">Emailadres</label></p>
+          <p><input type="text" name="email" id="email" /></p>
+        </div>
+        <div class="col-3">
+          <p><label for="email">Telefoon</label></p>
+          <p><input type="text" name="telefoon" id="telefoon" /></p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-2">
+          <p><label for="aflever">Afleveradres</label></p>
+          <textarea name="aflever" id="aflever">Het afleveradres</textarea>
+        </div>
+        <div class="col-2">
+          <p><label for="factuur">Factuuradres</label></p>
+          <textarea name="factuur" id="factuur">Het afleveradres</textarea>
+        </div>
+      </div>
+      <p><input type="checkbox" name="idem" id="idem" />
+             Factuuradres hetzelfde als afleveradres</p>
+      <hr />
+      <!-- Tabel met artikelen -->
+      <table>
+        <tr>
+          <th>Artikel</th>
+          <th>Prijs</th>
+          <th>Aantal</th>
+          <th>Bedrag</th>
+        </tr>
+        <!-- Eerste artikel -->
+        <tr>
+          <td>Toner voor Laserprinter </td>
+          <td>&euro; 150,-</td>
+          <td><input type="text" name="aantal1" id="aantal1" size="5" value="0" /></td>
+          <td><input type="text" name="bedrag1" id="bedrag1" size="8" value="0" /></td>
+        </tr>
+        <!-- Tweede artikel -->
+        <tr>
+          <td>DVD Rewritable</td>
+          <td>&euro; 25,- </td>
+          <td><input type="text" name="aantal2" id="aantal2" size="5" value="0" /></td>
+          <td><input type="text" name="bedrag2" id="bedrag2" size="8" value="0" /></td>
+        </tr>
+        <!-- Derde artikel -->
+        <tr>
+          <td>256 MB geheugenuitbreiding </td>
+          <td>&euro; 98,-</td>
+          <td><input type="text" name="aantal3" id="aantal3" size="5" value="0" /></td>
+          <td><input type="text" name="bedrag3" id="bedrag3" size="8" value="0" /></td>
+        </tr>
+        <!-- Vierde artikel -->
+        <tr>
+          <td>Harddisk, 120 GB. </td>
+          <td>&euro; 279,-</td>
+          <td><input type="text" name="aantal4" id="aantal4" size="5" value="0" /></td>
+          <td><input type="text" name="bedrag4" id="bedrag4" size="8" value="0" /></td>
+        </tr>
+        <tr>
+          <td colspan="3" align="right"><b>Totaal: &euro; </b></td>
+          <td><input type="text" name="totaal" id="totaal" size="8" value="0" /></td>
+        </tr>
+      </table>
+      <hr />
+      <p>
+      <input type="submit" name="bestel" id="bestel" value="Bestelling" />
+      <input type="reset" name="herstel" id="herstel" value="Herstel" />
+      </p>
+    </form>
+ <!--=========================================================================================================================================-->   
+    <script>
+
+        // (1) =====================================================
+        var Same_Adres = document.getElementById("idem");
+        var Factuur_Adres = document.getElementById("factuur");
+        var Aflever_Adres = document.getElementById("aflever");
+        var Old_Value = null;
+        var TextAreas = document.getElementsByTagName("textarea");
+
+        Same_Adres.addEventListener("change",function(){
+            if(this.checked){
+                Factuur_Adres.disabled = true;
+                Old_Value = Factuur_Adres.value;
+                Factuur_Adres.value = Aflever_Adres.value;
+            } else {
+                Factuur_Adres.disabled = false;
+                Factuur_Adres.value = Old_Value;
+            }
+        });
+
+        Aflever_Adres.addEventListener("input",function(){
+            if(Same_Adres.checked){
+                Factuur_Adres.value = Aflever_Adres.value;
+            }
+        });
+
+        for(let i = 0; i < TextAreas.length;i++){
+            TextAreas[i].addEventListener("focus",function(){
+                TextAreas[i].value = "";
+            });
+
+            TextAreas[i].addEventListener("blur",function(){
+                if(TextAreas[i].value == ""){
+                    TextAreas[i].value = "Het afleveradres";
+                }
+            });
+        }
+
+        // (2) =====================================================
+        var aantal = document.querySelectorAll("input[name^='aantal']");
+        var bedrag = document.querySelectorAll("input[name^='bedrag']");
+        var Costs = new Array(150,25,98,279);
+        var totaal = document.getElementById("totaal");
+
+        for(let i = 0;i < aantal.length;i++){
+            aantal[i].addEventListener("input",function(){
+                var Number = parseInt(aantal[i].value);
+                bedrag[i].value = Number*Costs[i];
+                var Sum = 0;
+                for(let n = 0; n < bedrag.length;n++){
+                    Sum += parseInt(bedrag[n].value); 
+                }
+                totaal.value = Sum;
+            });
+        }
+
+        // (3) =====================================================
+        var Submit_Knop = document.getElementById("bestel");
+        var Formulier = document.getElementById("form1");
+        var Email = document.getElementById("email");
+        var Naam = document.getElementById("naam");
+        var Regex = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+        Formulier.addEventListener("submit",function(event){
+            if(Naam.value == ""){
+                event.preventDefault();
+                window.alert("Naam niet ingevuld!");
+                return 0;
+            }
+
+            if(!Regex.test(Email.value)){
+                event.preventDefault();
+                window.alert("Email niet correct!");
+                return 0;
+            }
+        });
+        
+        // (4) =====================================================
+        var Reset_Knop = document.getElementById("herstel");
+        
+        Formulier.addEventListener("reset",function(event){
+            var Answer = window.confirm("Bent u zeker dat u alle gegevens wil wissen");
+            if(Answer){
+                Factuur_Adres.disabled = false;
+                Factuur_Adres.value = "Het factuuradres";
+            } else {
+                event.preventDefault();
+            }
+        });
+
+    </script>
+</body>
+</html>

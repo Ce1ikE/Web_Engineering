@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<boek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Oefening28_3.xsd">
+  <isbn>0-112-11111-1</isbn>
+  <titel>Lord of the Rings: The fellowship of the Ring</titel>
+  <auteur>J.R.R. Tolkien</auteur>
+  <jaar>1954</jaar>
+  <prijs>17.95</prijs>
+</boek>

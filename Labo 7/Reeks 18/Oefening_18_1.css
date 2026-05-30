@@ -1,0 +1,73 @@
+body {
+    background-color: rgba(47, 40, 40, 0.705);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Rekenmachine {
+    width: 400px;
+    margin: auto;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgb(64, 138, 63);
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+    text-shadow: 0px 0px 10px currentColor;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.Rekenmachine h2 {
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.Rekenmachine form {
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.Rekenmachine form p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Button-container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Rekenmachine form input {
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+    background-color: white;
+    border: 3px solid currentColor;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.2s ease-in-out;
+}
+
+.Rekenmachine form input:hover {
+    border: 3px solid white;
+}
+
+.Button-container input:hover {
+    cursor: pointer;
+    color: white;
+    border: 3px solid white;
+    box-shadow: -200px 0px 0px black inset;
+}

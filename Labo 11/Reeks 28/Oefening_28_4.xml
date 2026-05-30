@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<gedicht xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Oefening_28_4.xsd">
+    <titel>De waterlelie</titel>
+    <strofe>
+        <vers>Ik heb de witte water-lelie lief,</vers>
+        <vers>daar die zo blank is en zo stil haar kroon</vers>
+        <vers>uitplooit in 't licht.</vers>
+        <vers>Rijzend uit donker-koele vijvergrond,</vers>
+        <vers>heeft zij het licht gevonden en ontsloot</vers>
+        <vers>toen blij het gouden hart.</vers>
+        <vers>Nu rust zij peinzend op het watervlak</vers>
+        <vers>en wenst niet meer...</vers>
+    </strofe>
+    <auteur>Frederik van Eeden</auteur>
+    <data>1860 - 1932</data>
+</gedicht>

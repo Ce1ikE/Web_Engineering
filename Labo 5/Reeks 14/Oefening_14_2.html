@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 14 : Oefening 2</title>
+</head>
+<body>
+    <script>
+        var Sum = null,Getal;
+        Getal = parseInt(window.prompt("Geef een getal in AUB (Om te stoppen voer 0 in)")); 
+        while (Getal != 0) {
+           Sum += Getal;
+           Getal = parseInt(window.prompt("Geef een getal in AUB (Om te stoppen voer 0 in)")); 
+        }
+
+        document.write("<h1>Som = " + Sum + "</h1>");
+
+    </script>
+</body>
+</html>

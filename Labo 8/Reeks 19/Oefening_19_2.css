@@ -1,0 +1,41 @@
+body {
+    background-color: rgba(65, 48, 48, 0.65);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease-in-out;
+}
+
+.Welcome-box {
+    width: 200px;
+    height: auto;
+    color: black;
+    background-color: white;
+    border: 5px solid purple;
+    border-radius: 0px 50px 0px 50px;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    font-family: monospace;
+    font-style: italic;
+}
+
+.Welcome-box:hover {
+    color: white;
+    background-color: purple;
+    box-shadow: 5px 5px 10px purple;
+}
+
+body:has(.Welcome-box:hover) {    
+    animation: 10s Animate-Background infinite;
+}
+
+@keyframes Animate-Background {
+    0%      {background-color: rgba(65, 48, 48, 0.65);}
+    50%     {background-color: black;}
+    100%    {background-color: rgba(65, 48, 48, 0.65);}
+}

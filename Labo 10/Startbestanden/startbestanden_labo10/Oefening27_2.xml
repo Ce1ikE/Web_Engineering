@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+         oef 27.2   adressen.xml
+-->
+<!DOCTYPE adressen [
+<!ELEMENT adressen (persoon+)>
+  <!ELEMENT persoon (naam, adres)>
+    <!ELEMENT naam (#PCDATA)>
+    <!ELEMENT adres EMPTY>
+<!ATTLIST persoon geslacht (m | v) #REQUIRED>
+<!ATTLIST adres
+   postnummer CDATA #REQUIRED
+   straat CDATA #REQUIRED
+   nummer CDATA #REQUIRED
+   plaats CDATA #REQUIRED>
+]>
+
+<adressen>
+   <persoon>
+      <geslacht>m</geslacht>
+      <naam>Jan Peeters</naam>
+      <adres postnummer="2000" straat="Koepoortstraat" nummer="75" plaats="Antwerpen"/>
+   </persoon>
+   <persoon>
+      <geslacht>v</geslacht>
+      <naam>Ann-Sofie Luypaert</naam>
+      <adres postnummer="8000" straat="Eiermarkt" nummer="18" plaats="Brugge"/>
+   </persoon>
+</adressen>

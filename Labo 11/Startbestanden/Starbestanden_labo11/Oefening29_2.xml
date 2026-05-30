@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="efening29_2.xslt"?>
+<citaten>
+    <citaat>
+        <tekst>Als een leeuw kon spreken, zouden wij hem niet kunnen verstaan.</tekst>
+        <auteur>Ludwig Wittgenstein</auteur>
+    </citaat>
+    <citaat> 
+        <tekst>Hoe meer kennis, hoe meer twijfel.</tekst> 
+        <auteur>Goethe</auteur> 
+    </citaat>
+</citaten>

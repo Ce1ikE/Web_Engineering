@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="boek" type="boek-type"/>
+
+    <xs:complexType name="boek-type">
+        <xs:sequence>
+            <xs:element name="isbn" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="titel" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="auteur" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="jaar" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="prijs" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

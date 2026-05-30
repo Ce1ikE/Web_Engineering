@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+    <car>
+        <brand>Mercedes</brand>
+        <type>4MATIC</type>
+        <vehicule-weight>1956</vehicule-weight> <!-- KG -->
+        <car-dimensions> 
+            <length>4873</length> <!-- mm -->
+            <width>1853</width> <!-- mm -->
+            <height>1474</height> <!-- mm -->
+        </car-dimensions>
+        <fuel-type>LPG</fuel-type>
+        <fuel-tank-capacity>40</fuel-tank-capacity> <!-- L -->
+        <battery-cell-capacity>33.1</battery-cell-capacity> <!-- Ah -->
+        <tire-dimensions>
+            <tire-radius>315.98</tire-radius> <!-- mm -->
+            <tire-width>150.56</tire-width> <!-- mm -->
+        </tire-dimensions>
+        <coefficient-of-drag>0.29</coefficient-of-drag>
+        <engine>
+            <engine-type>KIE47</engine-type>
+            <engine-size>1.8</engine-size> <!-- L -->
+            <engine-max-speed>4500</engine-max-speed> <!-- rpm -->
+            <engine-max-power>73</engine-max-power> <!-- Kw -->
+            <number-of-cylinders>6</number-of-cylinders> 
+        </engine>
+    </car>
+
+    <car>
+        <brand>Ford</brand>
+        <type>CF89</type>
+        <vehicule-weight>900</vehicule-weight> <!-- KG -->
+        <car-dimensions> 
+            <length>4300</length> <!-- mm -->
+            <width>1642</width> <!-- mm -->
+            <height>1586</height> <!-- mm -->
+        </car-dimensions>
+        <fuel-type>Diesel</fuel-type>
+        <fuel-tank-capacity>54.9</fuel-tank-capacity> <!-- L -->
+        <battery-cell-capacity>33.1</battery-cell-capacity> <!-- Ah -->
+        <tire-dimensions>
+            <tire-radius>412.12</tire-radius> <!-- mm -->
+            <tire-width>110.5</tire-width> <!-- mm -->
+        </tire-dimensions>
+        <coefficient-of-drag>0.31</coefficient-of-drag>
+        <engine>
+            <engine-type>7LOE89</engine-type>
+            <engine-size>2.1</engine-size> <!-- L -->
+            <engine-max-speed>6400</engine-max-speed> <!-- rpm -->
+            <engine-max-power>85.8</engine-max-power> <!-- Kw -->
+            <number-of-cylinders>8</number-of-cylinders> 
+        </engine>
+    </car>
+
+    <car>
+        <brand>Volkswagen</brand>
+        <type>IO135</type>
+        <vehicule-weight>1556</vehicule-weight> <!-- KG -->
+        <car-dimensions> 
+            <length>4589</length> <!-- mm -->
+            <width>1589</width> <!-- mm -->
+            <height>1378</height> <!-- mm -->
+        </car-dimensions>
+        <fuel-type>LPG</fuel-type>
+        <fuel-tank-capacity>60.5</fuel-tank-capacity> <!-- L -->
+        <battery-cell-capacity>33.1</battery-cell-capacity> <!-- Ah -->
+        <tire-dimensions>
+            <tire-radius>356.5</tire-radius> <!-- mm -->
+            <tire-width>125.16</tire-width> <!-- mm -->
+        </tire-dimensions>
+        <coefficient-of-drag>0.31</coefficient-of-drag>
+        <engine>
+            <engine-type>HL47</engine-type>
+            <engine-size>1.8</engine-size> <!-- L -->
+            <engine-max-speed>4250</engine-max-speed> <!-- rpm -->
+            <engine-max-power>42</engine-max-power> <!-- Kw -->
+            <number-of-cylinders>6</number-of-cylinders> 
+        </engine>
+    </car>
+
+    <car>
+        <brand>Ford</brand>
+        <type>DE89</type>
+        <vehicule-weight>1724</vehicule-weight> <!-- KG -->
+        <car-dimensions> 
+            <length>3548</length> <!-- mm -->
+            <width>1806</width> <!-- mm -->
+            <height>1445</height> <!-- mm -->
+        </car-dimensions>
+        <fuel-type>LPG</fuel-type>
+        <fuel-tank-capacity>45</fuel-tank-capacity> <!-- L -->
+        <battery-cell-capacity>29.3</battery-cell-capacity> <!-- Ah -->
+        <tire-dimensions>
+            <tire-radius>378.3</tire-radius> <!-- mm -->
+            <tire-width>178.5</tire-width> <!-- mm -->
+        </tire-dimensions>
+        <coefficient-of-drag>0.29</coefficient-of-drag>
+        <engine>
+            <engine-type>FR5</engine-type>
+            <engine-size>2.6</engine-size> <!-- L -->
+            <engine-max-speed>5835</engine-max-speed> <!-- rpm -->
+            <engine-max-power>89</engine-max-power> <!-- Kw -->
+            <number-of-cylinders>9</number-of-cylinders> 
+        </engine>
+    </car>
+</cars>

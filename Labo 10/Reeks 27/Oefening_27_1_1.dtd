@@ -1,0 +1,33 @@
+<!ELEMENT cars (car+)>
+    <!ELEMENT car (brand,type,vehicule-weight,car-dimensions,fuel-type,fuel-tank-capacity,battery-cell-capacity,tire-dimensions,coefficient-of-drag,engine)>
+        <!ELEMENT brand (#PCDATA)>
+        <!ELEMENT type (#PCDATA)>
+        <!ELEMENT vehicule-weight (#PCDATA)>
+        <!ATTLIST vehicule-weight SI (Kg|Lb) #REQUIRED>
+        <!ELEMENT car-dimensions (length,width,height)>
+            <!ELEMENT length (#PCDATA)>
+            <!ATTLIST length SI (mm|ft|in) #REQUIRED>
+            <!ELEMENT width (#PCDATA)>
+            <!ATTLIST width SI (mm|ft|in) #REQUIRED>
+            <!ELEMENT height (#PCDATA)>
+            <!ATTLIST height SI (mm|ft|in) #REQUIRED>
+        <!ELEMENT fuel-type (#PCDATA)>
+        <!ELEMENT fuel-tank-capacity (#PCDATA)>
+        <!ATTLIST fuel-tank-capacity SI (L) #REQUIRED>
+        <!ELEMENT battery-cell-capacity (#PCDATA)>
+        <!ATTLIST battery-cell-capacity SI (Ah) #REQUIRED>
+        <!ELEMENT tire-dimensions (tire-radius,tire-width)>
+            <!ELEMENT tire-radius (#PCDATA)>
+            <!ATTLIST tire-radius SI (mm|ft|in) #REQUIRED>
+            <!ELEMENT tire-width (#PCDATA)>
+            <!ATTLIST tire-width SI (mm|ft|in) #REQUIRED>
+        <!ELEMENT coefficient-of-drag (#PCDATA)>
+        <!ELEMENT engine (engine-type,engine-size,engine-max-speed,engine-max-power,number-of-cylinders)>
+            <!ELEMENT engine-type (#PCDATA)>
+            <!ELEMENT engine-size (#PCDATA)>
+            <!ATTLIST engine-size SI (L) #REQUIRED>
+            <!ELEMENT engine-max-speed (#PCDATA)>
+            <!ATTLIST engine-max-speed  SI (rpm) #REQUIRED>
+            <!ELEMENT engine-max-power (#PCDATA)>
+            <!ATTLIST engine-max-power SI (KW) #REQUIRED>
+            <!ELEMENT number-of-cylinders (#PCDATA)>

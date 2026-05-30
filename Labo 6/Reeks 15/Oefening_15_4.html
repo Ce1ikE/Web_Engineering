@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 15 : Oefening 4</title>
+    <link rel="stylesheet" href="./Oefening_15_4.css">
+</head>
+<body>
+    <script>
+        var Number_To_Guess = ((Math.random())*100).toFixed(0);
+        
+        function Check_Number() {
+            var Number_Guessed = document.getElementById("Number_Guessed").value;
+            var Response =  document.getElementById("Response-box");
+            var p = document.createElement("p");
+            if(Number_Guessed == null) {
+                Response.appendChild(p);
+                Response.lastChild.innerHTML = "No number was entered";
+            } else if(Number_Guessed < Number_To_Guess) {
+                Response.appendChild(p);
+                Response.lastChild.innerHTML = Number_Guessed + " is Too low";
+            } else if(Number_Guessed > Number_To_Guess) {
+                Response.appendChild(p);
+                Response.lastChild.innerHTML = Number_Guessed + " is Too high";
+            } else if(Number_Guessed == Number_To_Guess) {
+                Response.appendChild(p);
+                Response.lastChild.innerHTML = "You guessed the right number!!";
+                document.getElementById("Enter-button").style.visibility = "hidden";
+            }
+
+        }
+    </script>
+    <fieldset id="Response-box">
+        <legend>Response</legend>
+    </fieldset>
+    <input type="number" min="0" max="100" id="Number_Guessed">
+    <button onclick="Check_Number()" id="Enter-button">Enter</button>
+
+</body>
+</html>

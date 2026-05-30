@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="./Oefening_29_7.xsl"?>
+<buurlanden>
+    <land staatsvorm="monarchie">
+        <landnaam>België</landnaam>
+        <hoofdstad>Brussel</hoofdstad>
+        <kenteken>B</kenteken>
+        <staatshoofd>
+            <naam aanspreektitel="Koning">Albert</naam>
+            <partner aanspreektitel="Koningin">Paola</partner>
+        </staatshoofd>
+        <familie>
+            <kind>
+                <naam aanspreektitel="Prins">Filip</naam>
+                <partner aanspreektitel="Prinses">Mathilde</partner>
+            </kind>
+            <kind>
+                <naam aanspreektitel="Prinses">Astrid</naam>
+                <partner>Lorenz</partner>
+            </kind>
+            <kind>
+                <naam aanspreektitel="Prins">Laurent</naam>
+                <partner aanspreektitel="Prinses">Claire</partner>
+            </kind>
+        </familie>
+    </land>
+    <land staatsvorm="monarchie">
+        <landnaam>Groot-Brittannië</landnaam>
+        <hoofdstad>Londen</hoofdstad>
+        <kenteken>GB</kenteken>
+        <staatshoofd>
+            <naam aanspreektitel="Koningin">Elisabeth</naam>
+            <partner aanspreektitel="Prins">Philip</partner>
+        </staatshoofd>
+        <familie>
+            <kind>
+                <naam aanspreektitel="Prins">Charles</naam>
+                <partner>Camilla</partner>
+            </kind>
+            <kind>
+                <naam aanspreektitel="Prinses">Anne</naam>
+                <partner>Tim</partner>
+            </kind>
+            <kind>
+                <naam aanspreektitel="Prins">Andrew</naam>
+            </kind>
+            <kind>
+                <naam aanspreektitel="Prins">Edward</naam>
+                <partner>Sophie</partner>
+            </kind>
+        </familie>
+    </land>
+    <land staatsvorm="bondsrepubliek">
+        <landnaam>Duitsland</landnaam>
+        <hoofdstad>Berlijn</hoofdstad>
+        <kenteken>D</kenteken>
+        <staatshoofd>
+            <naam>Angela Merkel</naam>
+        </staatshoofd>
+    </land>
+    <land staatsvorm="republiek">
+        <landnaam>Frankrijk</landnaam>
+        <hoofdstad>Parijs</hoofdstad>
+        <kenteken>F</kenteken>
+        <staatshoofd>
+            <naam>Nicolas Sarkozy</naam>
+        </staatshoofd>
+    </land>
+    <land staatsvorm="monarchie">
+        <landnaam>Nederland</landnaam>
+        <hoofdstad>Amsterdam</hoofdstad>
+        <kenteken>NL</kenteken>
+        <staatshoofd>
+            <naam aanspreektitel="Koningin">Beatrix</naam>
+            <partner aanspreektitel="Prins">Claus (+)</partner>
+        </staatshoofd>
+        <familie>
+            <kind>
+                <naam aanspreektitel="Prins">Willem Alexander</naam>
+                <partner aanspreektitel="Prins">Maxima</partner>
+            </kind>
+            <kind>
+                <naam aanspreektitel="Prins">Johan Friso</naam>
+                <partner aanspreektitel="Prinses">Mabel</partner>
+            </kind>
+            <kind>
+                <naam aanspreektitel="Prins">Constantijn</naam>
+                <partner aanspreektitel="Prinses">Laurentien</partner>
+            </kind>
+        </familie>
+    </land>
+</buurlanden>

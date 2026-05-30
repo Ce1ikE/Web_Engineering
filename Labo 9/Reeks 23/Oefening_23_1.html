@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 23 : Oefening 1</title>
+    <link rel="stylesheet" href="./Oefening_23_1.css">
+</head>
+<body>
+    <h1>jQuery</h1>
+    <ol>
+        <li>wanneer de <em>muiscursor</em> over de rode "teaser" bovenaan komt, dan moet de surprise div naar beneden schuiven.</li>
+        <li><em>klik</em> je daarna op de surprise div, dan moet die surprise div opnieuw naar boven schuiven.</li>
+    </ol>
+    <hr/>
+    
+    <div class="surprise">Surprise!</div>
+    <div class="teaser">
+        Mouse hover here!
+    </div>
+    <script src="./jquery.js"></script>
+    <script>
+        $(".teaser").hover(function(){
+            $(".surprise").slideDown(2000);
+        })
+
+        $(".surprise").click(function(){
+            $(this).slideUp(2000);
+        });
+    </script>
+</body>
+</html>

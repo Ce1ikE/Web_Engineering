@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE adressen SYSTEM "./Oefening_27_5.dtd"[
+    <!ENTITY kop "Adressenlijst van JeanLouis Van der Auwermeulen">
+]>
+<?xml-stylesheet href="./Oefening_27_5.css" type="text/css"?>
+<adressen>                                                                  <!-- // Occurences // -->
+    <title>&kop;</title>                                                    <!-- 1 -->
+    <adres>                                                                 <!-- + -->
+        <naam>De Verdand</naam>                                             <!-- 1 -->
+        <voornaam>Jean</voornaam>                                           <!-- + -->
+        <voornaam>Halidou</voornaam>                                        <!-- + -->
+        <voornaam>Bernard</voornaam>                                        <!-- + -->
+        <straat-nummer>489</straat-nummer>                                  <!-- NOT REQUIRED -->
+        <plaats>Calais</plaats>                                             <!-- 1 -->
+        <telefoon-nummer>030087099</telefoon-nummer>                        <!-- of gsm -->
+        <!-- <gsm-nummer></gsm-nummer> -->                                  <!-- of telefoon -->
+        <email>JeanHalidouBernard.DeVerdand@outlook.com</email>             <!-- NOT REQUIRED -->
+    </adres> 
+    <adres>                                     
+        <naam>Langchester</naam>                           
+        <voornaam>Sir John</voornaam>                                   
+        <straat-nummer>21</straat-nummer>         
+        <plaats>Yorkshire</plaats>                      
+        <telefoon-nummer>080097855</telefoon-nummer>     
+        <email>John.Yorkshire@outlook.com</email>                         
+    </adres>     
+    <adres>                                     
+        <naam>Van langhoven</naam>                                                              
+        <voornaam>Philip</voornaam>                         
+        <plaats>Moor</plaats>                      
+        <telefoon-nummer>047897788</telefoon-nummer>                                   
+    </adres>
+    <adres>                                     
+        <naam>Hofmann</naam>                                                             
+        <voornaam>Maurits</voornaam>                         
+        <plaats>Kohn</plaats>                      
+        <gsm-nummer>0289774120</gsm-nummer>                                 
+    </adres>                     
+</adressen>

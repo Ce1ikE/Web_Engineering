@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 19 : Oefening 3</title>
+    <link rel="stylesheet" href="./Oefening_19_3.css">
+</head>
+<body>
+    <a href="#" id="Link"></a>
+    <div id="Message-block">
+        <p id="Message"></p>
+    </div>
+    <script>
+        var Link = document.getElementById("Link");
+        var Message_Block = document.getElementById("Message-block");
+        var Message = document.getElementById("Message");
+        Link.addEventListener("mouseover", function(){
+            Message.innerHTML = "Welcome";
+            Message_Block.style.opacity = 1;
+            Link.innerHTML = "Mouse over";
+        });
+
+        Link.addEventListener("mouseout", function(){
+            Message.innerHTML = "Au revoir";
+            setTimeout(function(){
+                Message_Block.style.opacity = 0
+            },1500);
+            Link.innerHTML = "Mouse out";
+        });
+    </script>
+</body>
+</html>

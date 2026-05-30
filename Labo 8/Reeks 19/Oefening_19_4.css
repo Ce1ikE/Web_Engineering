@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(65, 48, 48, 0.65);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.tshirt-box,
+.Button-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+img {
+    width: 300px;
+    aspect-ratio: 1;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.5s ease-in-out;
+}
+
+input {
+    color: black;
+    font-family: monospace;
+    border: 2px solid black;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.5s ease-in-out;
+}
+
+input:hover {
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px 10px 10px 10px;
+    background-color: black;
+    box-shadow: 5px 5px 10px white;
+    cursor: pointer;
+}

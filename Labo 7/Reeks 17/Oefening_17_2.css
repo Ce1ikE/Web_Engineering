@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(to bottom,grey,black);
+    background-attachment: fixed;
+
+    margin: 0;
+    min-height: 100vh;
+
+    animation-name: Animate-body-box-shadow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@keyframes Animate-body-box-shadow {
+    0%      {box-shadow: 0px 0px 10px 10px inset aquamarine;}
+    50%     {box-shadow: 0px 0px 10px 10px inset rgb(131, 8, 162);}
+    75%     {box-shadow: 0px 0px 10px 10px inset rgb(140, 255, 127);}
+    100%    {box-shadow: 0px 0px 10px 10px inset aquamarine;}
+}
+
+
+.stopwatch-container {
+    border: 5px solid black;
+    background-color: rgb(55, 50, 50);
+    border-radius: 25%;
+    box-shadow: 5px 5px 10px aquamarine;
+    
+    padding: 40px;
+    margin-top: 100px;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+p {
+    background-color: rgba(172, 255, 47, 0.413);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: monospace;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px inset black;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    border: 3px solid black;
+    padding: 3px;
+    box-shadow: inset 0px 0px 0px 0px #54b3d6;
+    border-radius: 10px;
+    background-color: rgba(97, 95, 101, 0.939);
+    transition: box-shadow 0.5s ease-in-out,color 0.5s ease-in-out,border 0.6s ease-in-out;
+}
+
+
+input:hover {
+    border: 3px solid #54b3d6;
+    color: white;
+    box-shadow: inset 200px 0px 0px 0px #54b3d6;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 21 : Oefening 2</title>
+    <link rel="stylesheet" href="./Oefening_21_2.css">
+</head>
+<body>
+    <main>
+        <p>Enter a positive integer:</p>
+        <input type="text" id="Number-Input">
+        <div class="feedback-container">
+            <p id="feedback-message"></p>
+        </div>
+    </main>
+    <script>
+        var Number_Input = document.getElementById("Number-Input");
+        var Feedback_Message = document.getElementById("feedback-message");
+
+        Number_Input.addEventListener("input",function(){
+            Feedback_Message.style.opacity = 0;
+            if(0 <= parseInt(Number_Input.value)){
+                setTimeout(function(){
+                    Feedback_Message.className = "correct";
+                    Feedback_Message.innerHTML = parseInt(Number_Input.value) + " is a positive integer";
+                },500);
+            }
+            else if(parseInt(Number_Input.value) < 0) {
+                setTimeout(function(){
+                    Feedback_Message.className = "false";
+                    Feedback_Message.innerHTML = "Enter a positive integer please!";
+                },500);
+            } else {
+                setTimeout(function(){
+                    Feedback_Message.className = "false";
+                    Feedback_Message.innerHTML = "Enter a number please!";
+                },500);
+            }
+            setTimeout(function(){
+                Feedback_Message.style.opacity = 1;
+            },500);
+        });
+    </script>
+</body>
+</html>

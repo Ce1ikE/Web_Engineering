@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 21 : Oefening 7</title>
+    <link rel="stylesheet" href="./Oefening_21_7.css">
+</head>
+<body>
+    <fieldset>
+        <header>
+            <h1>Welcome to Pizza Parlor !</h1>
+        </header>
+        <main>
+            <div class="Quantity-container">
+                <label for="Aantal-Pizzas">Aantal :</label>
+                <input type="text" name="Quantity" id="Aantal-Pizzas">
+                <p id="Warning-message">* Verplicht veld</p>
+            </div>
+            <div class="Size-container">
+                <label for="Groote-Pizza">Groot(8&euro;) :</label>
+                <input type="radio" name="Size" id="Groote-Pizza" value="8" checked>
+                <label for="Kleine-Pizza">Klein(6&euro;) :</label>
+                <input type="radio" name="Size" id="Kleine-Pizza" value="6">
+            </div>
+            <div class="Toping-container">
+                <label for="Toping-Olijven">Olijven(+2&euro;)</label>
+                <input type="checkbox" name="Toping-1" id="Toping-Olijven">
+                <label for="Toping-Ananas">Ananas(+2.5&euro;)</label>
+                <input type="checkbox" name="Toping-2" id="Toping-Ananas">
+                <label for="Toping-ExtraKaas">Extra Kaas(+2.8&euro;)</label>
+                <input type="checkbox" name="Toping-3" id="Toping-ExtraKaas">
+                <label for="Toping-Salami">Salami(+2&euro;)</label>
+                <input type="checkbox" name="Toping-4" id="Toping-Salami">
+                <label for="Toping-Tonijn">Tonijn(+3.2&euro;)</label>
+                <input type="checkbox" name="Toping-5" id="Toping-Tonijn">
+                <span>Totaal Opties(max 3) :</span>
+                <span id="Total-Topings"></span>
+            </div>
+            <div class="Total-container">
+                <label for="Totaal">Totaal :</label>
+                <input type="text" name="Total" id="Totaal">
+                <h1 id="Total-h1"></h1>
+            </div>
+            <div class="Calculate-container">
+                <input type="button" value="Bereken totaal" id="Calculate-Total">
+            </div>
+        </main>
+    </fieldset>
+ <!--=========================================================================================================================================-->   
+    <script>
+        var Warning = document.getElementById("Warning-message");
+        var Quantity = document.getElementById("Aantal-Pizzas");
+        var Size = document.querySelectorAll("input[name='Size']");
+        var Topings = document.querySelectorAll("input[name^='Toping']");
+        var Total = document.getElementById("Totaal");
+        var Calculate_Btn = document.getElementById("Calculate-Total");
+        var Total_h1 = document.getElementById("Total-h1");
+        var Prices_Topings = new Array(2,2.5,2.8,2,3.2);
+        var Prices_Sizes = new Array(8,6);
+        Total.disabled = true;
+
+        Calculate_Btn.addEventListener("click",function(){
+            var Sum = 0;
+            if(Quantity.value == ""){
+                Warning.style.opacity = 1;
+                Quantity.style.border = "red solid 5px";
+                return 0;
+            }
+
+            for(let i = 0;i < Topings.length;i++){
+                if(Topings[i].checked){
+                    Sum += Prices_Topings[i];
+                }
+            }
+
+            for(let i = 0;i < Size.length;i++){
+                if(Size[i].checked){
+                    Sum += (Prices_Sizes[i])*(parseInt(Quantity.value));
+                    if(Size[i].getAttribute("id") == "Groote-Pizza"){
+                        Total_h1.style.fontSize = "2rem";
+                    } 
+    
+                    if(Size[i].getAttribute("id") == "Kleine-Pizza") {
+                        Total_h1.style.fontSize = "0.7rem";
+                    }
+                }
+            }
+
+            Total.value = Sum;
+            Total_h1.innerHTML = "&euro;" + Sum;
+        });
+
+
+        // challenge: sta max 3 toppings toe
+        var Counter_Checked = 0;
+        var Total_Topings = document.getElementById("Total-Topings");
+        Total_Topings.innerHTML = Counter_Checked;
+
+        for(let i = 0;i < Topings.length;i++){
+            Topings[i].addEventListener("change",function(){
+                if(Topings[i].checked){
+                    Counter_Checked += 1;
+                    Total_Topings.innerHTML = Counter_Checked;
+                } else {
+                    Counter_Checked -= 1;
+                    Total_Topings.innerHTML = Counter_Checked;
+                }
+
+                if(Counter_Checked == 3){
+                    for(let n = 0;n < Topings.length;n++){
+                        if(!Topings[n].checked){
+                            Topings[n].disabled = true;
+                        }
+                    }
+                }
+
+                if(Counter_Checked < 3) {
+                    for(let n = 0;n < Topings.length;n++){
+                        if(!Topings[n].checked){
+                            Topings[n].disabled = false;
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

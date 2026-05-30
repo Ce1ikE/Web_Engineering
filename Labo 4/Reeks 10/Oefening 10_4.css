@@ -1,0 +1,108 @@
+
+.wrapper-01 {
+	min-width:500px;
+	max-width:1200px;
+	margin:0px auto 0px auto;
+    background-color:  #CCC;
+}
+
+.wrapper-02 {
+	padding: 0px 30px;
+}
+
+/*===============================================================================*/
+
+header {
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	background-color: #03C;
+}
+
+header nav {
+	margin-top: auto;
+	margin-left: auto;
+}
+
+header img {
+	margin-left: auto;
+	height: 200px;
+}
+
+header nav h1 {
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	margin-bottom: 40px;
+}
+
+header nav ul {
+	display: flex;
+}
+
+header nav ul li {
+	background-color: rgb(123, 126, 129);
+	padding: 10px;
+	margin: 0px 3px;
+	border-radius: 5px 25% 5px 25%;
+}
+
+header nav ul li:hover {
+	background-color: antiquewhite;
+}
+
+header nav ul li:hover a {
+	color: red;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+}
+
+
+/*===============================================================================*/
+
+main>article {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+main>article>section {
+	background-color: aliceblue;
+	width: 75%;
+	margin: 10px 0px;
+	border-radius: 25px;
+	padding: 10px;
+}
+
+main>article>section p,h2 {
+	padding: 30px 10px;
+}
+
+
+main>article>aside {
+	width: 20%;
+	margin: 20px 0px;
+}
+
+main>article>aside img {
+	width: 100%;
+}
+
+main>article>aside p {
+	text-align: center;
+	margin: 10px 0px;
+}
+
+/*===============================================================================*/
+
+footer {
+	background-color: #66CCFF;
+	padding: 30px;
+}
+
+/*===============================================================================*/

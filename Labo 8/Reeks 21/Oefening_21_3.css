@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    width: 400px;
+    border: 3px solid gray;
+    border-radius: 15px;
+    background-image: url(./Hot_Air_Balloon.png);
+    background-position: center;
+    padding: 0;
+}
+
+
+form {
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    backdrop-filter: invert(25%) contrast(150%);
+    padding: 10px;
+    border-radius: 15px;
+    color: black;
+    font-weight:bolder;
+    font-size: larger;
+}
+
+form div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    appearance: none;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border-image: fill 0 linear-gradient(to top,#00000089,#0000001d);
+    color: black;
+}
+
+input[type="text"]::placeholder {
+    color: white;
+}
+
+input[type="text"]:focus {
+    background-color: black;
+    color: white;
+}
+
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+input[type="radio"]:hover,
+input[type="radio"]:checked {
+    cursor: pointer;
+    background-color: white;
+    border: 3px solid black;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border: 3px solid black;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+}
+
+input[type="checkbox"]:hover,
+input[type="checkbox"]:checked {
+    cursor: pointer;
+    background-color: green;
+}
+
+input[type="checkbox"]:not(:checked){
+    background-color: white;
+}
+
+input[type="button"] {
+    padding: 5px;
+    font-family: monospace;
+    font-size: 1.1rem;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 100px;
+    transition: color 0.5s ease-in-out, border 0.8s ease-in-out , box-shadow 0.5s ease-in-out;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    color: white;
+    border: 3px solid white;
+    box-shadow: -200px 0px 0px inset black;
+}
+
+.summary-container {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    background-color: red;
+    width: 300px;
+    aspect-ratio: 1;
+    border: 10px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+*::selection {
+    background-color: rgba(0, 0, 0, 0.363);
+    color: greenyellow;
+    text-shadow: 0px 0px 5px currentColor;
+}

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<patient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Oefening_28_1.xsd">
+    <naam>Jan Versmissen</naam>
+    <geslacht>m</geslacht>
+    <nr>123456</nr>
+    <medische-gegevens>
+        <gegeven>geboren 1921</gegeven>
+        <gegeven>zeer slecht ziend</gegeven>
+        <gegeven>verzorgingstehuis</gegeven>
+        <gegeven>verder geen medische gegevens</gegeven>
+    </medische-gegevens>
+</patient>
+
+  

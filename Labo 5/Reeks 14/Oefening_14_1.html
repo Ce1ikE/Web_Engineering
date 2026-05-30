@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 14 : Oefening 1</title>
+</head>
+<body>
+    <script>
+        var Name;
+
+        do {
+            Name = window.prompt("Wat is uw naam?");
+
+            Answer = window.confirm("De naam die u opgaf was " + Name + "\nKlopt dit?");
+
+        } while (!(Answer));
+
+        document.write("<h1>Welkom " + Name + "</h1>");
+
+    </script>
+</body>
+</html>

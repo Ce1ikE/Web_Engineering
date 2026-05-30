@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Nespresso</title>
+<link rel="stylesheet" type="text/css" href="stijl.css"/>
+
+<link href="stijl.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<div id="header">
+<img  src="foto/logo.gif" height="100px" width="100px" />
+<img id="fotoke" src="foto/images.jpeg" height="100px" width="100px" /></div>
+
+<form id="inloggen">
+<fieldset>
+<legend>Inloggen</legend>
+
+<table width="400" border="0">
+  <tr>
+    <td><label for="naam">Naam:</label>&nbsp;</td>
+    <td><input type="text" id="naam"/>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td><label for="voornaam">Voornaam:</label>&nbsp;</td>
+    <td><input type="text" id="voornaam"/>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td><label for="paswoord">Paswoord:</label>&nbsp;</td>
+    <td><input type="password" id="pass"/>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td colspan="2"><button type="button"  id="inlog" >verzend</button></td>
+    
+    
+  </tr>
+</table>
+
+
+</fieldset>
+
+
+</form>
+<p id="fout">Sorry, maar het paswoord is niet juist. Probeer opnieuw.
+</p>
+<p id="gedaan">U heeft 3 keer foutief ingegeven. Gelieve onze administatie te contacteren</p>
+
+<form id="welkom">
+<fieldset>
+<legend>Bestellen</legend>
+<p id="intro">
+</p>
+<table width="350" border="1">
+  <tr>
+    <td>Capricio</td>
+    <td><input type="text" id="aantal0" size="5" value="0"/>&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+    <td><input type="text" id="bedrag0" size="8"/></td>
+  </tr>
+  <tr>
+    <td>Indra</td>
+    <td><input type="text" id="aantal1" size="5" value="0"/>&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+    <td><input type="text" id="bedrag1" size="8"/></td>
+  </tr>
+ <tr>
+ 
+    <td>Arpeggio</td>
+    <td><input type="text" id="aantal2" size="5" value="0"/>&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+    <td><input type="text" id="bedrag2" size="8"/></td>
+  </tr> 
+  <tr>
+    <td>Livanto</td>
+    <td><input type="text" id="aantal3" size="5" value="0"/>&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+    <td><input type="text" id="bedrag3" size="8"/></td>
+  </tr> 
+  <tr>
+    <td>Finezzo</td>
+    <td><input type="text" id="aantal4" size="5" value="0"/>&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+    <td><input type="text" id="bedrag4" size="8"/></td>
+  </tr> 
+  <tr>
+    <td><button type="button" id="bereken"">Bereken</button></td>
+    <td>Totaal</td>
+    <td><input type="text" id="eindtot1" size="8" /></td>
+  </tr>
+  
+   
+</table>
+
+
+</fieldset>
+
+
+</form>
+
+
+
+<form id="betaal">
+<fieldset>
+<legend>Betalen</legend>
+<p>Gelieve uw betaalwijze aan te duiden:</p>
+
+<table width="400" border="0">
+  <tr>
+    <td><label for="visa">Met visa</label></td>
+    <td><input type="radio" name="betalen" value="visa" id="visa" onclick="betaal1()"/></td>
+  </tr>
+  <tr>
+    <td><label for="visa">Contant bij levering</label></td>
+    <td><input type="radio" name="betalen" value="contant" id="contant" onclick="betaal2()"/></td>
+  </tr>
+</table>
+
+<div id="visakaart">
+
+<table width="400px">
+	<tr>
+		<td><label for="visakaartnummer">Kaartnummer &nbsp;</label></td>
+		<td><input type="text" size="20" maxlength="12" id="visakaartnummer"  /></td>
+	</tr>
+	<tr>
+		<td><label for="controlenummer">Controlenummer &nbsp;</label></td>
+		<td><input type="text" size="20" maxlength="3" id="controlenummer" onchange="controleren();" /></td>
+	</tr></table>
+
+
+
+</div>
+
+<div id="contant1">U verkiest om contant te betalen bij levering. Uw bestelling wordt binnen de 48 uur geleverd.</div>
+
+
+</fieldset>
+
+
+</form>
+<div id="fout2">Uw kaartnummer is niet juist</div>
+
+<div id="bedankt"><h1>Dank u voor de bestelling. Uw caps worden binnen de 24 uur geleverd.</h1></div>
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

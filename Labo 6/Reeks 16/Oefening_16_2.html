@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 16 : Oefening 2</title>
+    <link rel="stylesheet" href="./Oefening_16_2.css">
+</head>
+<body>
+    <script>
+        var Nbr_of_Inputs = 5;
+        var My_Numbers = new Array;
+        var Sum = 0;
+        for (let i = 0; i < Nbr_of_Inputs; i++) {
+            do {
+                My_Numbers[i] = parseInt(window.prompt("Enter number of votes ( > 0 )"));
+                if (My_Numbers[i] <= 0) {
+                    window.alert("Number must be greater then zero");
+                }
+            } while (My_Numbers[i] <= 0);
+            Sum += My_Numbers[i]; 
+        }
+        
+        // console.log(Sum);
+        // console.log(My_Numbers);
+
+        document.write("<table>");
+        for (let n = 0; n < Nbr_of_Inputs; n++) {
+            document.write("<tr><td>" + My_Numbers[n] + "</td><td>" + ((My_Numbers[n]/Sum)*100).toFixed(0) + "%</td></tr>");
+        }
+        document.write("</table>");
+        
+    </script>
+</body>
+</html>

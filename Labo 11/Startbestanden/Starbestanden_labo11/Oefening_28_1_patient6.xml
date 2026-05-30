@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<patient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Oefening_28_1.xsd">
+    <naam>Petrus Van der Aa</naam>
+    <geslacht>m</geslacht>
+    <nr>1235</nr>
+    <medische-gegevens>
+        <gegeven>geboren 1980</gegeven>
+        <gegeven>inentingen ok</gegeven>
+    </medische-gegevens>
+</patient>

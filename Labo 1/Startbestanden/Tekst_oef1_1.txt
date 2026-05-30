@@ -1,0 +1,6 @@
+Dit is een gecentreerde kop van niveau 1
+Dit is een gewone paragraaf. De tekst wordt daardoor standaard tegen de linkermarge geplaatst. Als de afmetingen van het venster van de browser gewijzigd worden past de tekst zich vanzelf aan. 
+Deze tekst wordt uitgelijnd tegen de rechtermarge. Het leest minder prettig, een reden waarom dit type uitlijning niet zo vaak gebruikt wordt. 
+
+ Een eenvoudig recept:
+Neem een ei. Breek het boven een glas.  Splits voorzichtig het eiwit en de dooier.   Klop het eiwit met de mixer.   Bewaar de dooier voor later.

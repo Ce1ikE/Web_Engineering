@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="gerechten" type="gerechten-type"/>
+
+    <xs:complexType name="gerechten-type">
+        <xs:sequence>
+            <xs:element name="gerecht" type="gerecht-type" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="gerecht-type">
+        <xs:sequence>
+            <xs:element name="naam" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="tijd" type="tijd-type" minOccurs="1" maxOccurs="1"/>
+
+            <xs:element name="beschrijving" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="ingredienten" type="ingredienten-type" minOccurs="0" maxOccurs="unbounded"/>
+
+            <xs:element name="saus" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="ingredienten" type="ingredienten-type" minOccurs="0" maxOccurs="unbounded"/>
+
+            <xs:element name="schotel" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="ingredienten" type="ingredienten-type" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="class" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tijd-type">
+        <xs:sequence>
+            <xs:element name="voorbereiding" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+            <xs:element name="bereiding" type="xs:string"  minOccurs="1" maxOccurs="1"/>        
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ingredienten-type">
+    <xs:sequence>
+        <xs:element name="ingredient" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+    </xs:complexType>
+</xs:schema>

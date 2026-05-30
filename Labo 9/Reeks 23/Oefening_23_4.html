@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 23 : Oefening 4</title>
+    <link rel="stylesheet" href="./Oefening_23_4.css">
+</head>
+<body>
+    <header>
+        <h1>Slideshow</h1>
+    </header>
+    <main>
+        <img src="" alt="image" id="image_slideshow">
+    </main>
+    <footer>
+        <input type="button" value="start slideshow" id="Start_Slideshow">
+        <input type="button" value="stop slideshow" id="Stop_Slideshow">
+    </footer>
+    <script src="./jquery.js"></script>
+    <script>
+        var Location_Images = "../Startbestanden/startbestanden_labo9/oefening23_4_start/";
+        var Images_Array = new Array("apple.svg",
+                                    "banana.svg",
+                                    "cherry.svg",
+                                    "grape.svg",
+                                    "kiwi.svg",
+                                    "lemon.svg",
+                                    "milk.svg",
+                                    "peach.svg",
+                                    "poached.svg",
+                                    "steak.svg",
+                                    "watermelon.svg");
+        var Slideshow_Active = false;
+
+        function SlideShow() {
+            if(Slideshow_Active){
+                var Number = Math.floor(Math.random() * 11);
+                $("#image_slideshow").fadeOut(2000,function(){
+                    $(this).attr("src",Location_Images + Images_Array[Number]);
+                    $(this).fadeIn(2000);
+                });
+                setTimeout(SlideShow,5000);
+            } 
+        }
+
+        $("#Start_Slideshow").click(function(){
+            Slideshow_Active = true;
+            SlideShow();
+        });
+
+        
+        $("#Stop_Slideshow").click(function(){
+            Slideshow_Active = false;
+        });
+    </script>
+</body>
+</html>
