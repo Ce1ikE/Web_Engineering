@@ -1,0 +1,8 @@
+<!ELEMENT mailbox (email+)>
+    <!ELEMENT email (to+, from, cc*, bcc*, subject?, body?)>
+        <!ELEMENT to (#PCDATA)>
+        <!ELEMENT from (#PCDATA)>
+        <!ELEMENT cc (#PCDATA)>
+        <!ELEMENT bcc (#PCDATA)>
+        <!ELEMENT subject (#PCDATA)>
+        <!ELEMENT body (#PCDATA)>

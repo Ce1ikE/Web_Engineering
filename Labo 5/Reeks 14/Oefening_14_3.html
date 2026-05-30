@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 14 : Oefening 3</title>
+</head>
+<body>
+    <script>
+        var Sum = null,Getal,Counter = 0;
+        Getal = parseInt(window.prompt("Geef een getal in AUB (Om te stoppen voer 0 in)")); 
+        while (Getal != 0) {
+            Counter += 1;
+            Sum += Getal;
+            Getal = parseInt(window.prompt("Geef een getal in AUB (Om te stoppen voer 0 in)")); 
+        }
+
+        document.write("<h1>Gemiddelde = " + (Sum/Counter).toFixed(2) + "</h1>");
+
+    </script>
+</body>
+</html>

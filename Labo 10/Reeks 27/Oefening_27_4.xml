@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE adressen SYSTEM "./Oefening_27_4.dtd">
+<adressen>
+    <adres>                                     <!-- + -->
+        <naam></naam>                           <!-- 1 -->
+        <voornaam></voornaam>                   <!-- + -->
+        <voornaam></voornaam>                   <!-- + -->
+        <voornaam></voornaam>                   <!-- + -->
+        <straat-nummer></straat-nummer>         <!-- NOT REQUIRED -->
+        <plaats></plaats>                       <!-- 1 -->
+        <telefoon-nummer></telefoon-nummer>     <!-- of gsm -->
+        <!-- <gsm-nummer></gsm-nummer> -->      <!-- of telefoon -->
+        <email></email>                         <!-- NOT REQUIRED -->
+    </adres> 
+    <adres>                                     
+        <naam></naam>                           
+        <voornaam></voornaam>                                   
+        <straat-nummer></straat-nummer>         
+        <plaats></plaats>                      
+        <telefoon-nummer></telefoon-nummer>     
+        <!-- <gsm-nummer></gsm-nummer> -->
+        <email></email>                         
+    </adres>     
+    <adres>                                     
+        <naam></naam>                                                              
+        <voornaam></voornaam>                         
+        <plaats></plaats>                      
+        <telefoon-nummer></telefoon-nummer>                                   
+    </adres>
+    <adres>                                     
+        <naam></naam>                                                             
+        <voornaam></voornaam>                         
+        <plaats></plaats>                      
+        <gsm-nummer></gsm-nummer>                                 
+    </adres>                     
+</adressen>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Toepassing van het DOM (Document Object Model)</title>
+  <style>
+    .centreer{text-align:center}
+  </style>
+  <script type="text/javascript">
+  function zoekInKoekie(koekieNaam)
+  {
+    var naam;
+
+    if (document.cookie.length == 0)
+    {
+      return null;
+    }
+    else
+    {
+      var naamBegin = document.cookie.indexOf(koekieNaam+"=");
+      if (naamBegin == -1)
+      {
+        return null   
+      }
+      else
+      {
+        naamBegin = naamBegin + koekieNaam.length + 1;
+        naamEinde = document.cookie.indexOf(";",naamBegin);
+        if (naamEinde == -1) naamEinde = document.cookie.length;
+        return unescape(document.cookie.substring(naamBegin,naamEinde));
+       }
+     }
+  }
+
+  function schrijfKoekie(koekieNaam,data,aantalDagen)
+  {
+    var eindDatum = new Date();
+    eindDatum.setTime(eindDatum.getTime() + (aantalDagen*24*3600*1000));
+           //  d.i. + aantalDagen dagen
+    document.cookie = koekieNaam+"="+escape(data)+"; expires=" +eindDatum.toGMTString();
+  }
+
+  function koekie(koekieNaam)
+  {
+    var naam = zoekInKoekie(koekieNaam);
+    if (naam != null)
+    {
+      alert("Welkom " + naam + " op onze site")
+    }
+    else
+    {
+      naam= prompt("Dit is uw eerste bezoek op deze site\nGeef uw naam a.u.b.");
+      schrijfKoekie(koekieNaam,naam,10);
+    }
+  }
+
+  function verwijderKoekie(koekieNaam)
+  {
+    if(zoekInKoekie(koekieNaam) != null)
+    {
+      document.cookie=koekieNaam+"=; expires=Thu, 01-Jan-70 00:00:01 GMT";
+    }
+  }
+  //-->
+  </script>
+
+</head>
+<body onLoad="koekie('mijnkoekieNaam')">
+  <h3>JavaScript-toepassing: cookies</h3>
+  <p class="centreer">
+    <a href="#" onClick="verwijderKoekie('mijnkoekieNaam')">Wis cookie</a>
+  </p>
+</body>
+</html>

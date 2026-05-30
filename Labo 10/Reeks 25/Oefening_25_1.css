@@ -1,0 +1,76 @@
+cars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: black;
+}
+
+car {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    margin: 50px 100px;
+    font-family: monospace;
+    color: white;
+    text-shadow: 0px 0px 5px currentColor;
+}
+
+brand {
+    display: inline;
+    text-decoration: underline solid currentColor;
+    color: wheat;
+}
+
+type {
+    display: inline;
+    color: aqua;
+}
+
+vehicule-weight {
+    display: block;
+    color: red;
+}
+
+car-dimensions,
+car-dimensions>* {
+    display: block;
+    margin-left: 10px;
+    color: greenyellow;
+}
+
+fuel-type {
+    display: block;
+    color: tomato;
+}
+
+fuel-tank-capacity {
+    color: springgreen;
+}
+
+coefficient-of-drag {
+    display: block;
+    color: orange;
+}
+
+battery-cell-capacity {
+    display: block;
+    color: yellow;
+}
+
+tire-dimensions,
+tire-dimensions>* {
+    color: salmon;
+    display: block;
+    margin-left: 10px;
+}
+
+engine,
+engine>* {
+    color:burlywood;
+    display: block;
+    margin-left: 10px;
+}
+
+*::selection {
+    background-color: gray;
+    color: white;
+}

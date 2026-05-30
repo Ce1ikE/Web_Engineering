@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background-color: rgba(47, 38, 38, 0.674);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 3rem;
+    margin-top: auto;
+    text-shadow: 0px 0px 10px currentColor;
+    animation: Animate-Text 10s infinite;
+}
+
+.wassenrij {
+    margin: auto;
+    padding: 20px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 25px;
+}
+
+#Timer,
+#feedback {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 0px 10px inset black;
+    background-color: rgba(172, 255, 47, 0.413);
+    color: white;
+    font-family: monospace;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 25px;
+}
+
+.wasmachine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.wasmachine img {
+    border-radius: 25px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.5s ease-in-out;
+}
+
+.button-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button-container input {
+    color: black;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 10px currentColor;
+    font-family: monospace;
+    text-shadow: 0px 0px 2px currentColor;
+    transition: 0.5s ease-in-out;
+}
+
+.button-container input:hover {
+    color: black;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px white;
+}
+
+@keyframes Animate-Text {
+    0%      {color: aqua;}
+    25%     {color: purple;}
+    50%     {color: green;}
+    75%     {color: yellowgreen;}
+    100%    {color: aqua;}
+}

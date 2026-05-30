@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Oefening_19_2.css">
+    <title>Reeks 19 : Oefening 2</title>
+    <script>
+        var Name_User = null;
+        function Initial() {
+            Name_User = window.prompt("What is your name?");
+            document.getElementById("Welcome message").innerHTML = "Hello " + Name_User;
+        };
+
+
+
+    </script>
+</head>
+<body onload="Initial();">
+    <div class="Welcome-box">
+        <h1 id="Welcome message"></h1>
+    </div>
+</body>
+</html>

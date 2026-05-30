@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mailbox SYSTEM "./Oefening_27_6.dtd">
+<mailbox>
+    <email>
+        <to>john.doe@example.com</to>
+        <from>jane.smith@example.com</from>
+        <cc>manager@example.com</cc>
+        <bcc>hr@example.com</bcc>
+        <subject>Annual Review Meeting</subject>
+        <body>Hi John, your annual review meeting is scheduled for next Monday at 2 PM. Best, Jane.</body>
+    </email>
+    <email>
+        <to>teamlead@example.com</to>
+        <to>developer1@example.com</to>
+        <to>developer2@example.com</to>
+        <to>designer@example.com</to>
+        <to>qa@example.com</to>
+        <from>project.manager@example.com</from>
+        <cc>ceo@example.com</cc>
+        <bcc>legal@example.com</bcc>
+        <subject>Project Kickoff</subject>
+        <body>Hello Team, we will have our project kickoff meeting tomorrow at 10 AM. Please be prepared with your initial plans. Regards, Project Manager.</body>
+    </email>
+    <email>
+        <to>customer.service@example.com</to>
+        <from>client@example.com</from>
+    </email>
+    <email>
+        <to>editor@example.com</to>
+        <from>author@example.com</from>
+        <cc>publisher@example.com</cc>
+        <cc>proofreader@example.com</cc>
+        <cc>designer@example.com</cc>
+        <cc>marketing@example.com</cc>
+        <cc>legal@example.com</cc>
+        <bcc>accounting@example.com</bcc>
+        <bcc>distribution@example.com</bcc>
+        <bcc>support@example.com</bcc>
+        <bcc>it@example.com</bcc>
+        <bcc>sales@example.com</bcc>
+        <subject>Book Release Plan</subject>
+        <body>Dear Editor, here is the final draft of the book. Please proceed with the next steps. Thanks, Author.</body>
+    </email>
+    <email>
+        <to>recipient1@example.com</to>
+        <from>sender1@example.com</from>
+        <cc>team@example.com</cc>
+        <bcc>admin@example.com</bcc>
+        <subject>Weekly Report</subject>
+        <body>Hi, attached is the weekly report. Please review and let me know if you have any questions. Best, Sender.</body>
+    </email>
+    <email>
+        <to>recipient2@example.com</to>
+        <from>sender2@example.com</from>
+        <cc>group@example.com</cc>
+        <bcc>admin@example.com</bcc>
+        <subject>Event Invitation</subject>
+        <body>Hello, you are invited to the company event next Friday. Please RSVP. Regards, Sender.</body>
+    </email>
+    <email>
+        <to>recipient3@example.com</to>
+        <from>sender3@example.com</from>
+        <cc>info@example.com</cc>
+        <bcc>support@example.com</bcc>
+        <subject>New Product Launch</subject>
+        <body>Dear Customer, we are excited to announce our new product launch next month. Stay tuned for more details. Best, Sender.</body>
+    </email>
+    <email>
+        <to>recipient4@example.com</to>
+        <from>sender4@example.com</from>
+        <cc>marketing@example.com</cc>
+        <bcc>pr@example.com</bcc>
+        <subject>Marketing Campaign</subject>
+        <body>Hi Team, the new marketing campaign will start next week. Please ensure all preparations are completed. Regards, Sender.</body>
+    </email>
+</mailbox>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<huisdier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Oefening_28_2.xsd">
+    <soort>Katachtig</soort>
+    <naam>Miou</naam>
+    <geboortedatum>2019-02-12</geboortedatum>
+</huisdier>

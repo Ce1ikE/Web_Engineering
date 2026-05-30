@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 17 : Oefening 4</title>
+    <link rel="stylesheet" href="./Oefening_17_4.css">
+    <script>
+        var Restart;
+        var Counter_1 = 0,Counter_2 = 30;
+        var Reverse_1 = 0,Reverse_2 = 0;
+        var Height_Array = new Array("0px", "10px", "20px", "30px", "40px", "50px", "60px", "70px", "80px", "90px",
+                                    "100px", "110px", "120px", "130px", "140px", "150px", "160px", "170px", "180px", "190px",
+                                    "200px", "210px", "220px", "230px", "240px", "250px", "260px", "270px", "280px", "290px",
+                                    "300px", "310px", "320px", "330px", "340px", "350px", "360px", "370px", "380px", "390px",
+                                    "400px", "410px", "420px", "430px", "440px", "450px", "460px", "470px", "480px", "490px",
+                                    "500px", "510px", "520px", "530px", "540px", "550px", "560px", "570px", "580px", "590px",
+                                    "600px");
+
+        function Change_div1() {   
+            document.getElementById("box_01").style.width = Height_Array[Counter_1];          
+            if((Counter_1 % Height_Array.length) == 0) {
+                Reverse_1 = 1;
+                Change_Color1();
+            }
+            if(Counter_1 == 0) {
+                Reverse_1 = 0;
+                Change_Color1();
+            }
+            if(Reverse_1 == 0){
+                Counter_1++;
+            } else {
+                Counter_1--;
+            }
+
+            Restart = window.setTimeout("Change_div1()",50);
+        }
+
+        function Change_Color1() {
+            var Random_R = (Math.random()*255).toFixed(0);
+            var Random_G = (Math.random()*255).toFixed(0);
+            var Random_B = (Math.random()*255).toFixed(0);
+            document.getElementById("box_01").style.color = "rgb("+ Random_R +","+ Random_G +","+ Random_B + ")";
+        }
+
+        function Change_div2() {   
+            document.getElementById("box_02").style.width = Height_Array[Counter_2];          
+            if((Counter_2 % Height_Array.length) == 0) {
+                Reverse_2 = 1;
+                Change_Color2();
+            }
+            if(Counter_2 == 0) {
+                Reverse_2 = 0;
+                Change_Color2();
+            }
+            if(Reverse_2 == 0){
+                Counter_2++;
+            } else {
+                Counter_2--;
+            }
+
+            Restart = window.setTimeout("Change_div2()",50);
+        }
+
+        function Change_Color2() {
+            var Random_R = (Math.random()*255).toFixed(0);
+            var Random_G = (Math.random()*255).toFixed(0);
+            var Random_B = (Math.random()*255).toFixed(0);
+            document.getElementById("box_02").style.color = "rgb("+ Random_R +","+ Random_G +","+ Random_B + ")";
+        }
+
+    </script>
+</head>
+<body onload="Change_div1();Change_div2();">
+    <main class="Equalizer">
+        <div id="box_01"></div>
+        <div id="box_02"></div>
+    </main>
+</body>
+</html>

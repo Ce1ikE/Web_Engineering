@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 14 : Oefening 8</title>
+    <link rel="stylesheet" href="./Oefening_14_8.css">
+    <script>
+
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Getal</th>
+            <th>Delers</th>
+            <th>Priemgetal?</th>
+        </tr>
+        <script>
+            var Max_Aantal = 50, Priemgetal_antwoord , Counter = 0;
+
+            for (var i = 1; i <= Max_Aantal; i++) 
+            {
+                document.write("<tr>");
+                document.write("<td>" + i + "</td>");
+                
+                document.write("<td>");
+                for (var n = 0;n < i;n++)
+                {
+                    if(i % n == 0)
+                    {
+                        document.write(" " + n + " ");
+                        Counter++; 
+                    }
+                }
+                document.write(i + "</td>");
+
+                if(Counter == 1) {
+                    Priemgetal_antwoord = "Ja";
+                }
+                else {
+                    Priemgetal_antwoord = "Nee";
+                }
+                Counter = 0;
+
+                document.write("<td>" + Priemgetal_antwoord + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>

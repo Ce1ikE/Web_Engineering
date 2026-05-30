@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Reeks 18 : Oefening 1</title>
+  <link rel="stylesheet" href="./Oefening_18_1.css">
+  <script>
+
+	function somf()
+	{
+		var g1=document.getElementById("getal1");
+		var g2=document.getElementById("getal2");
+		var res=document.getElementById("resultaat");
+		res.value= parseFloat(g1.value)+parseFloat(g2.value);
+	}
+
+	function Difference() {
+		var g1=document.getElementById("getal1");
+		var g2=document.getElementById("getal2");
+		var res=document.getElementById("resultaat");
+		res.value= parseFloat(g1.value)-parseFloat(g2.value);
+	}
+
+	function Division() {
+		var g1=document.getElementById("getal1");
+		var g2=document.getElementById("getal2");
+		var res=document.getElementById("resultaat");
+		res.value= parseFloat(g1.value)/parseFloat(g2.value);
+	}
+
+	function Multiplication() {
+		var g1=document.getElementById("getal1");
+		var g2=document.getElementById("getal2");
+		var res=document.getElementById("resultaat");
+		res.value= parseFloat(g1.value)*parseFloat(g2.value);
+	}
+
+	function Power2() {
+		var g1=document.getElementById("getal1");
+		var res=document.getElementById("resultaat");
+		res.value= Math.pow(parseFloat(g1.value),2);
+	}
+
+	function SquareRoot() {
+		var g1=document.getElementById("getal1");
+		var res=document.getElementById("resultaat");
+		res.value= Math.sqrt(parseFloat(g1.value));
+	}
+
+	function Save_Number_1() {
+		var Saved_Number1 = document.getElementById("Memory");
+		var g1=document.getElementById("getal1");
+		Saved_Number1.value = g1.value;
+	}
+
+	function Add_Memory() {
+		var Saved_Number1 = document.getElementById("Memory");
+		var res = document.getElementById("resultaat");
+		Saved_Number1.value = parseFloat(Saved_Number1.value)+parseFloat(res.value); 
+	}
+
+	function Substract_Memory() {
+		var Saved_Number1 = document.getElementById("Memory");
+		var res = document.getElementById("resultaat");
+		Saved_Number1.value = parseFloat(Saved_Number1.value)-parseFloat(res.value); 
+	}
+
+	function Replace_Memory() {
+		var Saved_Number1 = document.getElementById("Memory");
+		var res = document.getElementById("resultaat");
+		Saved_Number1.value = res.value;
+	}
+
+  </script>
+</head>
+<body>
+	<div class="Rekenmachine"> 
+		<h2>Rekenmachine</h2>
+		<form action="#">
+			  <p>getal 1:<input type="text" id="getal1" size="10" /></p>
+			  <p>getal 2:<input type="text" id="getal2" size="10" /></p>
+			  <p>Memory :<input type="text" id="Memory" size="10" onFocus="blur()" /></p>
+			  <hr />
+			  <p class="Button-container">
+				  <input type="button" value="&plus;" onClick="somf()" />
+				  <input type="button" value="&minus;" onClick="Difference()" />
+				  <input type="button" value="&div;" onClick="Division()" />
+				  <input type="button" value="&times;" onClick="Multiplication()" />
+				  <input type="button" value="X&sup2;" onClick="Power2()" />
+				  <input type="button" value="&radic;X" onClick="SquareRoot()" />
+				  <input type="button" value="save G1" onClick="Save_Number_1()" />
+				  <input type="button" value="Add M" onClick="Add_Memory()" />
+				  <input type="button" value="Sub M" onClick="Substract_Memory()" />
+				  <input type="button" value="Replace M" onClick="Replace_Memory()" />
+				  <input type="reset" value="Erase" />
+			  </p>    
+			  <hr />
+			  <p>Resultaat:<input type="text" id="resultaat" size="10" onFocus="blur()" /></p>
+			  <hr />
+		 </form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(to right,greenyellow,rgba(0,0,0,0));
+}
+
+legend {
+    border: 2px solid grey;
+}
+
+fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+fieldset div {
+    margin: 10px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+fieldset div p {
+    margin: 0;
+}
+
+img {
+    width: 30px;
+}
+
+.flex-03 {
+    justify-content: center;
+}
+
+.flex-03>label {
+    margin-top: auto;
+}

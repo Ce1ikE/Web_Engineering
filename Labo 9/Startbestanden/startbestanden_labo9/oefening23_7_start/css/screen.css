@@ -1,0 +1,111 @@
+body{
+	background-image: url("../images/clouds.jpg");
+}
+
+#mario
+{
+
+}
+
+#marioman{
+	position: absolute;
+	bottom: 95px;
+	left: 20px;
+	width: 60px;
+	z-index: 9999;	
+}
+
+
+#mushroom
+{
+	position: absolute;
+	bottom: 100px;
+	left: 400px;
+	width: 50px;
+	z-index: 9998;
+}
+
+#ground{
+	background-color: #703009;
+	position: absolute;
+	height: 100px;
+	bottom: 0;
+	width: 100%;
+}
+
+#gamepad
+{
+	width: 300px;
+	height: 140px;
+	background-color: #c9c9c9;
+	border: 4px solid #000000;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#omhoog, #omlaag{
+	width: 20px;
+	height: 30px;
+	background-color: #000;
+	position: absolute;
+}
+
+#links, #rechts{
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	position: absolute;
+}
+
+#instructions
+{
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.75);
+	font-size: 16px;
+	width: 400px;
+	padding: 20px;
+}
+
+#links
+{
+	top: 60px;
+	left: 20px;
+}
+
+#rechts
+{
+	top: 60px;
+	left: 60px;
+}
+
+#omhoog
+{
+	left: 40px;
+	top: 40px;
+}
+
+#omlaag{
+	left: 40px;
+	top: 70px;
+}
+
+#A, #B{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-color: red;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 50px;
+	box-shadow: 2px 2px 2px #a00;
+}
+
+#A{
+	right: 60px;
+}
+
+#B{
+	right: 15px;
+}

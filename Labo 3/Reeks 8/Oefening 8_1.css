@@ -1,0 +1,57 @@
+fieldset {
+    color: rgb(116, 4, 51);
+    background: linear-gradient(to right,coral,rgba(0,0,0,0));
+}
+
+legend {
+    background-color: rgb(18, 143, 143);
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+input {
+    background-color: coral;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 10px;
+}
+
+select {
+    background-color: coral;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 10px;
+}
+
+textarea {
+    background-color: coral;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(246, 41, 18, 0.711);
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    border: 2px solid black;
+    transition: 0.2s ease-in-out;
+}
+
+input:checked {
+    border: 4px solid black;
+}
+
+h3 {
+    text-decoration: underline dashed rgb(255, 0, 72);  
+}

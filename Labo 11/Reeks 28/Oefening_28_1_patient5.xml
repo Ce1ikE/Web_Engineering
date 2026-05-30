@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<patient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Oefening_28_1.xsd">
+    <naam>Dolores Daza</naam>
+    <geslacht>f</geslacht>
+    <nr>123460</nr>
+    <medische-gegevens>
+        <gegeven>Geboren 1952</gegeven>
+        <gegeven>drie kinderen</gegeven>
+    </medische-gegevens>
+</patient>

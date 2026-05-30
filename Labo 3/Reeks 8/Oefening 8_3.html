@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 8 : Oefening 8.3</title>
+    <link rel="stylesheet" href="./Oefening 8_3.css">
+</head>
+<body>
+    <form action="mailto:ennis.celik@fake.com" method="post">
+        <fieldset class="Persoonlijke-info">
+            <legend>Persoonlijke informatie</legend>
+            <div class="flex-01">
+                <label for="LastName">Achternaam:</label>
+                <label for="FirstName">Voornaam:</label>
+                <label for="Email">Emailadres:</label>
+                <label for="Gender">Geslacht</label>
+                <label for="Birthdate">Geboortedatum</label>
+                <label for="HomePlace">Woonplaats</label>
+            </div>
+            <div class="flex-02">
+                <input type="text" name="FirstName" id="FirstName" required>
+                <input type="text" name="LastName" id="LastName" required>
+                <input type="email" name="Email" id="Email" required>
+                <p>
+                    <input type="radio" name="Gender" id="Gender" value="Male" required>
+                    Man
+                </p>
+                <p>
+                    <input type="radio" name="Gender" id="Gender" value="Female" required>
+                    Vrouw
+                </p>
+                
+                <input type="date" name="Birthdate" id="Birthdate" required>
+                <select name="" id="">
+                    <option value="Antwerpen">Antwerpen</option>
+                    <option value="Liege">Liege</option>
+                    <option value="Luxemburg">Luxemburg</option>
+                    <option value="West-Vlaanderen">West-Vlaanderen</option>
+                    <option value="Waals-Brabant">Waals-Brabant</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset class="PC-info">
+            <legend>Informatie over uw computer</legend>
+            <div class="flex-03">
+                <label for="">Welke browsers heb je ter beschikking?</label>
+                <label for="PC-image">Voeg hier een foto toe van je computer</label>    
+            </div>
+            
+            <div class="flex-04">
+                <p>
+                    <input type="checkbox" name="Browser-choice-1" value="Internet explorer">
+                    <img src="../Startbestanden/startdocumenten/IE.png" alt="IE">
+                </p>
+                <p>
+                    <input type="checkbox" name="Browser-choice-2" value="Mozilla firefox">
+                    <img src="../Startbestanden/startdocumenten/MOZ.png" alt="MOZ">
+                </p>
+                <p>
+                    <input type="checkbox" name="Browser-choice-3" value="chrome">
+                    <img src="../Startbestanden/startdocumenten/chrome.png" alt="CHROME">
+                </p>
+                <p>
+                    <input type="checkbox" name="Browser-choice-4" value="netscape">
+                    <img src="../Startbestanden/startdocumenten/netscape.png" alt="NETS">
+                </p>
+                <p>
+                    <input type="checkbox" name="Browser-choice-5" value="opera">
+                    <img src="../Startbestanden/startdocumenten/opera.png" alt="OPE">
+                </p>
+
+                <input type="file" value="Browse..." id="PC-image" accept=".jpeg,.jpg,.png">
+            </div>
+
+        </fieldset>
+        <input type="reset" value="Wis de ingevoerde gegevens">
+        <input type="submit" value="Verzend de ingevoerde gegevens">
+    </form>
+</body>
+</html>

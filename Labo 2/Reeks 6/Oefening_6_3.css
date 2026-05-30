@@ -1,0 +1,99 @@
+table {
+    border-collapse: collapse;
+    box-shadow: 5px 5px 5px black;
+}
+
+td {
+    width: 50px;
+    height: 10px;
+    border: 5px solid black;
+}
+
+.rij_1 {
+    height: 30px;
+}
+
+.rij_2 {
+    height: 50px;
+}
+
+.rij_3 {
+    height: 50px;
+}
+
+.rij_4 {
+    height: 30px;
+}
+
+.rij_5 {
+    height: 30px;
+}
+
+.rij_6 {
+    height: 20px;
+}
+
+.rij_7 {
+    height: 10px;
+}
+
+.rij_1 td {
+    border-top: none;
+}
+
+.rij_7 td,.laatste_kolom_rood {
+    border-bottom: none;
+}
+
+.rij_1>td,.rij_2>td,.rij_3>td,.rij_5>td {
+    border-left: none;
+}
+
+.rij_5>td {
+    border-bottom: none;
+}
+
+.eerste_kolom_geel {
+    background-color: yellow;
+}
+
+.Voorlaatste_kolom_geel {
+    background-color: yellow;
+}
+
+.laatste_kolom_wit {
+    border-right: none;
+    width: 10px;
+}
+
+
+.laatste_kolom_rood {
+    border-right: none;
+    background-color: red;
+    width: 10px;
+}
+
+.vierkant_wit {
+    border-bottom: none;
+}
+
+.vierkant_rood {
+    background-color: red;
+}
+
+.vierkant_zwart {
+    background-color: black;
+}
+
+.vierkant_blauw {
+    background-color: blue;
+}
+
+td[class^="Voorlaatste_kolom"] {
+    width: 40px;
+}
+
+td[class^="eerste_kolom"] {
+    width: 20px;
+}
+

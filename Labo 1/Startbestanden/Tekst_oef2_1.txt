@@ -1,0 +1,16 @@
+Inleiding HTML 
+Paragrafen (met <strong> en <em>) 
+Een webpagina bestaat uit hypertext, dit is tekst met verwijzingen naar andere documenten of plaatsen binnen hetzelfde document. Webpagina's bestaan uit HTML (Hyper Text  Markup Language)-code en zijn bedoeld om met een webbrowser bekeken te worden. De browser zet de broncode om naar een leesbare pagina. Door hypertext links in de HTML-code kan eenvoudig van de ene pagina naar de andere worden genavigeerd, een bezigheid die ook wel surfen op het internet wordt genoemd.
+Met HTML worden de onderdelen (kopteksten, alinea's, afbeeldingen, … ) van een webpagina beschreven.
+Met CSS (Cascading Style Sheets) wordt de stijl (lettertypen, kleuren, witruimtes, …) van het webdocument bepaald. Deze paragraaf is gecentreerd in een 10-punts Courier. (text-align:center; font-family:courier; font-size:10pt;)
+Ook speciale tekens zijn mogelijk: < ë ♥ © ±
+Woorden met speciale tekens: één, HTML & CSS, België, gëinformeerd, 10 à 20 studenten, garçon, "    " (vier spaties tussen aanhalingstekens).
+GPS-coördinaten: 52°22′30″ noorderbreedte en 4°54′30″ oosterlengte.
+Opmerking: Er zijn verschillende dubbele en enkele aanhalingstekens: "(quot), “(ldquo), ”(rdquo), ″(Prime), ´(acute), ‘(lsquo), ’(rsquo), ‚(sbquo), ′(prime).
+Een lijn 
+Een pre-blok: 
+    #include <stdio.h>
+    void main()
+    {
+        printf("Hello world\n");
+    }

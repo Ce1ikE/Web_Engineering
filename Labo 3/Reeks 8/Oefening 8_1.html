@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 8 : Oefening 8.1</title>
+    <link rel="stylesheet" href="./Oefening 8_1.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Persoonlijke info</legend>
+        <form action="mailto:ennis.celik@fake.com" method="post">
+            <p>
+                <input type="text" name="FirstName" placeholder="Naam..." required>
+                <input type="text" name="Name" placeholder="Achternaam..." required>
+            </p>
+            <p>
+                <label for="Birthdate">Geboorte datum</label>
+                <input type="date" name="Birthdate" id="Birthdate">
+            </p>
+            <p>
+                <h3>
+                    Geslacht
+                </h3>
+                <label for="Male">Man</label>
+                <input type="radio" name="Gender" value="Male" id="Male" required checked>
+                <label for="Female">Vrouw</label>
+                <input type="radio" name="Gender" value="Female" id="Female" required>
+            </p>
+            <p>
+                <h3>
+                    Haarkleur
+                </h3>
+                <label for="Brown">Bruin</label>
+                <input type="checkbox" name="Hair-Choice-1" id="Brown">
+                <label for="Black">Zwart</label>
+                <input type="checkbox" name="Hair-Choice-2" id="Black">
+                <label for="Blonde">Blond</label>
+                <input type="checkbox" name="Hair-Choice-3" id="Blonde">
+            </p>
+            <p>
+                <label for="Province-Choice">Provincie:</label>
+                <select name="Province" id="Province-Choice" required>
+                    <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+                    <option value="West-Vlaanderen">West-Vlaanderen</option>
+                    <option value="Antwerpen">Antwerpen</option>
+                    <option value="Luik">Luik</option>
+                    <option value="Namur">Namur</option>
+                    <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+                    <option value="Waals-Brabant">Waals-Brabant</option>
+                    <option value="Limburg">Limburg</option>
+                    <option value="Luxemburg">Luxemburg</option>
+                    <option value="Henegouwen">Henegouwen</option>
+                </select>
+            </p>
+            <p>
+                <textarea name="Remark" id="Remark" cols="30" rows="10" placeholder="Opmerking..." ></textarea>
+            </p>
+            <input type="submit" value="Send" name="Send">
+            <input type="reset" value="Reset" name="Reset">
+        </form>
+    </fieldset>
+</body>
+</html>

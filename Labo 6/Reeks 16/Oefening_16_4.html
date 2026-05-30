@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 16 : Oefening 4</title>
+</head>
+<body>
+    <script>
+        var Nbr_Of_Inputs = 10;
+        var My_Numbers = new Array;
+        var Help = null;
+
+        document.write("<p>");
+        for(let i = 0;i < Nbr_Of_Inputs;i++){
+            My_Numbers[i] = ((Math.random())*100).toFixed(0); 
+            document.write(My_Numbers[i] + ", ");
+        }
+        document.write("</p>");
+
+        // gesorteert met de "bubble sort" algorithme met een kleine aanpassing op lijn // * 
+        // waar i.p.v. "My_Numbers[k]" en "My_Numbers[k + 1]" te vergelijken met elkaar, trekken we ze van elkaar af
+        for (let n = 0; n < My_Numbers.length; n++) {
+            for (let k = 0; k < (My_Numbers.length - n - 1); k++) {
+                if ((My_Numbers[k] - My_Numbers[k + 1]) < 0) { // *
+                    Help = My_Numbers[k];
+                    My_Numbers[k] = My_Numbers[k + 1];
+                    My_Numbers[k + 1] = Help;
+                }        
+            }
+        }
+        
+        document.write("<p>");
+        for(let i = 0;i < Nbr_Of_Inputs;i++){
+            document.write(My_Numbers[i] + ", ");
+        }
+        document.write("</p>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+#nav, #nav ul { /* alle lijsten */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1
+}
+#nav a {
+	display: block;
+	width: 10em;
+	color : black;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: white;
+	border: 1px solid black;
+	padding:2px
+}
+#nav li a:hover {
+	color : white;
+	background-color : black
+}
+#nav li { /* alle lijst-items */
+ 	float: left;
+	width: 10em
+}
+#nav li ul { /* lijsten tweede nivo */
+	position: absolute;
+	width: 10em;
+	left: -999em /* dit is nodig voor screen readers; display:none zou hiervoor niet ok zijn */
+}
+
+#nav li ul ul { /* lijsten derde nivo en hoger */
+	margin: -1em 0 0 10em
+}
+#nav li.zweven ul ul {
+	left: -999em
+}
+#nav li.zweven ul, #nav li li.zweven ul { /* lists die genest zijn onder 'gehoverde' lijst items */
+	left: auto
+}

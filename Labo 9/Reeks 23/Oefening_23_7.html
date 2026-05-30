@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 23 : Oefening 7</title>
+    <link rel="stylesheet" href="./Oefening_23_7.css">
+</head>
+<body>
+    <img src="../Startbestanden/startbestanden_labo9/oefening23_7_start/images/mario.png" id="marioman" alt="Super Mario" />
+	
+	
+	<img src="../Startbestanden/startbestanden_labo9/oefening23_7_start/images/shroom.png" id="mushroom" alt="Magic Mushroom" />
+
+	<div id="ground"></div>
+
+	<div id="instructions">
+		<ul>
+			<li>links of rechts klikken op gamepad: Mario 20px naar links of rechts laten bewegen met een animatie</li>
+			<li>A klikken op gamepad: eerst Mario dubbel zo groot maken, daarna de paddestoel laten verdwijnen. Zorg dat Mario op de grond blijft staan en niet wegzakt in de aarde!</li>
+			<li>B klikken op gamepad: mario 3 keer laten knipperen (aan-uit-aan-uit-aan-uit-aan)</li>
+			<li>Omhoog klikken op gamepad: mario laten springen</li>
+			<li>Omlaag klikken op gamepad: mario kleiner laten worden. Zorg dat Mario op de grond blijft staan</li>
+		</ul>		
+	</div>
+
+	<div id="gamepad">
+		<div id="omhoog"></div>
+		<div id="omlaag"></div>
+		<div id="links"></div>
+		<div id="rechts"></div>
+
+		<div id="A">A</div>
+		<div id="B">B</div>
+	</div>
+
+	<script src="./jquery.js"></script>
+	<script>
+		var Dubbel_Size = false;
+		$("#omhoog").on("click", function () {
+			$("#marioman").animate(
+				{
+					bottom: "+=60"
+				}, 400, "swing", function () {
+					$("#marioman").animate({
+						bottom: "-=60"
+					}, 300, "swing");
+				});
+		});
+
+		$("#omlaag").on("click",function(){
+			if(Dubbel_Size){
+				Dubbel_Size = false;
+				$("#marioman").animate(
+					{
+						height: "60",
+						width: "60"
+					},{
+						duration: 2000,
+						specialEasing: {
+							width: "linear",
+							height: "linear"
+						},
+						complete: function(){
+							$("#mushroom").fadeIn(1000);
+					}
+				});
+			}
+		});
+
+		$("#links").on("click",function(){
+			$("#marioman").css("transform","rotateY(180deg)");
+			$("#marioman").animate(
+				{
+					left: "-=20"
+				},100,function(){
+			});
+		});
+
+		$("#rechts").on("click",function(){
+			$("#marioman").css("transform","rotateY(0deg)");
+			$("#marioman").animate(
+				{
+					left: "+=20"
+				},100,function(){
+
+			});
+		});
+
+		$("#A").on("click",function(){
+			if(!Dubbel_Size){
+				Dubbel_Size = true;
+				$("#marioman").animate(
+					{
+						height: "120",
+						width: "120"
+					},{
+						duration: 2000,
+						specialEasing: {
+							width: "linear",
+							height: "linear"
+						},
+						complete: function(){
+							$("#mushroom").fadeOut(1000);
+					}
+				});
+			}
+		});
+
+		$("#B").on("click",function(){
+			for(let i = 0;i < 3;i++){
+				$("#marioman").fadeOut(100).fadeIn(100);
+			}
+		});
+
+
+	</script>
+</body>
+</html>

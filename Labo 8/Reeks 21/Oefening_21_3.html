@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 21 : Oefening 3</title>
+    <link rel="stylesheet" href="./Oefening_21_3.css">
+</head>
+<body>
+    <fieldset>
+        <form action="">
+            <div>
+                <label for="Firstname">Firstname</label>
+                <input type="text" id="Firstname" placeholder="First Name...">
+            </div>
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" id="Name" placeholder="Name...">
+            </div>
+            <div>
+                <label for="StreetName">Streetname</label>
+                <input type="text" id="StreetName">
+            </div>
+            <div>
+                <label for="Postalcode">Postalcode</label>
+                <input type="text" id="Postalcode">
+            </div> 
+            <h2>Subscription duration</h2>
+            <div>
+                <label for="twelve-months">12 Months</label>
+                <input type="radio" id="twelve-months" value="12 Months" name="subscription-type" checked>
+                <label for="six-months">6 months</label>
+                <input type="radio" id="six-months" value="6 Months" name="subscription-type">
+                <label for="three-months">3 months</label>
+                <input type="radio" id="three-months" value="3 Months" name="subscription-type">
+            </div>
+            <h2>Info by mail</h2>
+            <div>
+                <label for="email-confirmation">I wish to receive info by mail</label>
+                <input type="checkbox" id="email-confirmation">
+            </div>
+            <div>
+                <input type="button" id="Submit_Input" value="Send">
+            </div>
+        </form>
+    </fieldset>
+
+    <div class="summary-container" id="summary-container">
+        <p id="summary"></p>
+        <input type="button" id="Confirm_Input" value="Ok">
+    </div>
+
+    <script>
+        var Firstname = document.getElementById("Firstname");
+        var Name = document.getElementById("Name");
+        var Submit_Btn = document.getElementById("Submit_Input");
+        var Summary = document.getElementById("summary");
+        var Summary_Container = document.getElementById("summary-container");
+        var Fieldset = document.getElementsByTagName("fieldset");
+        var List_Present = false;
+        
+        Submit_Btn.addEventListener("click",function(){
+            var Summary_List = Summary_Container.querySelector("ul");
+            if(Summary_List){
+                Summary_List.remove();
+            }
+
+            if(Firstname.value == ""){
+                Summary.innerHTML = "Firstname missing";
+                Fieldset[0].style.display = "none";
+                Summary_Container.style.zIndex = 1;
+                Summary_Container.style.opacity = 1;
+                return 0;
+            }
+
+            if(Name.value == ""){
+                Summary.innerHTML = "Name missing";
+                Fieldset[0].style.display = "none";
+                Summary_Container.style.zIndex = 1;
+                Summary_Container.style.opacity = 1;
+                return 0;
+            }
+
+            var StreetName = document.getElementById("StreetName");
+            var Postalcode = document.getElementById("Postalcode");
+            var Subscription_12 = document.getElementById("twelve-months");
+            var Subscription_6 = document.getElementById("six-months");
+            var Subscription_3 = document.getElementById("three-months");
+            var Email_Confirm = document.getElementById("email-confirmation");
+            Summary.innerHTML = "";
+            var List = document.createElement("ul");
+            Summary.insertAdjacentElement("afterend",List);
+            for(let i = 0;i < 6;i++){
+                var ListItem = document.createElement("li");
+                List.append(ListItem);
+            }
+            var Summary_ListItems = Summary_Container.getElementsByTagName("li");
+
+            Summary_ListItems[0].innerHTML = "Firtname:" + Firstname.value;
+            Summary_ListItems[1].innerHTML += "Name:" + Name.value;
+            Summary_ListItems[2].innerHTML += "Streetname:" + StreetName.value;
+            Summary_ListItems[3].innerHTML += "Postalcode:" + Postalcode.value;
+
+            if(Subscription_12.checked){
+                Summary_ListItems[4].innerHTML += "Subscription:" + Subscription_12.value;
+            } else if (Subscription_6.checked) {
+                Summary_ListItems[4].innerHTML += "Subscription:" + Subscription_6.value;
+            } else if (Subscription_3.checked) {
+                Summary_ListItems[4].innerHTML += "Subscription:" + Subscription_3.value;
+            }
+            if(Email_Confirm.checked) {
+                Summary_ListItems[5].innerHTML += "Receive Email: Yes";
+            } else {
+                Summary_ListItems[5].innerHTML += "Receive Email: No";
+            }
+
+            List_Present = true;
+            Fieldset[0].style.display = "none";
+            Summary_Container.style.zIndex = 1;
+            Summary_Container.style.opacity = 1;
+
+        });
+
+
+        var Confirm_Btn = document.getElementById("Confirm_Input");
+
+        Confirm_Btn.addEventListener("click",function(){
+            Fieldset[0].style.display = "block";
+            Summary_Container.style.zIndex = -1;
+            Summary_Container.style.opacity = 0;
+        });
+    </script>
+</body>
+</html>

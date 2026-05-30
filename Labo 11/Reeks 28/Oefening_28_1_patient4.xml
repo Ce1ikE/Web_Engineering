@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<patient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Oefening_28_1.xsd">
+    <naam>Patricia Theunis</naam>
+    <geslacht>f</geslacht>
+    <nr>123459</nr>
+    <medische-gegevens>
+        <gegeven></gegeven>
+    </medische-gegevens>
+</patient>

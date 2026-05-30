@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 23 : Oefening 5</title>
+    <link rel="stylesheet" href="./Oefening_23_5.css">
+</head>
+<body>
+    <p>Als je over het toestel komt moet de bankaart 30 pixels naar beneden schuiven met een animatie.<br>
+        De juiste code is 2468. Je kan maar 4 cijfers ingeven. Je mag 3 keer proberen om de code in te geven. De vierde keer wordt bij een foutieve code de kaart ingeslikt. Doe dit met een effect waarbij de kaart naar beneden schuift achter het toestel. Bij het ingeven van de correcte code toon je de correcte feedback namelijk de tekst &quot;Insert card&quot; wordt &quot;Let's do business&quot;, zet deze tekst in het vet (bold).</p>
+      <hr/>
+      <div id="card">
+      </div>
+      <div id="atm">
+        <div id="display">1234  </div>
+        <div id="toetsen">
+            <ul>
+                <li><a class="nummer" href="#" id="knop1">1</a></li>
+                <li><a class="nummer" href="#" id="knop2">2</a></li>
+                <li><a class="nummer" href="#" id="knop3">3</a></li>
+            </ul>
+            <ul>
+                <li><a class="nummer" href="#" id="knop4">4</a></li>
+                <li><a class="nummer" href="#" id="knop5">5</a></li>
+                <li><a class="nummer" href="#" id="knop6">6</a></li>
+            </ul>
+            <ul>
+                <li><a class="nummer" href="#" id="knop7">7</a></li>
+                <li><a class="nummer" href="#" id="knop8">8</a></li>
+                <li><a class="nummer" href="#" id="knop9">9</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" id="knopc">C</a></li>
+                <li><a class="nummer" href="#" id="knop0">0</a></li>
+                <li><a href="#" id="knopok">OK</a></li>
+            </ul>  
+        </div>
+      </div>
+      <div id="feedback">Insert card <!--Let's do business--></div>
+      <script src="./jquery.js"></script>
+      <script>
+        var Attempts = 0;
+        var Reset = true;
+
+        $(".nummer").click(function(){
+            var Number = $(this).text();
+            if(Reset){
+                $("#display").html(Number);
+                Reset = false;
+            } else {
+                if($("#display").text().length < 4) {
+                    $("#display").append(Number);
+                } else {
+                    $("#feedback").html("max 4 numbers!");
+                }
+            }
+        });
+
+        $("#knopc").click(function(){
+            $("#display").html("1234");
+            Reset = true
+        });
+
+        $("#knopok").click(function(){
+            if($("#display").text() == "2468"){
+                $("#feedback")
+                            .fadeOut(200)
+                            .css("font-weight","500")
+                            .html("Let's do business")
+                            .fadeIn(200);
+            } else {
+                Attempts++;
+                $("#feedback").html("Attempt ("+ Attempts +")");
+                if(Attempts == 4){
+                    $("#card").css("margin-top","150px");
+                }
+            }
+        });
+
+        $("#atm").hover(function(){
+            $("#card").css("margin-top","55px");
+        });
+      </script>
+</body>
+</html>

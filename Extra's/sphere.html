@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere</title>
+    <link rel="stylesheet" href="./Sphere.css">
+</head>
+<body>
+    <main>
+        <span id="value-X"></span>
+        <span id="value-Y"></span>
+        <div class="Sphere">
+            <div class="meredian"></div>
+            <div class="equator"></div>
+            <div class="ring Ring_1"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
+    </main>
+    <script src="./JQuery.js"></script>
+    <script>
+        var All_Rings = document.getElementsByClassName("ring");
+        var Sphere = document.getElementsByClassName("Sphere");
+
+        function Rotate_Rings() {
+            for(let i = 0;i < All_Rings.length;i++){
+                All_Rings[i].style.transform = "translate(-50%,-50%) rotateY(" + (i*1.5) + "deg)";
+            }
+        }
+
+        Rotate_Rings();
+
+        var X_Coord = document.getElementById("value-X");
+        var Y_Coord = document.getElementById("value-Y");
+        var MouseState = false;
+
+
+        document.addEventListener("mousemove",function(event){
+            if (MouseState) {
+                X_Coord.innerHTML = event.clientX;
+                Y_Coord.innerHTML = event.clientY;
+                Sphere[0].style.transform = "rotateY(" + ((event.clientX/document.documentElement.clientWidth)*360) + "deg) rotateX(" + ((event.clientY/document.documentElement.clientHeight)*360) + "deg)";
+            }
+        });
+
+
+        document.addEventListener("dblclick",function(event){
+            if(MouseState){
+                MouseState = false;
+            } else {
+                MouseState = true;
+            }
+        });
+
+
+        var Counter = 0;
+        function Animate_Rings() {
+            Counter = (++Counter) % All_Rings.length;
+            var range = All_Rings.length / 8;
+            var Steps = Math.floor(256 / range);
+
+            for (let i = 0; i < All_Rings.length; i++) {
+                let colorIndex = Math.floor(i / range);
+                let R_value = 0, G_value = 0, B_value = 0;
+
+                switch (colorIndex) {
+                    case 0: R_value = Steps * i; break;
+                    case 1: R_value = Steps * i; G_value = Steps * i; break;
+                    case 2: R_value = Steps * i; G_value = Steps * i; B_value = Steps * i; break;
+                    case 3: G_value = Steps * i; B_value = Steps * i; break;
+                    case 4: B_value = Steps * i; break;
+                    case 5: G_value = Steps * i; break;
+                    case 6: R_value = Steps * i; B_value = Steps * i; break;
+                    case 7: break;
+                    default: break;
+                }
+
+                All_Rings[i].style.color = "rgba(" + R_value + "," + G_value + "," + B_value + ",0.5)";
+            }
+                
+        }
+
+        Animate_Rings();
+
+    </script>
+</body>
+</html>

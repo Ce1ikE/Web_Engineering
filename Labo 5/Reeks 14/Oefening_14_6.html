@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 14 : Oefening 6</title>
+    <link rel="stylesheet" href="./Oefening_14_6.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Jaar</th>
+            <th>Intrest</th>
+            <th>Kapitaal</th>
+        </tr>
+        <script>
+            var Kapitaal, Intrestvoet, Looptijd , Intrest = 0;
+
+            Kapitaal = parseInt(window.prompt("Voer het start kapitaal in"));
+
+            Intrestvoet = parseInt(window.prompt("Voer de intrestvoet in [0-100]"));
+
+            Looptijd = parseInt(window.prompt("Voer de volledige looptijd in"));
+
+            if (0 < Looptijd && 0 < Kapitaal && (0 < Intrestvoet && Intrestvoet < 100)) {
+                for (var i = 1; i <= Looptijd; i++) {
+                    Intrest = (Kapitaal * (Intrestvoet / 100))
+                    Kapitaal += Intrest;
+                    document.write("<tr>");
+                    document.write("<td>" + i + "</td>");
+                    document.write("<td>" + Intrest.toFixed(2) + "</td>");
+                    document.write("<td>" + Kapitaal.toFixed(2) + "</td>");
+                    document.write("</tr>");
+                }
+            }
+            else {
+                window.alert("De ingevoerde waarde zijn niet correct");
+            }
+
+        </script>
+    </table>
+</body>
+</html>

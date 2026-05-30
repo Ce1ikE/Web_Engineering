@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+    width: 200px;
+    border: 5px solid black;
+    background: linear-gradient(200deg,rgb(15, 141, 15),rgb(175, 20, 20),rgb(166, 0, 255),rgb(133, 103, 5));
+}
+
+th {
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid black;
+}
+
+tr , td {
+    padding: 10px;
+    border: 2px solid black;
+    transition: 0.2s ease-in-out;
+}

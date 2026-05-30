@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+h1,p {
+    color: forestgreen;
+    font-family: My_Cutsom_Font;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+td,th {
+    width: 150px;
+    padding: 5px;
+}
+
+td,th {
+    background-color: rgba(245, 222, 179, 0.2);
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+th {
+    background-color: rgba(251, 110, 110, 0.2);
+}
+
+tr {
+    display: flex;
+}
+
+img {
+    width: 30px;
+    height: 20px;
+}
+
+@font-face {
+    font-family: My_Cutsom_Font;
+    src: url(../../Fonts/Midnight-Valentine.ttf);
+}
+
+*::selection {
+    background-color: rgb(246, 125, 125);
+    color: black;
+    text-shadow: 0px 0px 5px purple;
+}

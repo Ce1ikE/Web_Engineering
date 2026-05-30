@@ -1,0 +1,14 @@
+<!ELEMENT library (book+)>
+    <!ELEMENT book (author,draftsman,screenwriter,serie,number-in-serie,title,release-year,publishing-house,isbn)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT draftsman (person+)>
+    <!ELEMENT screenwriter (person+)>
+        <!ELEMENT person (#PCDATA)>
+    <!ELEMENT serie (#PCDATA)>
+    <!ATTLIST serie genre (fiction|adventure|mystery|thriller|horror|historical-fiction|action|biographic) #REQUIRED>
+    <!ATTLIST serie type (comic|novel) #REQUIRED>
+    <!ELEMENT number-in-serie (#PCDATA)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT release-year (#PCDATA)>
+    <!ELEMENT publishing-house (#PCDATA)>
+    <!ELEMENT isbn (#PCDATA)>

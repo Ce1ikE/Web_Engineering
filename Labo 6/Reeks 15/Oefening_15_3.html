@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 15 : Oefening 3</title>
+    <link rel="stylesheet" href="./Oefening_15_3.css">
+</head>
+<body>
+    <script>
+        function Speed_Calc(Frequency) {
+            var Speed, Dynamic_Wheel_Circumference = 1.969 , Total_gear_ratio = 3.321;
+            Speed = (Frequency*Dynamic_Wheel_Circumference*0.06)/(Total_gear_ratio);
+            return Speed;
+        }
+
+        
+        var Freq;
+        document.write("<table>");
+        document.write("<tr><th>Toerental[T/min]</th><th>Snelheid[km/h]</th></tr>");
+        for (let i = 0; i <= 12; i++) {
+            Freq = 2000 + i*500;
+            document.write("<tr><td>" + Freq + "</td><td>" + Speed_Calc(Freq).toFixed(2) + "</td></tr>");
+        }
+
+        document.write("</table>");
+    </script>
+</body>
+</html>

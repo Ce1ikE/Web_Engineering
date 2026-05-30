@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to bottom,rgb(255, 145, 2),rgba(0,0,0,0)) no-repeat;
+    height: 90vh;
+    padding: 10px;  
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(7, 57, 9);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    text-decoration: 5px underline solid rgb(248, 25, 0);
+}
+
+table,td {
+    color: rgb(2, 2, 124);
+    font-weight: bolder;
+    border: none;
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    text-align: center;
+}
+
+.categorien-beoordeling {
+    width: 200px;
+    text-align: left;
+}
+
+input {
+    background-color: gainsboro;
+    transition: 0.2s ease-in-out;
+}
+
+input:hover {
+    background-color: blueviolet;
+}
+
+input:checked {
+    background-color: blue;
+}

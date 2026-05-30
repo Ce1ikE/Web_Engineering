@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(101, 6, 79);
+}
+
+#Response-box {
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 5px inset black;
+}
+
+#Response-box>legend {
+    border: 3px solid black;
+    background-color: aqua;
+}
+
+#Number_Guessed {
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 60px;
+    padding: 5px;
+}
+
+#Enter-button {
+    border-radius: 25px;
+    width: 60px;
+    padding: 5px;
+}
+
+#Enter-button:hover {
+    background-color: aqua;
+}

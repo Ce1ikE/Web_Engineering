@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cars SYSTEM "./Oefening_27_1_1.dtd">
+<cars>
+    <car>
+        <brand>Mercedes</brand>
+        <type>4MATIC</type>
+        <vehicule-weight SI="Kg">1956</vehicule-weight> <!-- KG -->
+        <car-dimensions> 
+            <length SI="mm">4873</length> <!-- mm -->
+            <width SI="mm">1853</width> <!-- mm -->
+            <height SI="mm">1474</height> <!-- mm -->
+        </car-dimensions>
+        <fuel-type>LPG</fuel-type>
+        <fuel-tank-capacity SI="L">40</fuel-tank-capacity> <!-- L -->
+        <battery-cell-capacity SI="Ah">33.1</battery-cell-capacity> <!-- Ah -->
+        <tire-dimensions>
+            <tire-radius SI="mm">315.98</tire-radius> <!-- mm -->
+            <tire-width SI="mm">150.56</tire-width> <!-- mm -->
+        </tire-dimensions>
+        <coefficient-of-drag>0.29</coefficient-of-drag>
+        <engine>
+            <engine-type>KIE47</engine-type>
+            <engine-size SI="L">1.8</engine-size> <!-- L -->
+            <engine-max-speed SI="rpm">4500</engine-max-speed> <!-- rpm -->
+            <engine-max-power SI="KW">73</engine-max-power> <!-- Kw -->
+            <number-of-cylinders>6</number-of-cylinders> 
+        </engine>
+    </car>
+
+    <car>
+        <brand>Ford</brand>
+        <type>CF89</type>
+        <vehicule-weight SI="Kg">900</vehicule-weight> <!-- KG -->
+        <car-dimensions> 
+            <length SI="mm">4300</length> <!-- mm -->
+            <width SI="mm">1642</width> <!-- mm -->
+            <height SI="mm">1586</height> <!-- mm -->
+        </car-dimensions>
+        <fuel-type>Diesel</fuel-type>
+        <fuel-tank-capacity SI="L">54.9</fuel-tank-capacity> <!-- L -->
+        <battery-cell-capacity SI="Ah">33.1</battery-cell-capacity> <!-- Ah -->
+        <tire-dimensions>
+            <tire-radius SI="mm">412.12</tire-radius> <!-- mm -->
+            <tire-width SI="mm">110.5</tire-width> <!-- mm -->
+        </tire-dimensions>
+        <coefficient-of-drag>0.31</coefficient-of-drag>
+        <engine>
+            <engine-type>7LOE89</engine-type>
+            <engine-size SI="L">2.1</engine-size> <!-- L -->
+            <engine-max-speed SI="rpm">6400</engine-max-speed> <!-- rpm -->
+            <engine-max-power SI="KW">85.8</engine-max-power> <!-- Kw -->
+            <number-of-cylinders>8</number-of-cylinders> 
+        </engine>
+    </car>
+
+    <car>
+        <brand>Volkswagen</brand>
+        <type>IO135</type>
+        <vehicule-weight SI="Kg">1556</vehicule-weight> <!-- KG -->
+        <car-dimensions> 
+            <length SI="mm">4589</length> <!-- mm -->
+            <width SI="mm">1589</width> <!-- mm -->
+            <height SI="mm">1378</height> <!-- mm -->
+        </car-dimensions>
+        <fuel-type>LPG</fuel-type>
+        <fuel-tank-capacity SI="L">60.5</fuel-tank-capacity> <!-- L -->
+        <battery-cell-capacity SI="Ah">33.1</battery-cell-capacity> <!-- Ah -->
+        <tire-dimensions>
+            <tire-radius SI="mm">356.5</tire-radius> <!-- mm -->
+            <tire-width SI="mm">125.16</tire-width> <!-- mm -->
+        </tire-dimensions>
+        <coefficient-of-drag>0.31</coefficient-of-drag>
+        <engine>
+            <engine-type>HL47</engine-type>
+            <engine-size SI="L">1.8</engine-size> <!-- L -->
+            <engine-max-speed SI="rpm">4250</engine-max-speed> <!-- rpm -->
+            <engine-max-power SI="KW">42</engine-max-power> <!-- Kw -->
+            <number-of-cylinders>6</number-of-cylinders> 
+        </engine>
+    </car>
+
+    <car>
+        <brand>Ford</brand>
+        <type>DE89</type>
+        <vehicule-weight SI="Kg">1724</vehicule-weight> <!-- KG -->
+        <car-dimensions> 
+            <length SI="mm">3548</length> <!-- mm -->
+            <width SI="mm">1806</width> <!-- mm -->
+            <height SI="mm">1445</height> <!-- mm -->
+        </car-dimensions>
+        <fuel-type>LPG</fuel-type>
+        <fuel-tank-capacity SI="L">45</fuel-tank-capacity> <!-- L -->
+        <battery-cell-capacity SI="Ah">29.3</battery-cell-capacity> <!-- Ah -->
+        <tire-dimensions>
+            <tire-radius SI="mm">378.3</tire-radius> <!-- mm -->
+            <tire-width SI="mm">178.5</tire-width> <!-- mm -->
+        </tire-dimensions>
+        <coefficient-of-drag>0.29</coefficient-of-drag>
+        <engine>
+            <engine-type>FR5</engine-type>
+            <engine-size SI="L">2.6</engine-size> <!-- L -->
+            <engine-max-speed SI="rpm">5835</engine-max-speed> <!-- rpm -->
+            <engine-max-power SI="KW">89</engine-max-power> <!-- Kw -->
+            <number-of-cylinders>9</number-of-cylinders> 
+        </engine>
+    </car>
+</cars>

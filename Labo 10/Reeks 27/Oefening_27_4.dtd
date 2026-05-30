@@ -1,0 +1,9 @@
+<!ELEMENT adressen (adres+)>
+    <!ELEMENT adres (naam,voornaam+,straat-nummer?,plaats,(telefoon-nummer|gsm-nummer),email?)>
+        <!ELEMENT naam (#PCDATA)>
+        <!ELEMENT voornaam (#PCDATA)>
+        <!ELEMENT straat-nummer (#PCDATA)>
+        <!ELEMENT plaats (#PCDATA)>
+        <!ELEMENT telefoon-nummer (#PCDATA)>
+        <!ELEMENT gsm-nummer (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>

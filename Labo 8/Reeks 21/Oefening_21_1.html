@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 21 : Oefening 1</title>
+    <link rel="stylesheet" href="./Oefening_21_1.css">
+</head>
+<body>
+    <main>
+        <p>Which background-color do you wish to set?</p>
+        <input type="text" id="Color-Input" placeholder="color...">
+        <input type="button" value="Apply background-color" id="Set-Color-Btn">
+    </main>
+    <script>
+        var Button = document.getElementById("Set-Color-Btn");
+        var Color_Input = document.getElementById("Color-Input");
+
+        Button.addEventListener("click",function(){
+            document.body.style.backgroundColor = Color_Input.value;
+        });
+    </script>
+</body>
+</html>

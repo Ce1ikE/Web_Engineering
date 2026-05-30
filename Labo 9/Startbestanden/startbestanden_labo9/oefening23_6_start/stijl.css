@@ -1,0 +1,79 @@
+﻿body {
+	background-color: #666;
+	font-family: Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:12px;	
+}
+
+#wrapper{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid white;
+	padding:10px;		
+}
+
+#header{
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:10px;		
+}
+
+#header img{
+	height:100px;
+	width:100px;
+}
+
+table{
+	width:400px;
+}
+
+#visakaart input{
+	size:20px;
+}
+
+#welkom{
+	display:none;	
+}
+
+#welkom table{
+	border: 1px solid black;
+	width: 350px;
+}
+
+.small{
+	width: 40px;
+}
+
+.large{
+	width: 64px;
+}
+
+#fout{
+	display:none;		
+}
+
+#betaal{
+	display:none;	
+}
+
+#visakaart{
+	display:none;	
+}
+
+#contant1{
+	display:none;
+}
+
+#fout2{
+	display:none;
+}
+
+#bedankt{
+	display:none;
+}
+
+#gedaan{
+	display:none;
+}

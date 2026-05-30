@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(to top,rgba(97, 95, 101, 0.939),rgb(33, 31, 31));
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.stopwatch-container {
+    border: 5px solid black;
+    padding: 40px;
+    background-color: rgb(55, 50, 50);
+    border-radius: 25%;
+    box-shadow: 5px 5px 10px aquamarine;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+p {
+    background-color: rgba(172, 255, 47, 0.413);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: monospace;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px inset black;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    border: 3px solid black;
+    padding: 3px;
+    box-shadow: inset 0px 0px 0px 0px #54b3d6;
+    border-radius: 10px;
+    background-color: rgba(97, 95, 101, 0.939);
+    transition: box-shadow 0.5s ease-in-out,color 0.5s ease-in-out,border 0.6s ease-in-out;
+}
+
+
+input:hover {
+    border: 3px solid #54b3d6;
+    color: white;
+    box-shadow: inset 200px 0px 0px 0px #54b3d6;
+}

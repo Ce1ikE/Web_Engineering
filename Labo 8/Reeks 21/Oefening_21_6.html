@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 21 : Oefening 6</title>
+    <link href="../Startbestanden/vraag3/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./Oefening_21_6.css" rel="stylesheet" type="text/css">
+</head>
+<body id="body">
+    <div id="container">
+        <div id="dag_nacht">
+          <div id="dag"><a href="#">dag</a></div>
+          <div id="nacht"><a href="#">nacht</a></div>
+      </div>
+      <div id="sneeuw"></div>
+      <div id="wrapper">
+          <div id="nav">
+              <a href="#"><img id="cadeau-icoon" src="../Startbestanden/vraag3/images/icon_cadeau_blauw.png" width="49" height="49"></a>
+              <a href="#"><img id="kerstboom-icoon" src="../Startbestanden/vraag3/images/icon_kerstboom_grijs.png" width="49" height="49"></a>    
+          </div>
+          <div id="kerstboom">
+                <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><a href="#"><img id="blauw1" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><a href="#"><img id="blauw2" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td><a href="#"><img id="blauw3" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                    <td>&nbsp;</td>
+                    <td><a href="#"><img id="blauw4" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td><a href="#"><img id="blauw5" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                    <td><a href="#"><img id="blauw6" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                    <td><a href="#"><img id="blauw7" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#"><img id="blauw8" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                    <td>&nbsp;</td>
+                    <td><a href="#"><img id="blauw9" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                    <td>&nbsp;</td>
+                    <td><a href="#"><img id="blauw10" src="../Startbestanden/vraag3/images/lamp_uit.png" width="32" height="63"></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+  </div>
+ <!--=========================================================================================================================================-->   
+  <script>
+    var Zon = document.getElementById("dag");
+    var Maan = document.getElementById("nacht");
+    var Cadeau_Icoon = document.getElementById("cadeau-icoon");
+    var Kertboom_Icoon = document.getElementById("kerstboom-icoon");
+    var Lichtjes = document.querySelectorAll("img[id^='blauw']");
+
+    var Flikkeren_Active = false;
+
+    Zon.addEventListener("click",function(){
+        document.body.style.backgroundColor = "#0d9adb";
+    });
+
+    Maan.addEventListener("click",function(){
+        document.body.style.backgroundColor = "#00001C";
+    });
+
+    Cadeau_Icoon.addEventListener("click",function(){
+        for(let i = 0;i < Lichtjes.length;i++){
+            Lichtjes[i].setAttribute("src","../Startbestanden/vraag3/images/lamp_blauw.png");
+        }
+        Flikkeren_Active = true;
+        setTimeout(Flikker_Lichtjes,2000);
+    });
+    
+    Kertboom_Icoon.addEventListener("click",function(){
+        Flikkeren_Active = false;
+    });
+
+    function Flikker_Lichtjes(){
+        if(Flikkeren_Active){
+            setTimeout(function(){
+                for(let i = 0;i < Lichtjes.length;i++){
+                    Lichtjes[i].setAttribute("src","../Startbestanden/vraag3/images/lamp_blauw.png");
+                }
+            },0);
+    
+            setTimeout(function(){
+                for(let i = 0;i < Lichtjes.length;i++){
+                    Lichtjes[i].setAttribute("src","../Startbestanden/vraag3/images/lamp_uit.png");
+                }
+            },1000);
+    
+            setTimeout(Flikker_Lichtjes,1500);
+        }
+    }
+  </script>
+</body>
+</html>

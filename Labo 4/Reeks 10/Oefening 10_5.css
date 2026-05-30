@@ -1,0 +1,61 @@
+
+.pagina {
+    background-color: #FFC;
+    min-width:500px;
+	max-width:1200px;
+    margin:0px auto 0px auto;
+}
+
+
+/*==================================================================================*/
+
+
+.kop {
+    background-color: #663;
+    padding: 10px;
+}
+
+.kop>img {
+    width: 200px;
+}
+
+/*==================================================================================*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.links {
+    background-color: #CCCC00;
+    width: 15%;
+    padding: 30px 10px;
+    margin-bottom: auto;
+}
+
+.midden {
+    width: 70%;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: white;
+}
+
+.midden p {
+    margin: 30px 0px;
+}
+
+.rechts {
+    width: 10%;
+}
+
+
+/*==================================================================================*/
+
+.voet {
+    background-color: #66CCFF;
+    padding: 30px;
+}
+
+
+

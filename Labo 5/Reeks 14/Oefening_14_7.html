@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 14 : Oefening 7</title>
+    <link rel="stylesheet" href="./Oefening_14_7.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Getal 1</th>
+            <th>Getal 2</th>
+        </tr>
+        <script>
+            var Getal_1 , Getal_2;
+
+            Getal_1 = parseInt(window.prompt("Voer het eerste getal in AUB"));
+            Getal_2 = parseInt(window.prompt("Voer het tweede getal in AUB"));
+
+            var O_Getal_1 = Getal_1;
+            var O_Getal_2 = Getal_2;
+
+            while(Getal_1 != Getal_2 || Getal_1 < 0 || Getal_2 < 0)
+            {
+                if (Getal_1 > Getal_2) {
+                    Getal_1 -= Getal_2;
+                }
+                else {
+                    Getal_2 -= Getal_1;
+                }
+
+                document.write("<tr><td>" + Getal_1 + "</td><td>" + Getal_2  + "</td></tr>");
+            }
+
+            if (Getal_1 < 0 || Getal_2 < 0) {
+                window.alert(Getal_1 + " en " + Getal_2 + "\nhebben geen gemeenschapelijke delers");
+            }
+
+        </script>
+    </table>
+    <script>
+            if(Getal_1 == Getal_2)
+            {
+                    document.write("<p>De grootste gemene deler van " + O_Getal_1 + " en " + O_Getal_2  + " is " + Getal_1 + "</p>");
+            }
+    </script>
+</body>
+</html>

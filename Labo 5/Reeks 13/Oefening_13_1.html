@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 13 : Oefening 1</title>
+</head>
+<body>
+    <script>
+        var Getal_1 = parseInt(window.prompt("Geef een getal in AUB"));
+        var Getal_2 = parseInt(window.prompt("Geef een ander getal in AUB"));
+
+        if(Getal_1 > Getal_2) // Getal_1 is smaller then Getal_2
+        {
+            document.write("<p>" + Getal_1 + " is groter dan " + Getal_2 + "</p>");
+        }
+        else
+        {
+            if(Getal_1 < Getal_2) // Getal_1 is bigger then Getal_2
+            {
+                document.write("<p>" + Getal_1 + " is kleiner dan " + Getal_2 + "</p>");
+            }
+            else // Getal_1 is equal to Getal_2
+            {
+                document.write("<p>" + Getal_1 + " en " + Getal_2 + " Zijn gelijk aan elkaar</p>");
+            }
+        }
+    </script>
+</body>
+</html>

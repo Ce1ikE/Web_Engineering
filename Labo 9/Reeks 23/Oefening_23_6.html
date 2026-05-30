@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 23 : Oefening 6</title>
+    <link rel="stylesheet" href="./Oefening_23_6.css">
+</head>
+<body>
+    <div id="wrapper">
+    
+        <div id="header">
+            <img src="../Startbestanden/startbestanden_labo9/oefening23_6_start/foto/logo.gif" height="100px" width="100px" />
+            <img id="fotoke" src="../Startbestanden/startbestanden_labo9/oefening23_6_start/foto/images.jpeg" height="100px" width="100px" />
+        </div>
+    
+        <form id="inloggen">
+            <fieldset>
+                <legend>Inloggen</legend>
+    
+                <table width="400" style="border:0;">
+                    <tr>
+                        <td><label for="naam">Naam:</label>&nbsp;</td>
+                        <td><input type="text" id="naam" />&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><label for="voornaam">Voornaam:</label>&nbsp;</td>
+                        <td><input type="text" id="voornaam" />&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><label for="paswoord">Paswoord:</label>&nbsp;</td>
+                        <td><input type="password" id="pass" />&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="button" id="inlog">verzend</button></td>
+                    </tr>
+                </table>
+            </fieldset> 
+        </form>
+        <p id="fout">Sorry, maar het paswoord is niet juist. Probeer opnieuw.
+        </p>
+        <p id="gedaan">U heeft 3 keer foutief ingegeven. Gelieve onze administatie te contacteren</p>
+    
+        <form id="welkom">
+            <fieldset>
+                <legend>Bestellen</legend>
+                <p id="intro">
+                </p>
+                <table width="350" style="border:1;">
+                    <tr>
+                        <td>Capricio</td>
+                        <td><input type="text" id="aantal0" size="5" value="0" />&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+                        <td><input type="text" id="bedrag0" size="8" /></td>
+                    </tr>
+                    <tr>
+                        <td>Indra</td>
+                        <td><input type="text" id="aantal1" size="5" value="0" />&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+                        <td><input type="text" id="bedrag1" size="8" /></td>
+                    </tr>
+                    <tr>
+    
+                        <td>Arpeggio</td>
+                        <td><input type="text" id="aantal2" size="5" value="0" />&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+                        <td><input type="text" id="bedrag2" size="8" /></td>
+                    </tr>
+                    <tr>
+                        <td>Livanto</td>
+                        <td><input type="text" id="aantal3" size="5" value="0" />&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+                        <td><input type="text" id="bedrag3" size="8" /></td>
+                    </tr>
+                    <tr>
+                        <td>Finezzo</td>
+                        <td><input type="text" id="aantal4" size="5" value="0" />&nbsp; x&nbsp; 0.33€&nbsp;=</td>
+                        <td><input type="text" id="bedrag4" size="8" /></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" id="bereken">Bereken</button></td>
+                <td>Totaal</td>
+                <td><input type=" text" id="eindtot1" size="8" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <form id="betaal">
+            <fieldset>
+                <legend>Betalen</legend>
+                <p>Gelieve uw betaalwijze aan te duiden:</p>
+                <table width="400" style="border: 0;">
+                    <tr>
+                        <td><label for="visa">Met visa</label></td>
+                        <td><input type="radio" name="betalen" value="visa" id="visa"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contant">Contant bij levering</label></td>
+                        <td><input type="radio" name="betalen" value="contant" id="contant"/></td>
+                    </tr>
+                </table>
+                <div id="visakaart">
+                    <table width="400px">
+                        <tr>
+                            <td><label for="visakaartnummer">Kaartnummer &nbsp;</label></td>
+                            <td><input type="text" size="20" maxlength="12" id="visakaartnummer" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="controlenummer">Controlenummer &nbsp;</label></td>
+                            <td><input type="text" size="20" maxlength="3" id="controlenummer" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="contant1">U verkiest om contant te betalen bij levering. Uw bestelling wordt binnen de 48 uur
+                    geleverd.
+                </div>
+            </fieldset>
+    
+    
+        </form>
+        <div id="fout2">Uw kaartnummer is niet juist</div>
+            <div id="bedankt">
+                <h1>Dank u voor de bestelling. Uw caps worden binnen de 24 uur geleverd.</h1>
+            </div>
+        </div>
+    <script src="./jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            slideshow();
+        });
+
+        var Attempts = 0;
+
+        function slideshow()
+        {
+            var Image_Folder = "../Startbestanden/startbestanden_labo9/oefening23_6_start/";
+            var fotos=new Array(8);
+            fotos[0]="foto/images8.jpeg";
+            fotos[1]="foto/images1.jpeg";
+            fotos[2]="foto/images2.jpeg";
+            fotos[3]="foto/images3.jpeg";
+            fotos[4]="foto/images4.jpeg";
+            fotos[5]="foto/images5.jpeg";
+            fotos[6]="foto/images6.jpg";
+            fotos[7]="foto/images7.jpeg";
+            teller=(Math.floor(Math.random()*8));
+            $("#fotoke").fadeOut(2000,function(){
+                $(this)
+                .attr("src",Image_Folder + fotos[teller])
+                .fadeIn(2000);
+            })
+            setTimeout(slideshow,1000);
+        }
+
+        $("#inlog").click(function(){
+            if($("#naam").val() == "x" && $("#pass").val() == "y" && Attempts < 3){
+                $("#intro").html("welkom " + $("#voornaam").val() + " u kan nu een bestelling plaatsen");
+                $("#welkom").fadeIn(1500);
+                $("#fout").fadeOut(1500);
+            } else {
+                if(Attempts < 3){
+                    $("#fout").fadeIn(1500);
+                    $("#pass").val("");
+                    $("#naam").focus();
+                    Attempts++;
+                } else {
+                    $("#fout").fadeOut(1500);
+                    $("#gedaan").fadeIn(1500);
+                    $("#naam").attr("disabled",true);
+                    $("#voornaam").attr("disabled",true);
+                    $("#pass").attr("disabled",true);
+                }
+            }
+        });
+
+        $("#bereken").click(function(){
+            var eindtot=0;
+            var i;
+            var subtot;
+            
+            for(i=0;i<5;i++){
+                subtot = parseFloat((parseFloat($("#aantal"+i).val())*0.33).toFixed(2));
+                $("#bedrag"+i).val(subtot);
+                eindtot += subtot;
+            }
+            $("#eindtot1").val(eindtot.toFixed(2))
+            $("#betaal").slideDown(1000);
+        });
+
+
+        $("input[type='radio']").click(function(){
+            if($(this).attr("id") == "visa"){
+                $("#contant1").slideUp(500);
+                $("#visakaart").slideDown(500);
+                $("#bedankt").slideUp(500);
+            } else {
+                $("#visakaart").slideUp(500);
+                $("#contant1").slideDown(500);
+                $("#bedankt").slideDown(500);
+            }
+        });
+        
+        
+
+        $("#controlenummer").on("input",function(){
+            var testtwaalf, testdrie, testtwaalfsub;
+            var twaalf = $("#visakaartnummer").val().length;
+            var drie = $("#controlenummer").val().length;
+            
+            if(twaalf==12 && drie==3)
+            {	
+                testtwaalf = $("#visakaartnummer").val();	
+                testdrie = $("#controlenummer").val();		
+                testtwaalfsub = testtwaalf.substring(9,12);	
+                
+                if(testdrie == testtwaalfsub)
+                {
+                    $("#bedankt").fadeIn(1000);
+                    $("#fout2").fadeOut(1000);
+                }
+                else
+                {
+                    $("#bedankt").fadeOut(1000);
+                    $("#fout2").fadeIn(1000);
+                }
+            }
+            else
+            {
+                $("#bedankt").fadeOut(1000);
+                $("#fout2").fadeIn(1000);
+            }
+        });
+    </script>
+</body>
+</html>

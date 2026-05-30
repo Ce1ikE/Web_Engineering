@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 23 : Oefening 3</title>
+    <link rel="stylesheet" href="./Oefening_23_3.css">
+</head>
+<body>
+    <h1>jQuery - live email check</h1>
+    <ol>
+        <li>wanneer een gebruiker een email adres ingeeft moet er live/realtime gecontroleerd worden of het email adres geldig is (staat er een punt in en een @-symbool?)</li>
+		<li>de sign-up knop is onzichtbaar, zolang het email adres niet geldig is (geen punt en @ symbool aanwezig in het email adres)</li>
+		<li>zodra het email adres geldig is, zorgt u er via een jquery-effect voor dat de knop verschijnt. (gebruik een slide of fade effect)</li>
+		<li>test met adres "uwnaam@thomasmore.be"</li>
+    </ol>
+    <hr/>
+    
+    <form action="#" method="post" autocomplete="off">
+        <div class="formulier">
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" />
+            
+            <div class="signup">
+                <input type="button" value="Ok, Sign up!" />
+            </div>
+            
+        </div>
+    </form>
+    <script src="./jquery.js"></script>
+    <script>
+        var Regex = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+        $("#email").on("input",function(){
+            if(Regex.test($(this).val())){
+                $(".signup").slideDown(1000);
+            } else {
+                $(".signup").slideUp(1000);
+            }
+        });
+    </script>
+</body>
+</html>

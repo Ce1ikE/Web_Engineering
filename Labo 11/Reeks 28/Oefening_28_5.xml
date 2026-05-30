@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gerechten xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Oefening_28_5.xsd">
+
+<gerecht class="vlees">
+    <naam>Geroosterde entrecote</naam>
+    <tijd>
+        <voorbereiding>1 min.</voorbereiding>
+        <bereiding>8-10 min.</bereiding>
+    </tijd>
+    <beschrijving>
+        Koop de entrecôte aan een stuk van ten minste 2-3 cm dik. Hij kan als een biefstuk geroosterd of gebakken worden. Bestrijk hem dan met de olie en rooster of bak hem en kruid met zout en peper. Geef er balletjes boter bij gemengd met peterselie voor een doordeweekse dag. Geef er voor een feestelijkere dag een bearnaisesaus bij met aardappelsoezen of frites en een groente naar keuze.
+    </beschrijving>
+    <ingredienten>
+        <ingredient>1 entrecote van 300 g</ingredient>
+        <ingredient>1 eetlepel olie</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>30 g boter</ingredient>
+        <ingredient>gehakte peterselie</ingredient>
+    </ingredienten>
+</gerecht>
+
+<gerecht class="vlees">
+    <naam>Entrecote "Marchand de vin"</naam>
+    <tijd>
+        <voorbereiding>10 min.</voorbereiding>
+        <bereiding>20 min.</bereiding>
+    </tijd>
+    <beschrijving>
+        Koop de entrecôte aan een stuk van ten minste 2-3 cm dik. Hij kan als een biefstuk geroosterd of gebakken worden. Bestrijk hem dan met de olie en rooster of bak hem en kruid met zout en peper. Geef er balletjes boter bij gemengd met peterselie voor een doordeweekse dag. Geef er voor een feestelijkere dag een bearnaisesaus bij met aardappelsoezen of frites en een groente naar keuze.
+    </beschrijving>
+    <saus>voor de saus:</saus>
+    <ingredienten>
+        <ingredient>20 g sjalot</ingredient>
+        <ingredient>2 dl rode wijn</ingredient>
+        <ingredient>1 dessertlepel vleesgelei</ingredient>
+        <ingredient>30 g boter</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>1 koffielepel gehakte peterselie</ingredient>
+    </ingredienten>
+    <schotel>voor het vlees:</schotel>
+    <ingredienten>
+        <ingredient>1 entrecote (300 a 350 g)</ingredient>
+        <ingredient>olie</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+    </ingredienten>
+</gerecht>
+
+<gerecht class="vlees">
+    <naam>Goelasj</naam>
+    <tijd>
+        <voorbereiding>20 min.</voorbereiding>
+        <bereiding>2 u.</bereiding>
+    </tijd>
+    <beschrijving>
+    Voor dit gerecht wordt stoofvlees gebruikt (ronde bil, staartstuk, schouder of nek). Snij het in brokken. Snij de uien in stukken en fruit ze goudgeel in de reuzel in een stevige stoofpan. Haal de pan dan van het vuur en roer de paprika en kummel bij de uien, zo verbrandt de paprika niet en behoudt ze haar smaak. Roer de stukken vlees erbij en laat alles zachtjes warm worden tot het begint te sudderen. Het vlees mag niet kleuren. Bedek alles met water. Kruid met zout, peper, roer de tomatenpasta erdoor en laat het zachtjes ten minste 1 uur koken in de gesloten pan. Voeg dan de geschilde in blokken gesneden aardappelen toe en stoof nog de aangegeven tijd door. Kruid voor het opdoen eventueel nog wat bij met paprika.
+    </beschrijving>
+    <ingredienten>
+        <ingredient>400 tot 500 g rundvlees</ingredient>
+        <ingredient>150 g uien</ingredient>
+        <ingredient>40 g reuzel</ingredient>
+        <ingredient>20 g paprikapoeder</ingredient>
+        <ingredient>1 mespunt kummel</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>2 eetlepels tomatenpasta</ingredient>
+        <ingredient>400 g aardappelen</ingredient>
+    </ingredienten>
+</gerecht>
+
+<gerecht class="vlees">
+    <naam>Rundvlees "a la mode"</naam>
+    <tijd>
+        <voorbereiding>20-25 min.</voorbereiding>
+        <bereiding>3 u.</bereiding>
+    </tijd>
+    <beschrijving>
+        Voor dit gerecht is een stuk vlees nodig van 800 g tot 1 kg, door de slager gemaakt, d.w.z. gepikeerd en opgebonden. Het stuk kan heel goed voor een paar dagen dienen; het kan warm, opgewarmd en koud gegeten worden. In het laatste geval kan het heel goed in een ingevette terrine, bedekt met vleesaspic, bewaard worden in de koelkast. Keer het dan 1/2 a 3/4 uur op een koude schaal voor het opdoen. Wordt de rode wijn vervangen door droge witte, dan heet het gerecht: rundvlees "a la bourgeoise". Smelt de reuzel in een grote braadpan en braad hierin het stuk rondom goudbruin. Begiet het dan met wijn en bouillon, kruid met zout en peper en voeg het boeket toe met de kalfspoot en het zwoerd (eerst onder koud water gespoeld, dan in kokend water gedompeld). Sluit de pan en stoof zachtjes 1 1/2 uur. Voeg dan ui en wortels in schijfjes gesneden toe en smoor nog 1 1/2 uur. Verwijder de touwtjes en schik het stuk op een ronde of ovale diepe schotel, omringd met ui en wortel en de kalfspoot in stukken.
+    </beschrijving>
+    <ingredienten>
+        <ingredient>1 stuk rundvlees (800 a 900 g van ronde bil of staartstuk)</ingredient>
+        <ingredient>30 g reuzel</ingredient>
+        <ingredient>2 dl rode wijn</ingredient>
+        <ingredient>1 dl bouillon</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>1 kruidenboeket</ingredient>
+        <ingredient>1/2 kalfspoot</ingredient>
+        <ingredient>100 g vers varkensbuikzwoerd</ingredient>
+        <ingredient>50 g ui</ingredient>
+        <ingredient>600 g wortels</ingredient>
+    </ingredienten>
+</gerecht>
+
+<gerecht class="vlees">
+    <naam>Runderpens op z'n Lyonees</naam>
+    <tijd>
+        <voorbereiding>20 min.</voorbereiding>
+        <bereiding>20 min.</bereiding>
+    </tijd>
+    <beschrijving>
+        Vraag de slager om gekookte runderpens. In de meeste gevallen zal runderpens een paar dagen van tevoren besteld moeten worden en dan is ze alleen maar gebroeid. Ze moet dan nog enige uren zacht gekookt worden in licht gezouten water met een boeket, tot ze smoorgaar is geworden. Snij de pens dan in repen of vierkantjes. Maak de olie heet in een koekenpan en fruit de in plakken gesneden uien zachtjes, de pan af en toe heen en weer schuddend, tot ze transparant zijn. Bruin ze dan op een hoger vuur, haal ze er met een schuimspaan uit en hou ze warm. Voeg de boter toe aan de olie in de pan en maak ze goed heet. Bak de pens hier goudbruin, roer de uien er weer bij, kruid met zout en peper en doe de helft van de peterselie erbij. Meng het en schep het met de schuimspaan over in een verwarmde schaal. Maak het bakvet in de koekenpan los met de wijn of azijn en giet deze jus over de pens. Bestrooi met de rest van de peterselie.
+    </beschrijving>
+    <ingredienten>
+        <ingredient>400 g gekookte runderpens</ingredient>
+        <ingredient>3 eetlepels olie</ingredient>
+        <ingredient>100 g ui</ingredient>
+        <ingredient>30 g boter</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>gehakte peterselie</ingredient>
+        <ingredient>1 dl droge witte wijn</ingredient>
+    </ingredienten>
+</gerecht>
+
+<gerecht class="vis">
+    <naam>Lotte a l'americaine</naam>
+    <tijd>
+        <voorbereiding>15 min.</voorbereiding>
+        <bereiding>40 min.</bereiding>
+    </tijd>
+    <beschrijving>
+        Snij de vis in niet te grote gelijke stukken en bebloem ze licht. Maak de olie heet in een sauteerpan of braadpan en bak hierin de vis goudbruin. Overgiet de vis met de warme cognac en flambeer. Kruid met zout en peper als de vlammen gedoofd zijn. Haal de vis met een schuimspaan uit de pan en leg hem op een bord.Voeg de boter toe aan de warme olie in de pan en voeg, zodra dit heet is geworden, de gehakte ui, knoflook uit de knijper, de helft van de wijn, tomatenpasta, zout en peper erbij. Laat dit 20 minuten zachtjes sudderen. Voeg dan de rest van de wijn, de vis en 2 scheutjes tabasco toe en laat het nog 10 minuten gaan. Dien zeer warm op met pilaurijst of Creoolse rijst.
+    </beschrijving>
+    <ingredienten>
+        <ingredient>500 g staartvis</ingredient>
+        <ingredient>bloem</ingredient>
+        <ingredient>0,5 dl olie</ingredient>
+        <ingredient>1 eetlepel cognac</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>20 g boter</ingredient>
+        <ingredient>50 g ui</ingredient>
+        <ingredient>3 g knoflook</ingredient>
+        <ingredient>0,5 dl droge witte wijn</ingredient>
+        <ingredient>35 g tomatenpasta</ingredient>
+        <ingredient>tabasco</ingredient>
+    </ingredienten>
+</gerecht>
+
+<gerecht class="vis">
+    <naam>Lotte a la bourguignonne</naam>
+    <tijd>
+        <voorbereiding>30 min.</voorbereiding>
+        <bereiding>bereiding: 30 min.</bereiding>
+    </tijd>
+    <beschrijving>
+        Doe rode wijn, een takje tijm, laurier en de bestoken ui in een sauspan, breng aan het sudderen en laat gedurende 10 minuten voortsudderen. Snij intussen de vis in 4 of 6 stukken. Pocheer de hele uitjes 20 minuten in kokend gezouten water. Maak de champignons schoon (blz. 292), snij ze in kleine stukken en fruit ze op klein vuur in een pan met 20 g boter en wat citroensap, zout en peper. Bak niet langer dan 15 minuten. Pocheer de vis in 8-10 minuten in de gekruide wijn of tot de vis mooi stevig is geworden. Schep de vis met een schuimspaan in een warme schaal met de uitjes en champignons. Hou dit warm. Zeef de rode wijn en roer er de bloem, op klein vuur gemengd met 20 g boter, door. Roer tot de saus bindt. Nappeer de vis met deze saus en schik er de driehoekige broodcroutons, die in de rest van de boter gebakken werden. Opmerking: De croutons kunnen ook eerst gebakken worden.
+    </beschrijving>
+    <ingredienten>
+        <ingredient>4 dl rode wijn tijm</ingredient>
+        <ingredient>1 laurierblaadje</ingredient>
+        <ingredient>1 ui bestoken met 2 kruidnagels</ingredient>
+        <ingredient>450-500 g staartvis</ingredient>
+        <ingredient>50 g kleine uitjes</ingredient>
+        <ingredient>60 g champignons</ingredient>
+        <ingredient>60 g boter</ingredient>
+        <ingredient>1 citroen</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>10 g bloem</ingredient>
+        <ingredient>4 broodcroutons</ingredient>
+    </ingredienten>
+</gerecht>
+
+<gerecht class="vis">
+    <naam>Tong van Dieppe</naam>
+    <tijd>
+        <voorbereiding>20 min.</voorbereiding>
+        <bereiding>30 min.</bereiding>
+    </tijd>
+    <beschrijving>
+        Vil de tongen of vraag de vishandelaar dit voor u te doen, en laat ze heel. Leg ze naast elkaar in een langwerpige vuurvaste schotel, verdeel er de boter in klontjes overheen, kruid met zout en peper en giet er de wijn over. Bedek ze met beboterd aluminiumfolie en zet de schotel 12-15 minuten in een hete oven. Schenk het kooknat in een kommetje en laat de vissen in de schotel liggen. Bereid de witte saus met het kooknat van de tongen. Kook de mosselen, haal ze uit de schelpen en rangschik ze met de garnalen om de vis heen. Bedek alles met de saus en laat nog 6-8 minuten gratineren in een hete oven.
+    </beschrijving>
+    <ingredienten>
+        <ingredient>2 kleine tongen (300 g elk)</ingredient>
+        <ingredient>30 g boter</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>2 dl droge witte wijn</ingredient>
+        <ingredient>1 dl witte saus</ingredient>
+        <ingredient>250 g mosselen</ingredient>
+        <ingredient>50 g gepelde garnalen</ingredient>
+    </ingredienten>
+</gerecht>
+
+<gerecht class="kip">
+    <naam>Kip met armagnac</naam>
+    <tijd>
+        <voorbereiding>15 min.</voorbereiding>
+        <bereiding>1.15 u.</bereiding>
+    </tijd>
+    <beschrijving>
+        Smelt de boter in een kleine braadpan zonder te kleuren en doe hier de hele uitjes in. Stoof ze 45 minuten op een zeer zacht vuur. Ze moeten blank blijven en gaar zijn. Kruid ze met zout en peper. Snij terzelfder tijd de kip in stukken: 2 vlerken met borstvlees en 2 dijen met de poten (maak een bouillon van de rest van de kip en de afval). Maak de bouillon of consomme goed heet in een pan en laat hierin in 30 minuten de stukken kip mais en gaar pocheren. De bouillon mag maar net murmelen. Maak de room warm zonder te koken. Schik de 4 stukken kip in een vuurvaste schotel, verdeel de uitjes eroverheen, begiet met de armagnac en de room. Kruid nog wat met zout en peper en zet de schotel in een middelmatig hete oven, gedurende 15-20 minuten. Dien onmiddellijk op. Opmerking: De armagnac kan door whisky vervangen worden.
+    </beschrijving>
+    <ingredienten>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>1 kleine panklare braadkip</ingredient>
+        <ingredient>0,75 1 bouillon (of kippenconsomme)</ingredient>
+        <ingredient>2 dl room</ingredient>
+        <ingredient>0,5 dl armagnac</ingredient>
+    </ingredienten>
+</gerecht>
+
+<gerecht class="kip">
+    <naam>Kip Marengo</naam>
+    <tijd>
+        <voorbereiding>20 min.</voorbereiding>
+        <bereiding>1.15 u.</bereiding>
+    </tijd>
+    <beschrijving>
+        Verdeel de hele kip in stukken. Maak boter en olie heet in een braadpan en bak hierin de stukken kip halfgaar. Bestrooi ze dan met de gehakte sjalotten, knoflook en peterselie, zout en peper en ga door met bakken tot de kip gaat kleuren. Strooi er dan de bloem over, schep alles even om en giet de warme bouillon en de wijn erbij. Sluit de pan en laat op een regelmatig vuur 45 minuten lang sudderen. Voeg de tomatenpasta en de schoongemaakte, gehalveerde champignons toe. Laat nog 30 minuten sudderen in de gesloten pan of tot de champignons gaar zijn. Het traditionele garnituur voor kip Marengo voor twee personen bestaat uit 2 gefrituurde eieren, 2 gepocheerde rivierkreeftjes en gebakken broodcroutons. Geef er verder aardappelpuree, gekookte aardappelen of pilaurijst bij.
+    </beschrijving>
+    <ingredienten>
+        <ingredient>
+            1 panklare braadkip van 1 kg of 600-750 g stukken kip
+        </ingredient>
+        <ingredient>20 g boter</ingredient>
+        <ingredient>20 g olijfolie</ingredient>
+        <ingredient>20 g sjalotten</ingredient>
+        <ingredient>1 knoflookteen</ingredient>
+        <ingredient>peterselie</ingredient>
+        <ingredient>zout</ingredient>
+        <ingredient>peper</ingredient>
+        <ingredient>30 g bloem</ingredient>
+        <ingredient>1 dl bouillon</ingredient>
+        <ingredient>1 dl droge witte wijn</ingredient>
+        <ingredient>30 g tomatenpasta</ingredient>
+        <ingredient>100 g champignons</ingredient>
+    </ingredienten>
+</gerecht>
+
+</gerechten>

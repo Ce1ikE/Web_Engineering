@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../Reeks 25/Oefening_25_2.css" type="text/css"?>
+<library>
+    <book>
+        <author>NA</author>
+        <draftsman>
+            <person>Franquin André</person>
+        </draftsman>
+        <screenwriter>
+            <person>Almo Jo</person>
+            <person>Franquin André</person>
+        </screenwriter>
+        <serie>Robbedoes en Kwabbernoot</serie>
+        <number-in-serie>5</number-in-serie>
+        <title>De roof van de Marsupilami</title>
+        <release-year>1954</release-year>
+        <publishing-house>Dupuis</publishing-house>
+        <category>Comic</category>
+        <isbn>978-90-12-58039-7</isbn>
+    </book>
+
+    <book>
+        <author>NA</author>
+        <draftsman>
+            <person>Franquin André</person>
+            <person>Gillain Joseph</person>
+        </draftsman>
+        <screenwriter>
+            <person>Almo Jo</person>
+            <person>Gillain Joseph</person>
+        </screenwriter>
+        <serie>Robbedoes en Kwabbernoot</serie>
+        <number-in-serie>3</number-in-serie>
+        <title>De zwarte hoeden</title>
+        <release-year>1952</release-year>
+        <publishing-house>Dupuis</publishing-house>
+        <category>Comic</category>
+        <isbn>125-80-22-48039-4</isbn>
+    </book>
+
+    <book>
+        <author>NA</author>
+        <draftsman>
+            <person>Salverius Louis</person>
+        </draftsman>
+        <screenwriter>
+            <person>Cauvin Raoul</person>
+        </screenwriter>
+        <serie>De Blauwbloezen</serie>
+        <number-in-serie>3</number-in-serie>
+        <title>Voor vijftienhonderd dollar extra</title>
+        <release-year>1973</release-year>
+        <publishing-house>Dupuis</publishing-house>
+        <category>Comic</category>
+        <isbn>185-72-21-47865-4</isbn>
+    </book>
+
+    <book>
+        <author>NA</author>
+        <draftsman>
+            <person>Lambil Willy</person>
+        </draftsman>
+        <screenwriter>
+            <person>Cauvin Raoul</person>
+        </screenwriter>
+        <serie>De Blauwbloezen</serie>
+        <number-in-serie>8</number-in-serie>
+        <title>De hoogvliegers van de cavalerie</title>
+        <release-year>1976</release-year>
+        <publishing-house>Dupuis</publishing-house>
+        <category>Comic</category>
+        <isbn>145-78-98-87465-2</isbn>
+    </book>
+
+    <book>
+        <author>NA</author>
+        <draftsman>
+            <person>Lambil Willy</person>
+        </draftsman>
+        <screenwriter>
+            <person>Cauvin Raoul</person>
+        </screenwriter>
+        <serie>De Blauwbloezen</serie>
+        <number-in-serie>55</number-in-serie>
+        <title>Mijn broer de Indiaan</title>
+        <release-year>2011</release-year>
+        <publishing-house>Dupuis</publishing-house>
+        <category>Comic</category>
+        <isbn>978-90-314-3137-3</isbn>
+    </book>
+
+    <book>
+        <author>NA</author>
+        <draftsman>
+            <person>Lambil Willy</person>
+        </draftsman>
+        <screenwriter>
+            <person>Cauvin Raoul</person>
+        </screenwriter>
+        <serie>De Blauwbloezen</serie>
+        <number-in-serie>57</number-in-serie>
+        <title>Colorado Story</title>
+        <release-year>2013</release-year>
+        <publishing-house>Dupuis</publishing-house>
+        <category>Comic</category>
+        <isbn>978-90-314-3270-7</isbn>
+    </book>
+
+    <book>
+        <author>NA</author>
+        <draftsman>
+            <person>Lambil Willy</person>
+        </draftsman>
+        <screenwriter>
+            <person>Cauvin Raoul</person>
+        </screenwriter>
+        <serie>De Blauwbloezen</serie>
+        <number-in-serie>6</number-in-serie>
+        <title>De nor in Robertsonville</title>
+        <release-year>1975</release-year>
+        <publishing-house>Dupuis</publishing-house>
+        <category>Comic</category>
+        <isbn>185-72-21-75421-3</isbn>
+    </book>
+
+    <book>
+        <author>NA</author>
+        <draftsman>
+            <person>Gazzotti Bruno</person>
+        </draftsman>
+        <screenwriter>
+            <person>Vehlmann Fabien</person>
+        </screenwriter>
+        <serie>Alleen</serie>
+        <number-in-serie>1</number-in-serie>
+        <title>Spoorloos</title>
+        <release-year>2007</release-year>
+        <publishing-house>Dupuis</publishing-house>
+        <category>Comic</category>
+        <isbn>978-90-314-2703-1</isbn>
+    </book>
+
+    <book>
+        <author>NA</author>
+        <draftsman>
+            <person>Gazzotti Bruno</person>
+        </draftsman>
+        <screenwriter>
+            <person>Vehlmann Fabien</person>
+        </screenwriter>
+        <serie>Alleen</serie>
+        <number-in-serie>13</number-in-serie>
+        <title>Tijgerzielen</title>
+        <release-year>2022</release-year>
+        <publishing-house>Dupuis</publishing-house>
+        <category>Comic</category>
+        <isbn>978-90-314-3948-5</isbn>
+    </book>    
+</library>

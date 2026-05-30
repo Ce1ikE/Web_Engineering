@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 16 : Oefening 3</title>
+    <link rel="stylesheet" href="./Oefening_16_3.css">
+</head>
+<body>
+    <script>
+        var Months = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+        var Results = new Array; 
+        var Sum = 0;
+        var Average = null;
+
+        for (let n = 0; n < Months.length; n++) {
+           Results[n] = parseInt(window.prompt("How many cars did you sell for the month of " + Months[n] + " ?"));            
+            Sum += Results[n];
+        }
+
+        console.log(Results,Sum);
+
+        Average = Sum / Months.length; // == Sum / 12;
+
+        document.write("<table>");
+        document.write("<tr><td>Maand</td><td>Aantal</td><td>T.o.v. gemiddelde</td></tr>");
+        for (let i = 0; i < Months.length; i++) {
+            document.write("<tr><td>" + Months[i] + "</td><td>" + Results[i] + "</td><td>" + (Results[i] - Average) + "</td></tr>");
+        }
+            
+        document.write("</table>");
+    </script>
+</body>
+</html>

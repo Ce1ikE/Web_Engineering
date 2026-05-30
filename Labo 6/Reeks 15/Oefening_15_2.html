@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeks 15 : Oefening 2</title>
+</head>
+<body>
+    <script>
+        var rendement , Kapitaal , Eind_Kapitaal , Tijd;
+        Kapitaal = parseInt(window.prompt("Enter starting amount"));
+        Eind_Kapitaal = parseInt(window.prompt("Enter ending amount"));
+        Tijd = parseInt(window.prompt("Enter the run time [In years]"));
+        rendement = (Math.pow(Eind_Kapitaal/Kapitaal,1/Tijd)) -1;
+        rendement *= 100;
+        document.write("<p>Your efficiency of your money investment equals = " + rendement.toFixed(2) + "%</p>");
+    </script>
+</body>
+</html>
